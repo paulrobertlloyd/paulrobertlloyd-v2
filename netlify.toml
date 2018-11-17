@@ -17,3 +17,21 @@
   for = "/*.js"
   [headers.values]
     Content-Type = "text/javascript; charset=utf-8"
+
+# Rewrite entry discussion URL
+[[redirects]]
+  from = "/:year/:month/:slug/discussion/*"
+  to = "/:year/:month/:slug_discussion.html"
+  status = 200
+
+# Rewrite entry photos URL
+[[redirects]]
+  from = "/:year/:month/:slug/photos/*"
+  to = "/:year/:month/:slug_photos.html"
+  status = 200
+
+# Rewrite related entries URL
+[[redirects]]
+  from = "/:year/:month/:slug/related/*"
+  to = "/:year/:month/:slug_related.html"
+  status = 200
