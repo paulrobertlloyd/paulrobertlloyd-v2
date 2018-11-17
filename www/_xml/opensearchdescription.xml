@@ -6,8 +6,8 @@ xmlns:moz="http://www.mozilla.org/2006/browser/search/">
     <LongName>Paul Robert Lloyd's Website</LongName>
     <Description>Paul Robert Lloyd is an interaction designer. This is where he shares his thoughts, photos and latest work.</Description>
     <Contact>noreply@paulrobertlloyd.com</Contact>
-    <Url type="text/html" template="http://prlloyd.webfactional.com/_mt/mt-search.cgi?IncludeBlogs=1,2,3,4&#38;search={searchTerms}"/>
-    <Url type="application/atom+xml" template="http://prlloyd.webfactional.com/_mt/mt-search.cgi?IncludeBlogs=1,2,3,4&#38;search={searchTerms}&#38;Template=opensearch"/>
+    <Url type="text/html" template="https://v2.paulrobertlloyd.com/_mt/mt-search.cgi?IncludeBlogs=1,2,3,4&#38;search={searchTerms}"/>
+    <Url type="application/atom+xml" template="https://v2.paulrobertlloyd.com/_mt/mt-search.cgi?IncludeBlogs=1,2,3,4&#38;search={searchTerms}&#38;Template=opensearch"/>
     <Url type="application/opensearchdescription+xml" rel="self" template="https://v2.paulrobertlloyd.com/_xml/opensearchdescription.xml" />
     <Image height="16" width="16" type="image/x-icon">https://v2.paulrobertlloyd.com//favicon.ico</Image>
     <InputEncoding>UTF-8</InputEncoding>

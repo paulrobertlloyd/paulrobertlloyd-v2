@@ -35,3 +35,19 @@
   from = "/:year/:month/:slug/related/*"
   to = "/:year/:month/:slug_related.html"
   status = 200
+
+# CGI scripts have gone
+[[redirects]]
+  from = "/_mt/*"
+  to = "/410.html"
+  status = 410
+
+[[redirects]]
+  from = "/tags/*"
+  to = "/410.html"
+  status = 410
+
+[[redirects]]
+  from = "/tags/"
+  to = "/tags/"
+  status = 200
