@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Last month I wrote about Bradshaw's Guide, a project that brings George Bradshaw's 1866 descriptive railway handbook to the web. Today I'll cover some of the typographic decisions I made, and how they lead me to believe that we still lack the necessary tools for web typography."/>
+    <meta name="keywords" content="Bradshaws Guide, Typography, Web Design"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2013/05/web_typography.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2013/05/web_typography/" title="What I Want from a Web Font"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2013/04/silicon_valley/" title="Don&#8217;t Be Evil, and Get Rich Trying"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2013/08/keep_up/" title="Keep Up!"/>
+    <title>What I Want from a Web Font &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>What I Want from a Web Font</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2013/04/silicon_valley/" title="Don&#8217;t Be Evil, and Get Rich Trying">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2013/08/keep_up/" title="Keep Up!">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-273">
+            
+            <div class="prose">
+                <p>Last month <a href="/2013/04/bradshaws_guide/">I wrote about Bradshaw&#8217;s Guide</a>, a project that brings George Bradshaw&#8217;s 1866 descriptive railway handbook to the web. Today I&#8217;ll cover some of the typographic decisions I made, and why I believe we still lack the necessary tools for web typography.</p>
+                
+                <h2>Bringing Order to Typographic Chaos</h2>
+                
+                <p>Although the content of Bradshaw&#8217;s Guide is well suited to hypertext, its chaotic and haphazard victorian typography, featuring a mix of fonts, weights and widths, felt somewhat at odds with the more structured nature of the web.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/05/bradshaws_cover.png" alt=""/>
+                    <figcaption>
+                        <p>Scan of the inside cover of Bradshaw&#8217;s 1866 railway handbook.</p>
+                    </figcaption>
+                </figure>
+                
+                <p>To successfully mimic its design, a vast array of fonts and styles would be needed, requiring assets in size and number that would slow page loads and degrade the experience, especially on mobile. The challenge then, was to maintain this identifiable aesthetic, but in a performant manner.</p>
+                
+                <p>Thankfully, beyond the cover and adverts, the guide is more consistently typeset, with different fonts and styles used to delineate content types. This structure gave me the confidence to keep my font selection limited.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/05/bradshaws_type.png" alt=""/>
+                    <figcaption>
+                        <p>Typographic hierarchy used in the original Bradshaw&#8217;s Guide.</p>
+                    </figcaption>
+                </figure>
+                
+                <h2>Font Selection</h2>
+                
+                <p>Finding the right fonts was a particularly drawn out process. Beyond the usual requirements &#8211; suitability, legibility on screen, price &#8211; I found myself drawing up a detailed set of technical criteria:</p>
+                
+                <ol start='1'>
+                <li><h3>Freedom to host locally</h3>
+                
+                <p>Performance is a question of trade offs. While third-party web font providers tend to use best-practice techniques, they are also a bit of a black box. I&#8217;d much rather work this stuff out for myself. </p>
+                
+                <p>Initially focused on reducing <abbr>HTTP</abbr> requests, I base64 encoded each font into the main stylesheet, producing a compressed CSS file 122kB in size. I&#8217;m now linking to each font separately. The combined total of styles and fonts comes in at a more respectable 97kB, and these assets can now be downloaded in parallel, which hopefully speeds things up a bit.</p>
+                
+                <p>I&#8217;m sure further improvements could be made. Being able to host fonts on my own server gives me the opportunity to continue experimenting.</p></li>
+                <li><h3>Openly licensed</h3>
+                
+                <p>While I&#8217;m not adverse to paying for fonts, openly licensed typefaces provide this flexibility. There is often a perception that free fonts are poorly designed, but I was surprised by how many good open source fonts are now available. <a href="http://www.google.com/fonts/">Google Fonts</a>, <a href="https://edgewebfonts.adobe.com">Adobe Edge Fonts</a>, <a href="http://openfontlibrary.org">Open Font Library</a> and <a href="http://www.fontsquirrel.com">Font Squirrel</a> are invaluable sources for such fonts, all of which can used locally as well as on the web.</p></li>
+                <li><h3>OpenType support</h3>
+                
+                <p>In trying to replicate the mix of type treatments used in Bradshaw&#8217;s Guide, I made heavy use of <a href="http://ie.microsoft.com/testdrive/graphics/opentype/opentype-fontbureau/index.html">OpenType features</a>. For example, if you browse the site in Safari or earlier versions of IE, you&#8217;ll miss the extensive use of small caps. Although OpenType features can increase the size of individual font files, conversely, the extra options they provided can negate the need for additional weights and styles. Put simply, OpenType features help you achieve more, with less.</p></li>
+                </ol>
+                
+                <h2>The Missing Web Typography Tool</h2>
+                
+                <p>After an extensive search, I opted to use <a href="http://www.fontsquirrel.com/fonts/kameron">Kameron</a> for headings, a chunky slab serif that contrasted strongly with <a href="http://www.linuxlibertine.org">Linux Libertine</a>, a delicate serif I had chosen for body copy.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/05/bradshaws_web.png" alt=""/>
+                    <figcaption>
+                        <p>Sample of fonts used on Bradshaw&#8217;s Guide.</p>
+                    </figcaption>
+                </figure>
+                
+                <p>With content made up of English and European characters, punctuation marks, <a href="https://en.wikipedia.org/wiki/Index_(typography)">manacles</a>, numerals and fractions, Libertine Regular needed to contain a large number of glyphs, including those needed for OpenType feature adaptions (ligatures, small caps, old style numerals etc.). Libertine Italic and Kameron Bold are used less often, so fewer characters were required. With the regular weight of Kameron used for uppercase headings, this was subset to include only uppercase letters, numbers and a few basic punctuation marks.</p>
+                
+                <p>Unfortunately, few tools allowed me to subset fonts with this degree of precision. FontShop has <a href="http://www.subsetter.com">a useful subsetting tool</a>, but this only works with their own fonts. Font Squirrel&#8217;s <a href="http://www.fontsquirrel.com/tools/webfont-generator">web font generator</a> can be useful, but strips out any OpenType features.</p>
+                
+                <p>In the end, I had to install <a href="http://fontforge.org">Fontforge</a>, an unwieldy and complex font editor. This allowed me to reduce the number of characters in Linux Libertine from ~3000 to ~250, yet maintain (and edit) its many OpenType instructions.</p>
+                
+                <p>With performance an important aspect of web design, it&#8217;s disappointing that web typography requires the download of large files that contain characters that may never be used.</p>
+                
+                <p>Beyond <a href="http://blog.fonts.com/2012/03/27/dynamic-subsetting-for-dynamic-content/">dynamic subsetting</a> (a technology which appears reserved for Monotype&#8217;s customers only) we need tools that help us subset fonts on a more granular basis. I&#8217;m envisaging a cross between Google Fonts (which indicates the overall download size of selected fonts), FontSquirrel&#8217;s web font generator, and FontForge, with its glyph view and editable OpenType instructions.</p>
+                
+                <p>Internet, make it happen.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/bradshawsguide/">Bradshaws Guide</a>, <a rel="tag" href="/tags/typography/">Typography</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2013-05-27T23:23:15+00:00" pubdate>Monday, 27 May 2013 at 11:23 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2013/05/web_typography/">Entry</a></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2013/05/web_typography/discussion/">Join Discussion</a> <span>0</span></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2013/05/web_typography/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

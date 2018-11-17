@@ -1,0 +1,84 @@
+label: Personal Blog - Links
+id: personal_blog_links
+author_link: http://paulrobertlloyd.com/
+author_name: Paul Robert Lloyd
+version: 1.8
+class: blog
+description: ''
+thumbnail_file: thumb.png
+thumbnail_file_medium: thumb-medium.png
+thumbnail_file_small: thumb-small.png
+elements:
+  custom_fields:
+    component: commercial
+    importer: custom_fields
+    data:
+      url:
+        default: http://
+        description: Link to referenced content.
+        name: URL
+        obj_type: entry
+        options: ~
+        required: 0
+        tag: EntryDataUrl
+        type: url
+  default_categories:
+    component: ~
+    data:
+      article:
+        label: Article
+      audio:
+        label: Audio
+      photo:
+        label: Photo
+      quote:
+        label: Quote
+      video:
+        label: Video
+    importer: default_categories
+  template_set:
+    component: ~
+    importer: template_set
+    data:
+      base_path: templates
+      label: Personal Blog - Links
+      templates:
+        archive:
+          archive_monthly:
+            label: Archive - Monthly
+            mappings:
+              monthly:
+                archive_type: Monthly
+                file_template: %y/%m/%i
+                preferred: 1
+          archive_yearly:
+            label: Archive - Yearly
+            mappings:
+              yearly:
+                archive_type: Yearly
+                file_template: %y/%i
+                preferred: 1
+        index:
+          atom:
+            label: Feed
+            outfile: _xml/links.xml.php
+            rebuild_me: 1
+        individual:
+          entry:
+            label: Entry
+            mappings:
+              individual:
+                archive_type: Individual
+                file_template: %y/%m/%f
+                preferred: 1
+          entry_plaintext:
+            label: Entry (Plain Text)
+            mappings:
+              individual:
+                archive_type: Individual
+                file_template: %y/%m/%F.txt
+                preferred: 0
+        system:
+          search_results:
+            description_label: Displays results of a search.
+            label: Search Results

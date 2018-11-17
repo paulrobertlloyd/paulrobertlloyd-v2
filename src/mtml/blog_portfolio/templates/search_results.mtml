@@ -1,0 +1,85 @@
+<mt:SearchResults trim="1">
+<mt:SearchResultsHeader trim="1">
+<mt:SetVarBlock name="title"><mt:IfTagSearch>Articles tagged<mt:Else>Results matching</mt:IfTagSearch> &#8216;<mt:SearchString replace="/",""/>&#8217;</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:IfTagSearch>Tags<mt:Else>Search Results</mt:IfTagSearch></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1><mt:Var name="title"/></h1>
+</mt:SearchResultsHeader>
+<mt:Include module="Entry Summary" parent="1" cgi="true" indent="16" trim="1"/>
+<mt:SearchResultsFooter trim="1">
+            </section>
+            <nav>
+                <ul role="navigation" class="pagination">
+                    <mt:IfPreviousResults trim="1"><li><a href="<mt:PreviousLink/>" rel="prev">Previous</a></li></mt:IfPreviousResults>
+                    <mt:PagerBlock trim="1">
+                        <mt:IfCurrentPage><li class="active"><span><mt:Var name="__value__"$></span></li><mt:Else><li><a href="<mt:PagerLink/>"><mt:Var name="__value__"$></a></li></mt:IfCurrentPage>
+                    </mt:PagerBlock>
+                    <mt:IfMoreResults trim="1"><li><a href="<mt:NextLink/>" rel="next">Next</a></li></mt:IfMoreResults>
+                </ul>
+                <a rel="alternate" type="application/atom+xml" href="<mt:CGIPath/><mt:SearchScript/>?<mt:IfTagSearch>tag<mt:Else>search</mt:IfTagSearch>=<mt:SearchString replace="/","" encode_url="1"/>&#38;Template=feed&#38;IncludeBlogs=<mt:SearchIncludeBlogs/>&#38;limit=<mt:SearchMaxResults/>" title="Subscribe to a feed of results <mt:IfTagSearch>tagged &#8216;<mt:SearchString replace="/",""/>&#8217;<mt:Else>matching &#8216;<mt:SearchString/>&#8217;</mt:IfTagSearch>">RSS</a>
+            </nav>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+        </div><!--/complementary-->
+</mt:SearchResultsFooter>
+</mt:SearchResults>
+
+<mt:NoSearchResults trim="1">
+<mt:SetVarBlock name="title"><mt:IfTagSearch>No articles tagged<mt:Else>No results matching</mt:IfTagSearch> &#8216;<mt:SearchString replace="/",""/>&#8217;</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:IfTagSearch>Tags<mt:Else>Search Results</mt:IfTagSearch></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1><mt:Var name="title"/></h1>
+                <p>Suggestions:</p>
+                <ul>
+                    <li>Check your spelling.</li>
+                    <li>Try using more general keywords.</li>
+                    <li>Try different words that mean the same thing.</li>
+                </ul>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+        </div><!--/complementary-->
+</mt:NoSearchResults>
+
+<mt:NoSearch trim="1">
+<mt:Var name="title" value="Search"/>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>Instructions</h1>
+                <p>By default, this search engine looks for all words in any order. To search for an exact phrase, enclose the phrase in quotes: <code>"movable type"</code>.</p>
+                <p>The search engine also supports AND, OR, and NOT keywords to specify boolean expressions:<br/>
+                    <code>personal OR publishing</code><br/>
+                    <code>publishing NOT personal</code>
+                </p>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:IfStraightSearch><mt:Include module="Featured" parent="1" indent="12"/></mt:IfStraightSearch>
+<mt:IfTagSearch><mt:Include module="Tags" parent="1" indent="12"/></mt:IfTagSearch>
+        </div><!--/complementary-->
+</mt:NoSearch>
+
+<mt:Include module="Footer" parent="1"/>

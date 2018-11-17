@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3;source-code-pro:n4.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Last week I was invited to Responsive Summit, a face-to-face discussion about Responsive Web Design. We talked about what we've learnt so far, the problems we're continuing to face and things we'd like to change. And no, I didn't get the Dr. Strangelove reference either."/>
+    <meta name="keywords" content="Responsive Design, Responsive Summit, Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/" title="How I Learned to Stop Worrying and Love Responsive Images"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2012/02/niptuck/" title="Nip/Tuck"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2012/02/offscreen/" title="Offscreen Magazine"/>
+    <title>How I Learned to Stop Worrying and Love Responsive Images &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>How I Learned to Stop Worrying and Love Responsive Images</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2012/02/niptuck/" title="Nip/Tuck">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2012/02/offscreen/" title="Offscreen Magazine">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-244">
+            <figure>
+                <img src="/_assets/2012/02/responsive_summit.jpg" alt=""/>
+            </figure>
+            <div class="prose">
+                <p>Last week I was invited to <a href="http://responsivesummit.com/">Responsive Summit</a>, a face-to-face discussion about Responsive Web Design. We talked about what we&#8217;ve learnt so far, the problems we&#8217;re continuing to face and things we&#8217;d like to change. And no, I didn&#8217;t get the <a href="http://en.wikipedia.org/wiki/Dr._Strangelove">Dr. Strangelove</a> reference either.</p>
+                
+                <p>Whilst some disliked the perceived exclusivity, I found it encouraging that <a href="http://twitter.com/armstrong">Chris</a>, <a href="http://twitter.com/jbrewer">Josh</a> and <a href="http://twitter.com/aexmo">Alex</a> were able to arrange such a meet-up in just 6 days. Blogging about our thoughts and experiences is better than pithy tweets, but sharing them in person? That&#8217;s better still.</p>
+                
+                <p>Lessons were learnt about how to arrange similar meet-ups in the future, but that&#8217;s not to say there wasn&#8217;t an opportunity for input from the wider community. Questions were submitted via the website and these helped us divide the discussion into five key topic areas:</p>
+                
+                <ul>
+                <li>Workflow</li>
+                <li>Layout</li>
+                <li>Sensors</li>
+                <li>Images</li>
+                <li>Advertising</li>
+                </ul>
+                
+                <p>We also agreed to share our findings from the day on our blogs. I&#8217;m going to concentrate much of my report on the topic of responsive images; possibly the meatiest and most difficult challenges we&#8217;ve encountered so far.</p>
+                
+                <h2>Media Queries in <abbr>HTML</abbr>?</h2>
+                
+                <p>On many topics we found agreement, yet thankfully, there were areas of disagreement too.</p>
+                
+                <p>Chris asked if we needed media query like behaviour in <abbr title="HyperText Markup Language">HTML</abbr>. For example, a list of links might be better represented as a select menu in certain instances. I questioned whether such an approach would be a regression, taking us back to the &#8216;bad old days&#8217; of mixing together presentation, behaviour and content. I still believe that structuring documents semantically, with <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript manipulating that information, is the right approach. Progressive enhancement is forever revealed as a guiding principle when crafting web experiences. I&#8217;d hate to see that change.</p>
+                
+                <figure>
+                    <img src="/_assets/2012/02/responsive_summit_josh.jpg"/>
+                    <figcaption>
+                        <p>Josh Brewer facilitated the discussion. Original photo by <a href="http://www.flickr.com/photos/mr-armstrong/6924116705/in/set-72157629074652364">Chris Armstrong</a>.</p>
+                    </figcaption>
+                </figure>
+                
+                <h2>The Picture Element</h2>
+                
+                <p>Yet Chris&#8217;s suggestion isn&#8217;t a million miles away from a <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/">proposal to handle images in a responsive way</a> with a <code>&lt;picture&gt;</code> element. Much like <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> in <abbr>HTML5</abbr>, this new element would allow requests to be sent for images matching inline media queries, falling back to an <code>&lt;img&gt;</code> element for browsers that didn&#8217;t recognise the new syntax:</p>
+                
+                <ol class="code">
+                    <li><code>&#60;picture&#62;</code></li>
+                    <li class="tab1"><code>&#60;source src="high-res.jpg" media="min-width: 50em" /&#62;</code></li>
+                    <li class="tab1"><code>&#60;source src="low-res.jpg" /&#62;</code></li>
+                    <li class="tab1"><code class="comment">&#60;!-- Fallback content: --&#62;</code></li>
+                    <li class="tab1"><code>&#60;img src="low-res.jpg" /&#62;</code></li>
+                    <li><code>&#60;/picture&#62;</code></li>
+                </ol>
+                
+                <p>Whilst this proposal provides much needed scope for improving the scalability around image content, I&#8217;m not sure if it&#8217;s a little over engineered. Would the reintroduction of the <code>lowsrc</code> attribute be simpler, and therefore see swifter adoption from browser vendors? Furthermore, are there not other solutions we can find that don&#8217;t rely on new markup?</p>
+                
+                <h2>Going Further with File Formats</h2>
+                
+                <p>I wonder if the solution actually lies in file formats. This is something I touched upon briefly in <a href="/2012/02/niptuck/">my last post</a>, where I mentioned the much unloved <abbr title="Joint Photographic Experts Group">JPEG</abbr> 2000 format. Researching a little further, I discovered a number of other proposed formats, all of which could prove useful as we strive to build a responsive web:</p>
+                
+                <ul>
+                <li><p><strong><a href="http://en.wikipedia.org/wiki/JPEG_2000">JPEG 2000</a></strong>, intended to replace the older <abbr>JPEG</abbr> format, was introduced by the <abbr>JPEG</abbr> committee in 2000. This format generates higher quality images compared to standard <abbr>JPEG</abbr>s <em>and</em> produces smaller file sizes. Features include multiple resolution representation, progressive transmission, lossy and lossless compression and support for transparency mapping. Unfortunately, it&#8217;s not widely supported by browsers.</p></li>
+                <li><p><strong><a href="http://en.wikipedia.org/wiki/JPEG_XR">JPEG XR</a></strong> is a computationally lightweight alternative to <abbr>JPEG</abbr> 2000, developed by Microsoft in 2009. It also provides better compression (including lossless), greater colour accuracy allowing for up to 48-bit &#8216;deep colour&#8217; and <abbr title="High Dynamic Range">HDR</abbr> images, transparency mapping, and metadata support. Originally known as Windows Media Photo, it is well supported by Microsoft&#8217;s own software. Although covered by their Open Specification Promise, I suspect there&#8217;s little desire from others to support a format patented by Microsoft.</p></li>
+                <li><p><strong><a href="http://en.wikipedia.org/wiki/WebP">WebP</a></strong> is a sister project to the controversial WebM video format developed by Google. This produces lossless images that are 28% smaller in size compared to <abbr title="Portable Network Graphic">PNG</abbr>s, and lossy images 25-34% smaller compared to <abbr>JPEG</abbr>s &#8211; although image quality may not be comparable. It&#8217;s supported by Chrome and Opera, and can be used in other browsers via a JavaScript shim.</p></li>
+                </ul>
+                
+                <h3>Do We Need a New Image File Format?</h3>
+                
+                <p>During the discussion at Responsive Summit, the idea of creating a new image format arose, but was quickly dismissed. If you think <abbr title="World Wide Web Consortium">W3C</abbr> specifications take a long time to reach implementation, that&#8217;s nothing compared to the standardisation process for file formats. Achieving widespread support across browsers would take even longer.</p>
+                
+                <p>So then we started to look at existing formats. Mark mentioned <abbr title="Tagged Image File Format">TIFF</abbr> files, which can contain multiple subfiles. This lead Alex to talk about the Mac OS X ICNS format; a bundle that contains different sized icons ranging from 16x16 to 1024x1024 that can serve a multitude of uses. <a href="http://mistermorris.tumblr.com/post/18273059852/a-better-responsive-image-format">Could something similar be used on the web</a>?</p>
+                
+                <p>This isn&#8217;t dissimilar to <abbr>WOFF</abbr> (<a href="http://en.wikipedia.org/wiki/Web_Open_Font_Format">Web Open Font Format</a>), another wrapper format that contains either TrueType or OpenType fonts (i.e. pre-existing file formats) alongside some additional metadata needed for licensing purposes. This example is particularly encouraging, because it wasn&#8217;t long after the need for such a format was recognised, that font foundries and browser vendors agreed a specification and started implementing it.</p>
+                
+                <p>This might be an potential avenue for exploration, but it&#8217;s not without problems. First, even if a format was specced and implemented in browsers as fast as <abbr>WOFF</abbr>, the fallback mechanisms for images aren&#8217;t as graceful. Within the @font-face rule and with traditional font-stacks, we have a high degree of fallback control. For images, our only fallback is alternative text (when available). I suspect users have a higher tolerance for incorrect fonts than they do missing images.</p>
+                
+                <p>Secondly, and likely an issue with any potential solution involving file formats, is the method of creation. Any format would need support in popular editing packages for it to become a truly popularised; although plug-ins and extensions could satisfy this requirement in the short term.</p>
+                
+                <h3>What We Need Is a Portable Network Graphic</h3>
+                
+                <p>So rather than a new file format, or even a new container format, what we really need is an existing image format that can be extended, yet at the same time provide backwards compatibility.</p>
+                
+                <p>What about <a href="http://en.wikipedia.org/wiki/Portable_Network_Graphics"><abbr>PNG</abbr></a>?</p>
+                
+                <p>The trusty &#8216;ping&#8217; has saved us once before. It was originally created in 1995 after the <abbr title="Lempel-Ziv-Welch">LZW</abbr> compression method used in CompuServe&#8217;s <abbr title="Graphics Interchange Format">GIF</abbr> format became subject to licensing fees.</p>
+                
+                <p>This format is interesting given two examples where it has been extended whilst maintaining backwards compatibility:</p>
+                
+                <ul>
+                <li><p><strong>Fireworks <abbr>PNG</abbr></strong>: As the native file format for Fireworks, it includes a variety of information: bitmaps, text, vectors, image masks, layers, states and pages. Whilst fully editable in Fireworks, when viewed in a browser or another image editor only a flattened image is displayed.</p></li>
+                <li><p><strong><a href="http://en.wikipedia.org/wiki/APNG">APNG</a></strong>: Mozilla&#8217;s Animated Portable Network Graphics format is another unofficial extension to the <abbr>PNG</abbr> specification. It too retains backwards compatibility; browsers that don&#8217;t recognise this format only see the first frame.</p></li>
+                </ul>
+                
+                <p>This suggestion isn&#8217;t without problems either. For starters, it&#8217;s doubtful whether a file containing multiple image sizes wouldn&#8217;t be accompanied by a huge file size. One would hope that some intelligence could be incorporated so that when lower resolution variants were requested, only the required amount of data would be sent (bonus points if the same behaviour was also backwards compatible).</p>
+                
+                <p>Perhaps what we&#8217;re really after is the image equivalent of variable bit-rate, as seen in streaming audio and video. Imagine images that adapted their file characteristics based on available bandwidth and their resulting display size. Yes, I would also like a pony.</p>
+                
+                <p>And with that, I&#8217;ve sufficiently demonstrated my naivety regarding image formats.</p>
+                
+                <figure>
+                    <img src="/_assets/2012/02/responsive_summit_paul.jpg"/>
+                    <figcaption>
+                        <p>Me, in deep pondering mode. Original photo by <a href="http://www.flickr.com/photos/mr-armstrong/6778001526/in/set-72157629074652364">Chris Armstrong</a>.</p>
+                    </figcaption>
+                </figure>
+                
+                <h2>Immediate Solutions</h2>
+                
+                <p>Without the luxury of responsive image formats or new markup patterns, or even the impressive hacks that have failed to work sufficiently, what can we do?</p>
+                
+                <p><a href="http://joshemerson.co.uk/">Josh</a> has been using an interesting technique that follows on from earlier hacks, but almost embraces the point at which they fail. Again, his script ensures a small image is always downloaded, and larger images are only loaded when the conditions are right for them to do so. But, rather than try and guess which should be delivered upfront, the larger image is loaded <em>in addition</em> to the smaller image. Sounds crazy, but by downloading the larger image in the background, and only replacing the smaller one when ready, the apparent page speed is quicker, even though more data has been downloaded. Genius! He&#8217;s dubbed the technique &#8216;Responsive Enhance&#8217;, and you can <a href="https://github.com/joshje/Responsive-Enhance">try it out for yourself on GitHub</a>.</p>
+                
+                <p>Combining such a technique with judicious image compression, the right choice of file format, <abbr title="Content Delivery Network">CDN</abbr> hosting, cache control and a variety of other performance techniques, means we&#8217;re at least heading in the right direction.</p>
+                
+                <h3>Designing Around The Problem</h3>
+                
+                <p>I&#8217;m conscious that up until this point I&#8217;ve only been talking about technical solutions. As a designer, I&#8217;m drawn to a different approach. We should continue to push the constraints of the platform, but we shouldn&#8217;t be scared of designing around these limitations either.</p>
+                
+                <p>Instead of displaying large images in a carousel, why not show a series of thumbnails that reveal larger images when selected (thus letting users chose whether or not they want to download the larger images). Maybe embrace the lower bounds of image compression; posterisation effects can be achieved with small indexed colour palettes, and highly compressed <abbr>JPEG</abbr> images can look, er&#8230; interesting?</p>
+                
+                <p>With icons we have even more choice; be it using vector formats like <abbr title="Scalable Vector Graphics">SVG</abbr> as I&#8217;ve done on this site, or icon fonts. These are gaining popularity due to their small size, flexibility and dare I say commercial potential!</p>
+                
+                <h2>Conclusion</h2>
+                
+                <p>This post is a bit longer than I was intending, yet it only touches upon one of the five topics we discussed during the summit.</p>
+                
+                <p><a href="http://markboulton.co.uk/">Mark</a> made a series of great points throughout the day, but the one that will stay with me is this. We&#8217;ve been designing fixed layouts for a thousand years. What we&#8217;re dealing with isn&#8217;t a new web trend or set of techniques, it&#8217;s a whole new way of thinking about design and layout &#8211; and we&#8217;re at the very forefront of it. Short version: there&#8217;s a lot to figure out!</p>
+                
+                <p>Ultimately, we&#8217;ll tackle the problem of responsive images as we have others. Constraints will push designers to find the limits of the platform, and that in turn will generate new fashions and trends that evolve an aesthetic unique to the web. Meanwhile, developers will employ ingenious JavaScript hacks and polyfills that will guide the future direction of the web platform. And a combination of these techniques, in tandem with new processes and ways of working, will mean that designing for the web will remain one of the most exciting design challenges out there.</p>
+                
+                <p>Want to be part of it? Write about the problems you&#8217;re facing. If you see a separation between the developers and designers in your company, work to change that (we&#8217;re going to solve this together, not apart). And organise your own summits &#8211; although choose a better title! Not only can you help push the web forward, but if you&#8217;re lucky, you might even get your hands on some Microsoft sponsored cake, too.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/responsivedesign/">Responsive Design</a>, <a rel="tag" href="/tags/responsivesummit/">Responsive Summit</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2012-02-26T23:21:55+00:00" pubdate>Sunday, 26 February 2012 at 11:21 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/">Entry</a></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/discussion/">View Discussion</a> <span>1</span></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

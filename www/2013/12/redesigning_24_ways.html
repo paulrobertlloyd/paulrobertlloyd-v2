@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="The tail end of this year has been rather hectic. If moving house and changing jobs weren't enough to be getting on with, I was also busy redesigning 24 ways."/>
+    <meta name="keywords" content="Design, Projects, Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2013/12/redesigning_24_ways.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2013/12/redesigning_24_ways/" title="Redesigning 24 ways"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2013/10/moving_in_moving_on/" title="Moving In, Moving On"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2014/01/goals_for_2014/" title="My Intention Is This"/>
+    <title>Redesigning 24 ways &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>Redesigning 24 ways</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2013/10/moving_in_moving_on/" title="Moving In, Moving On">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2014/01/goals_for_2014/" title="My Intention Is This">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-410">
+            <figure>
+                <img src="/_assets/2013/12/redesigning_24_ways.jpg" alt=""/>
+            </figure>
+            <div class="prose">
+                <p>The tail end of this year has been <a href="http://paulrobertlloyd.com/2013/10/moving_in_moving_on/">rather hectic</a>. If moving house and changing jobs weren&#8217;t enough to be getting on with, I was also busy redesigning <em><a href="http://24ways.org/">24 ways</a></em>.</p>
+                
+                <p>For the uninitiated, <em>24 ways</em> is an annual advent calendar for web designers and developers. Published by Drew McLellan since 2005, the site boasts hundreds of articles that impart wisdom and teach new skills.</p>
+                
+                <p>Following <a href="http://allinthehead.com/retro/366/rebuilding-24-ways">Drew&#8217;s post</a> on how he rebuilt the site, I thought I would describe the process behind the accompanying redesign.</p>
+                
+                <h2>The brief</h2>
+                
+                <p>The last major redesign was produced by Tim Van Damme in 2007. His innovative design pushed the limits of the medium &#8211; notably in its use of <abbr title="Red green blue alpha">RGBA</abbr> <abbr>CSS</abbr> colour properties &#8211; and set expectations for any redesign that would follow.</p>
+                
+                <p>Few designs remain timeless, and after six years it was showing its age. Approaching a ninth season, <a href="http://24ways.org/archive/">the archive</a> was struggling to accommodate more than 200 articles; navigation was breaking down and it had become difficult to explore the range of topics covered.</p>
+                
+                <p>The design was also failing to reflect the best practices now being promoted. For example, when Geri Coady wrote about <a href="http://24ways.org/2012/colour-accessibility/">colour contrast</a>, her words were presented as grey text on a grey background. The site was responsive (thanks to some retroactive hacking) but a fresh approach was needed to effectively deliver content to a broadening range of devices accessing the site.</p>
+                
+                <h2>Approach</h2>
+                
+                <p>Beyond these considerations, I was given free rein.</p>
+                
+                <p>Red has long been the site&#8217;s signature colour, so while this would be retained, I was keen to explore how other colours could be chosen algorithmically. Since articles feature few images &#8211; most are screenshots or diagrams &#8211; a heavily typographic, European-flavoured approach was mooted. Although the underlying IA was sound, the addition of topics would improve the discoverability of content.</p>
+                
+                <p>Still, how could this redesign continue the tradition of pushing against the edges of the medium?</p>
+                
+                <p>In <a href="http://alistapart.com/article/the-web-aesthetic">The Web Aesthetic</a>, I urged designers to move beyond traditional print-inspired layouts, and instead look more to digital software &#8211; all while being true to the universal nature of the medium. Could this be an opportunity to make those ideas real?</p>
+                
+                <h2>A torturous design process</h2>
+                
+                <figure class="pullquote">
+                    <blockquote>
+                        <p>How I design: tenacity, panic, happy accidents and fast-approaching deadlines.</p>
+                    </blockquote>
+                    <figcaption>
+                        <p><a href="http://twitter.com/paulrobertlloyd/statuses/374836201972584448">@paulrobertlloyd, 3 September 2013</a></p>
+                    </figcaption>
+                </figure>
+                
+                <p>Given the brief in June, every time I sat down to work on the project, I couldn&#8217;t get started. A breakthrough came when I thought back to something <a href="http://danielmall.com/">Dan Mall</a> had said about creating element collages: &#8220;I start by putting elements on the page for which I have an idea in my mind for&#8221;. Having an idea for the display of comments, and with a little alcoholic lubrication, I took to <a href="http://bohemiancoding.com/sketch/">Sketch</a> and started there.</p>
+                
+                <p>Diamonds quickly became a unifying motif throughout this exploratory stage. Not only did this shape produce interesting crops and create a visual tension on the page, it also hinted at the season without going to the lengths of adding stars or Christmas trees.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/12/24_ways_comments.png" alt=""/>
+                    <figcaption>
+                        <p>The design concept started with commenting</p>
+                    </figcaption>
+                </figure>
+                
+                <p>For the typography, I settled on a pairing of <a href="http://www.latofonts.com/lato-free-fonts/">Lato</a> and <a href="http://ebensorkin.wordpress.com/">Merriweather</a>. For similar reasons discussed in <a href="http://paulrobertlloyd.com/2013/05/web_typography/">an earlier post</a>, I opted to use freely available fonts, with budget and ease of implementation at the forefront of my mind. This choice helped me typeset articles to a reasonable standard, yet using typefaces from different designers and with different metrics meant I was unable to mix them together inline. I looked at pairing Merriweather with its sans serif counterpart, yet its tracking was too loose for body copy.</p>
+                
+                <figure class="pullquote">
+                    <blockquote>
+                        <p>Know your fonts&#8230; using a typeface whose name means &#8216;summer&#8217;, for a website based around Christmas.</p>
+                        <p>Awkward.</p>
+                    </blockquote>
+                    <figcaption>
+                        <p><a href="https://twitter.com/paulrobertlloyd/statuses/401169294488535040">@paulrobertlloyd, 14 November 2013</a></p>
+                    </figcaption>
+                </figure>
+                
+                <p>All the while, <a href="http://jessicahische.is/talkingtype">Jessica Hische&#8217;s advice</a> was in the back of my mind: could I have found a better pairing with more time? If confirmation were needed, nearing completion of the design I discovered that Lato is Polish for Summer! Hopefully this is something we can revisit next year.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/12/24_ways_concept.png" alt=""/>
+                    <figcaption>
+                        <p>Initial design concept for 24 ways home page</p>
+                    </figcaption>
+                </figure>
+                
+                <h2>Moving to code</h2>
+                
+                <p>By the time dConstruct arrived in September, I had enough elements to present an initial direction to Drew and the rest of the <em>24 ways</em> team. They loved what they saw, but frustratingly, I couldn&#8217;t progress beyond this stage. I had a clear idea for index pages (inspired in part by the design of the <a href="http://nytimes.com/skimmer">New York Times skimmer</a>), yet few ideas for how this might translate to other pages.</p>
+                
+                <p>With the deadline fast approaching, I abandoned Sketch and headed for the browser. Having already marked up the site (using <a href="http://github.com/paulrobertlloyd/barebones/">Barebones</a> to provide generic styling) I introduced elements of the new design and observed how it cascaded down and throughout pages. Soon enough, the design was informing the markup, which in turn was informing the design. A visual language was developing in front of me.</p>
+                
+                <figure class="pullquote">
+                    <blockquote>
+                        <p>Sometimes you have to work with a design system to truly understand it.</p>
+                    </blockquote>
+                    <figcaption>
+                        <p><a href="https://twitter.com/paulrobertlloyd/statuses/395365510046830592">@paulrobertlloyd, 29 October 2013</a></p>
+                    </figcaption>
+                </figure>
+                
+                <h2>Content first, navigation last</h2>
+                
+                <p>While innovative and strongly conceptual, the previous design dominated the content. This was something I wanted to avoid; nothing should get in the way of being able to comfortably read an article. Setting aside traditional notions of layout, I explored different ways to navigate, inspired in part by mobile and tablet applications.</p>
+                
+                <p>As the boundary between desktop and mobile continues to blur, I felt encouraged to keep the main navigation recessed regardless of device. Beyond an article, users may want to discover related content, or catch up with other articles from a particular season: onward links that could be easily linked to from within the page. This suggested a navigation menu that needn&#8217;t be persistent; just because you have space to display navigation, doesn&#8217;t mean that you should.</p>
+                
+                <p>Without user testing, this is all conjecture of course. I&#8217;d be interested in hearing how readers have found navigating the site.</p>
+                
+                <p>Even so, the design of the navigation changed quite a bit during the build process. By prototyping early on, I was able to test the ergonomics across different devices; the persistent right-hand position of the menu icon is one decision that resulted from such testing.</p>
+                
+                <h2>&#8220;I don&#8217;t want doors!&#8221;</h2>
+                
+                <p>That&#8217;s what Drew said when we first talked about the redesign. He was fairly clear about this, but I was certain there should be an element of hiding and reveal.</p>
+                
+                <p>Earlier this year <a href="http://benjystanton.co.uk/">Benjy Stanton</a> gave a talk at Port80 about <a href="http://slideshare.net/benjystanton/crafting-animation-on-the-web">animation on the web</a>. He pointed out that although we have the tools (or at least the technology) to achieve richer animation, it&#8217;s often neglected. Beyond transitioning between menu states, a small flap in the corner of each article summary that pealed open to reveal the author might add this extra layer of engagement.</p>
+                
+                <figure>
+                    <img src="/_assets/2013/12/24_ways_animation_keyframes.png" alt=""/>
+                    <figcaption>
+                        <p>Keyframes in flap animation</p>
+                    </figcaption>
+                </figure>
+                
+                <p>Running short on time, I asked my friend (and <a href="http://joshemerson.co.uk/blog/using-svg-graphics-today"><abbr title="Scalable Vector Graphics">SVG</abbr> guru</a>) Josh Emerson for help. I imagined the resulting animation would use <abbr>SVG</abbr>, but it turns out there were significant issues with such an approach. Instead, Josh recommended I use <abbr>CSS</abbr> keyframe animations and background positioning with just a touch of JavaScript. Genius!</p>
+                
+                <p>Since the site launched, I&#8217;ve continued to tweak transitions and their values. This has been a frustrating exercise, sometimes having to forgo smoother transitions in order to avoid bizarre rendering bugs.</p>
+                
+                <h2>The pragmatist awoken</h2>
+                
+                <p>As much as I wanted to create an opinionated design, I also wanted to make a statement about progressive enhancement.</p>
+                
+                <p>While many subscribe to the notion that websites don&#8217;t need to look the same in every browser, they still include many lines of prefixed <abbr>CSS</abbr>, determined to make sure that any browser that can render a feature &#8211; regardless of the code required &#8211; does so.</p>
+                
+                <p>I wanted to implement the design in such a way that if a browser didn&#8217;t support a certain feature unprefixed &#8211; gradients, transitions, translations etc. &#8211; then a fallback would be seen instead. Users of the latest version of Firefox might see animated flaps yet not diamond shaped avatars, WebKit users the opposite.</p>
+                
+                <p>This thinking was found wanting. I had already built much of the site using a customised version of <a href="http://necolas.github.io/normalize.css/">normalise.css</a> (which addresses browser inconsistencies using prefixed properties) and besides, those diamond avatars, while an enhancement, were integral to the design.</p>
+                
+                <p>Pragmatism got the better of me, as it should. After all, what is front-end development if not a dance on the line strung between idealism and pragmatism?</p>
+                
+                <h2>Modularity</h2>
+                
+                <p>I was keen to introduce more modularity into my code, do more with a <abbr>CSS</abbr> preprocessor, use a <abbr title="Block, Element, Modifier">BEM</abbr>-like approach for markup patterns and not require jQuery for any JavaScript functions. This last one got the better of me &#8211; at least in the short term &#8211; although <a href="http://zeptojs.com">Zepto</a> did help me keep page weight down.</p>
+                
+                <p>Although I didn&#8217;t employ strict adherence to the <abbr><a href="http://bem.info/">BEM</a></abbr> methodology, I found the underlying concept incredibly useful in helping me name patterns.</p>
+                
+                <figure class="pullquote">
+                    <blockquote>
+                        <p>It&#8217;s finally happened&#8230; I&#8217;m seriously considering using a .list&#45;&#45;item class name.</p>
+                        <p>Sky, meet flying pigs.</p>
+                    </blockquote>
+                    <figcaption>
+                        <p><a href="https://twitter.com/paulrobertlloyd/statuses/395351309169459200">@paulrobertlloyd, 29 October 2013</a></p>
+                    </figcaption>
+                </figure>
+                
+                <p>As <em>24 ways</em> is entirely content-based, <abbr>HTML5</abbr>&#8217;s semantic elements were used extensively, all while making sure they generated a sensible document outline (something that&#8217;s often forgotten). Class names took inspiration from these elements, as terms like <code>article</code>, <code>summary</code>, <code>header</code>, <code>footer</code> and <code>main</code> mapped closely to the smaller patterns required.</p>
+                
+                <p>Taking inspiration from <abbr>BEM</abbr>, I used single word root classes, suffixed with a modifier if required. Child elements would use this root class, followed by an underscore and a description of that element. A additional layer of semantics was provided using <a href="http://microformats.org/wiki/microformats-2/">Microformats 2</a> class names, although these were not referenced in the CSS.</p>
+                
+                <p><em>Sidenote: If you&#8217;re unconvinced about the need for methodologies like <abbr>BEM</abbr>, I&#8217;d encourage you to read <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">Nicholas Gallagher&#8217;s thought provoking article</a> on semantics and front-end architecture.</em></p>
+                
+                <p>This naming system produced markup patterns like this:</p>
+                
+                <ol class="code">
+                    <li><code>&#60;article class="summary summary-article h-entry day-15"&#62;</code></li>
+                    <li class="tab1"><code>&#60;header class="summary_header"&#62;</code></li>
+                    <li class="tab2"><code>&#60;h1 class="summary_title p-name"&#62;&#60;a class="u-url" rel="bookmark" href="#"&#62;Real Animation Using JavaScript, CSS3, and HTML5 Video&#60;/a&#62;&#60;/h1&#62;</code></li>
+                    <li class="tab2"><code>&#60;p class="summary_meta"&#62;</code></li>
+                    <li class="tab3"><code>&#60;time class="dt-published" datetime="2010-12-15T00:00:00-00:00"&#62;15 Dec 2010&#60;/time&#62;</code></li>
+                    <li class="tab3"><code>&#60;a class="summary_comments" href="#comments"&#62;6 comments&#60;/a&#62;</code></li>
+                    <li class="tab2"><code>&#60;/p&#62;</code></li>
+                    <li class="tab1"><code>&#60;/header&#62;</code></li>
+                    <li class="tab1"><code>&#60;div class="summary_main"&#62;</code></li>
+                    <li class="tab2"><code>&#60;p class="p-summary"&#62;&#60;a href="http://danielmall.com/"&#62;Dan Mall&#60;/a&#62; breathes life into web standards-based animation. By striving for more than just mechanical movement, we can create more believable animated effects to enhance our users&#8217; experience.&#60;/p&#62;</code></li>
+                    <li class="tab1"><code>&#60;/div&#62;</code></li>
+                    <li class="tab1"><code>&#60;footer class="summary_footer"&#62;</code></li>
+                    <li class="tab2"><code>&#60;p class="summary_author p-author h-card"&#62;&#60;a class="u-url" href="#"&#62;&#60;img class="u-photo" src="danmall160.jpg" alt=""/&#62;&#60;span class="p-name"&#62;Dan Mall&#60;/span&#62;&#60;/a&#62;&#60;/p&#62;</code></li>
+                    <li class="tab1"><code>&#60;/footer&#62;</code></li>
+                    <li><code>&#60;/article&#62;</code></li>
+                </ol>
+                
+                <p>If you&#8217;re interested in learning more about the front-end code behind <em>24 ways</em>, you can view <a href="http://github.com/paulrobertlloyd/24ways-frontend/">the repo on GitHub</a>.</p>
+                
+                <h2>Designing in the dark</h2>
+                
+                <p>It has been three weeks since the redesign was unveiled, and thankfully to a largely positive audience. It&#8217;s funny to think that just a week beforehand some of the design&#8217;s signature features still hadn&#8217;t been conceived. I really took it to the line! </p>
+                
+                <p>Indeed, if providing a critique, it&#8217;s important to recognise the constraints under which it was delivered. Working evenings and weekends meant I had little time to noodle on any particular design direction. Having left Clearleft and started working in London meant I no longer had easy access to a device lab. Waiting for my phone line to be installed meant I was unable to download and install the virtual machines needed for cross browser testing.</p>
+                
+                <p>Developing a responsive website without these resources can be a risky proposition, and what I&#8217;ve developed is largely a best guess. Once I have these tools in hand, I will likely revisit many of my design decisions.</p>
+                
+                <h2>What next?</h2>
+                
+                <p>Sadly, aspects of the design discussed earlier in the process were never addressed. For example, there was a desire to look at ways of surfacing archived content on the homepage between seasons, yet this was lost in the rush to get the site launched in time. Images &#8211; both in terms of art direction and their delivery in a responsive context &#8211; clearly need more thought.</p>
+                
+                <p>However, I&#8217;m a big believer in iteration, and not treating a website as ever being finished. I hope what&#8217;s been released this year can act as a foundation, and that the design will evolve in the years to come.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/design/">Design</a>, <a rel="tag" href="/tags/projects/">Projects</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2013-12-22T22:53:51+00:00" pubdate>Sunday, 22 December 2013 at 10:53 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2013/12/redesigning_24_ways/">Entry</a></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2013/12/redesigning_24_ways/discussion/">Join Discussion</a> <span>0</span></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2013/12/redesigning_24_ways/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

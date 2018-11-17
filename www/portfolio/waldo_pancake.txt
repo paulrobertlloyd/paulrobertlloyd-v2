@@ -1,0 +1,35 @@
+Waldo Pancake
+=============
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/portfolio/waldo_pancake>
+  Wednesday, 9 February 2011
+
+<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/0.jpg" alt=""/>
+        <figcaption>
+            <p>The Waldo Pancake website</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/1.jpg" alt=""/>
+        <figcaption>
+            <p>Navigation</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/2.jpg" alt=""/>
+        <figcaption>
+            <p>Slideshow featuring some of Jim's work</p>
+        </figcaption>
+    </figure>
+</div>
+
+Jim Smith (<abbr title="also known as">aka</abbr> [Waldo Pancake][1]) is a designer, illustrator and copywriter whose work can be found on the side of juice bottles, sweet packets and inside every [Puccino's][2] coffee shop.
+
+His existing site used a Flash-based solution, but this meant his work couldn't be viewed on mobile devices. Wanting to maintain similar slideshow functionality (with images that could be updated via an <abbr title="File Transfer Protocol">FTP</abbr> client) Jim approached me to redevelop his website. In addition to visualising his designs in <abbr title="HyperText Markup Language">HTML</abbr>, I created a simple file based content management system in <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> and utilised jQuery to provide cross-browser compatible image slideshows.
+
+  [1]: http://waldopancake.com/
+  [2]: http://puccinosworldwide.com/
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3;source-code-pro:n4.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Earlier today, 24 Ways published an article in which I outlined five reasons why I believe two current proposed markup patterns for responsive images are largely redundant. Here I provide some follow-up, and hopefully clarification around the points I raised."/>
+    <meta name="keywords" content="Responsive Design, Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2012/12/responsive_images.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2012/12/responsive_images/" title="A Field of Ponies"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2012/12/more_responsive_answers/" title="More Responsive Answers"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat/" title="Trimming Even More Fat"/>
+    <title>A Field of Ponies &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>A Field of Ponies</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2012/12/more_responsive_answers/" title="More Responsive Answers">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat/" title="Trimming Even More Fat">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-267">
+            
+            <div class="prose">
+                <p>Earlier today, <cite>24 Ways</cite> (sort of an advent calendar for web designers and developers), <a href="http://24ways.org/2012/responsive-images-what-we-thought-we-needed/">published an article</a> in which I outlined five reasons why I believe two current proposed markup patterns for responsive images are largely redundant.</p>
+                
+                <p>For those behind these proposals, this was received as an unthinking critique of their commendable work, lacking wider context and oblivious to the finer details that have been debated extensively already. Others, perhaps looking for an instant solution to this vexing problem, focused on one part of the article, and decided the solution is a new image format.</p>
+                
+                <h2>I Don&#8217;t Want A New Pony</h2>
+                
+                <p>In my article, I link to <a href="http://blog.yoav.ws/2012/05/Responsive-image-format">an article by Yoav Weiss</a>. He suggests a possible solution would be to adjust the way browsers handle progressive <abbr>JPEG</abbr>s. In terms of getting vendors to do anything helpful in terms of how they handle images, this seems reasonable. Whether it is remotely achievable, especially when you consider how difficult it has proven to get broad support for a new image format, <abbr title="compare">cf.</abbr> no support for a single video codec, this seems unlikely.</p>
+                
+                <p>With regards to image formats, I say:</p>
+                
+                <blockquote>
+                  <p>While it&#8217;s tempting to try to solve this issue by inventing new markup, the crux of it remains at the file level.</p>
+                </blockquote>
+                
+                <p>A responsive image format should be our North Star. The reason I brought up image formats, is that even if we try to route around the problem with markup &#8211; or with other hacks and polyfills &#8211; we should remember that this is where the problem lies. Techniques like <a href="http://filamentgroup.com/lab/rwd_img_compression/">compressive images</a> support that claim. Any solution that doesn&#8217;t address the problem at the format level can only be viewed of as temporary.</p>
+                
+                <p>I understand the grim reality regarding new image formats. Still, I thought it was worth restating where the problem lies, a gentle reminder for us not lose sight of this while we continue to explore different solutions.</p>
+                
+                <h2>Beyond Art Direction</h2>
+                
+                <p>What does or doesn&#8217;t belong in markup is one of those questions that is always hotly debated among web developers. There is never a right answer. Should art direction for images belong in markup? I don&#8217;t think it should, and perhaps that&#8217;s why I dislike the <code>picture</code> mark-up pattern. Others disagree, and that&#8217;s fine.</p>
+                
+                <p>Still, beyond art direction, there should be greater questioning of whether to include an image in our markup in the first place. Scott Jehl terms this &#8216;aggressive enhancement&#8217;. Perhaps this is simply a means of reselling progressive enhancement to an industry that has become used to burdening webpages with ancillary content.</p>
+                
+                <p>When everything on the web should ultimately degrade down to text &#8211; remember, browsing the web is not always a visual experience &#8211; I think more often than not, the inclusion of an image can be rightly questioned.</p>
+                
+                <p>Let me be clear. I&#8217;m not saying we shouldn&#8217;t use images on the web. Again, I point you in the direction of <a href="http://blog.responsivenews.co.uk/post/18948466399/cutting-the-mustard">the <abbr>BBC</abbr>&#8217;s responsive work</a>. My point is, if we intend for our markup to remain lightweight and accessible, the place we describe the conditions upon which an image is displayed or not, is probably best located beyond the bounds of <abbr>HTML</abbr>.</p>
+                
+                <h2>Today&#8217;s Options</h2>
+                
+                <p>Right now, I believe we have a bunch of tools at our disposal. These can be broadly categorised as follows:</p>
+                
+                <ul>
+                <li><p><strong>Progressive enhancement:</strong> Referencing less images in our markup, and using conditional loading techniques to decide if and when additional images should be displayed. <a href="https://github.com/scottjehl/picturefill">Picturefill</a> falls under this category (although I&#8217;m not convinced this  pattern should be standardised).</p></li>
+                <li><p><strong>Compressive images:</strong> I&#8217;ve had a lot fun <a href="http://paulrobertlloyd.com/2012/12/causeway_coast/">playing with the technique</a> originally <a href="http://blog.netvlies.nl/design-interactie/retina-revolution/">outlined by Daan Jobsis</a>. It&#8217;s exciting to <a href="http://nocturnalmonkey.com/writing/compressing-images">see others experiment</a> with this idea too. I know I&#8217;ll be paying more attention to compression settings and image dimensions over the coming year.</p></li>
+                <li><p><strong>Altering the visual aesthetic:</strong> If recognising that limited or unpredictable bandwidth is a constraint of the medium, let&#8217;s embrace it and see what results! As we move away from classic layouts and design practice, it behoves us to think how images will play a part within this new landscape.</p></li>
+                </ul>
+                
+                <p>Or, to put it another way, we already have <a href="http://www.youtube.com/watch?v=wJbhxVepEoc">a field of ponies</a>.</p>
+                
+                <h2>Web Native Design</h2>
+                
+                <p>My article should be seen as part of a broader discussion about how much, and what aspects, of our existing practice remain suitable when designing for the web. This is something I covered earlier this year in <a href="http://www.alistapart.com/articles/the-web-aesthetic/"><cite>The Web Aesthetic</cite></a>, although I&#8217;m not sure if I&#8217;ve conveyed my thinking as clearly as I would like.</p>
+                
+                <p>Perhaps the most important line in my article was this:</p>
+                
+                <blockquote>
+                  <p>Instead of spending the next year worrying about responsive images, let&#8217;s embrace the constraints of the medium, and seek out new solutions that can work within them.</p>
+                </blockquote>
+                
+                <p>Two years may seem like a long time for those who have focused intently on this particular problem, but relative to the longevity of the web, it is nothing but a heartbeat. While we&#8217;re still figuring this stuff out, it feels uncomfortable for us to rush to markup to solve the first problems we&#8217;ve encountered.</p>
+                
+                <p>Ultimately, usage will dictate which is seen as the best means of using images on the web. While <abbr title="Responsive Images Community Group">RICG</abbr> may want to look at how a solution could exist in markup, let&#8217;s not fall into the trap of accepting that this problem &#8211; and its solution &#8211; exists only at this level.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/responsivedesign/">Responsive Design</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2012-12-11T15:49:24+00:00" pubdate>Tuesday, 11 December 2012 at  3:49 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2012/12/responsive_images/">Entry</a></li>
+                    
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/12/responsive_images/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

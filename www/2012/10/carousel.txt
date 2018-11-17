@@ -1,0 +1,11 @@
+Carousel
+========
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/10/carousel>
+  Saturday, 6 October 2012
+
+One of my favourite photos from [a day exploring London][1] early last month.
+
+  [1]: http://www.flickr.com/photos/paulrobertlloyd/sets/72157631686838093
+

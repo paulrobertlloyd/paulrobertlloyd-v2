@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3;source-code-pro:n4.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="The Christmas break provides the time to tie up loose ends and make much needed progress on personal projects. At least, that was the plan. Once again I find myself distracted by the task of making this website just that little bit faster."/>
+    <meta name="keywords" content="Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat/" title="Trimming Even More Fat"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2012/12/responsive_images/" title="A Field of Ponies"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2012/12/clearing_the_decks/" title="Clearing the Decks"/>
+    <title>Trimming Even More Fat &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>Trimming Even More Fat</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2012/12/responsive_images/" title="A Field of Ponies">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2012/12/clearing_the_decks/" title="Clearing the Decks">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-268">
+            
+            <div class="prose">
+                <p>The Christmas break provides the time to tie up loose ends and make much needed progress on personal projects. At least, that was the plan. Once again I find myself distracted by the task of making this website just that little bit faster.</p>
+                
+                <p>As a follow-up to <a href="/2012/11/trimming_the_fat/">last month&#8217;s post</a>, here are some additional performance enhancements I&#8217;ve made between eating the left over turkey.</p>
+                
+                <h2>Fewer <abbr>HTTP</abbr> Requests</h2>
+                
+                <p>In my last post I described how I was able to remove many of the JavaScript dependancies the site once relied upon. The only site-wide script remaining was that used to manipulate the main navigation, adding and hiding elements and class names that I could then style with <abbr>CSS</abbr>.</p>
+                
+                <p>In my quest to reduce <abbr>HTTP</abbr> requests, and having seen <a href="http://www.netmagazine.com/tutorials/build-smart-mobile-navigation-without-hacks">Aaron Gustafson&#8217;s JavaScript-free mobile navigation solution</a>, the need for this small script became questionable.</p>
+                
+                <p>I love the ingenuity of Aaron&#8217;s approach, not least because it builds upon a clean, semantic base, and feels like genuine progressive enhancement. That said, Opera Mini has trouble interpreting the <code>:target</code> pseudo-class selector this solution uses, so it&#8217;s not without its problems.</p>
+                
+                <h3>Mashed up icons</h3>
+                
+                <p>A further request could be removed by using <a href="http://css-tricks.com/data-uris/">data <abbr>URI</abbr>s</a> and encoding the <abbr>SVG</abbr> image sprite as a base64 string in the <abbr>CSS</abbr>. This became a less attractive option when I learnt that the size of this string would be larger than the linked file it would replace.</p>
+                
+                <p>As I sought to reduce the size of the sprite, I realised many of the graphical elements it contained could be provided with simple CSS rules: the three line menu icon, the round containers for back and forward navigation links &#8211; even the Flickr icon in the footer could be generated using <abbr>CSS</abbr>. With these removed, the remaining icons appeared best suited to being served as a web font instead.</p>
+                
+                <p>I now find myself using a combination of techniques. The logo continues to use <abbr>SVG</abbr>, but encoded as a base64 string. <abbr>CSS</abbr> styles are used to create simple shapes and icons, with a custom web font (created using the amazing <a href="http://icomoon.io/#app-features">IcoMoon</a> app) used for more complex icons.</p>
+                
+                <p>In order to keep the size of this file down, fallbacks (<abbr>PNG</abbr> for the logo, <abbr>EOT</abbr> and TrueType for the web font) continue to reference external files. This means users of older browsers may end up downloading both the fallback assets and the files encoded within the <abbr>CSS</abbr>. It&#8217;s not a perfect situation, but going by my analytics data, this won&#8217;t affect many visitors.</p>
+                
+                <p>In addition to these changes, refactoring the remaining styles meant the new <abbr>CSS</abbr> file is slightly smaller than the three previous files it replaces:</p>
+                
+                <table class="chart-hbar">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Bytes downloaded (requests)</th>
+                        </tr>
+                        <tr>
+                            <td class="label">Before (<abbr>CSS</abbr>+<abbr>JS</abbr>+<abbr>SVG</abbr>)</td>
+                            <td class="value"><span style="width:100%;">11.47 <abbr>kB</abbr> &#160; (3)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">After (<abbr>CSS</abbr> only)</td>
+                            <td class="value"><span style="width:93.80%;">10.76 <abbr>kB</abbr> &#160; (1)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Improved Time to First Byte</h2>
+                
+                <p>In my previous post, I mentioned that I was now serving the site via <a href="http://cloudflare.com/">CloudFlare</a>. Beyond providing content distribution and file optimisation, this service provides a layer of protection from security threats like SQL injection and denial of service attacks.</p>
+                
+                <p>I really like CloudFlare, but it came with a notable downside: Time to First Byte (<abbr>TTFB</abbr>) times were longer than they ought to be. This issue has been <a href="http://blog.cloudflare.com/ttfb-time-to-first-byte-considered-meaningles">dismissed by CloudFlare</a>, yet real world usage suggested the responsiveness of this site was indeed impacted. <a href="http://andyhume.net">Andy Hume</a> recommended I try <a href="http://www.fastly.com">Fastly</a>. While it doesn&#8217;t optimise files or provide security protection, it provides the same core service as CloudFlare more effectively:</p>
+                
+                <h3>First view</h3>
+                
+                <table class="chart-hbar">
+                    <caption>Homepage comparison: <a href="http://webpagetest.org/result/121219_DH_DDQ/">19 December 2012</a> v <a href="http://webpagetest.org/result/121227_BD_GR8/">27 December 2012</a></caption>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">CloudFlare</th>
+                        </tr>
+                        <tr>
+                            <td class="label">First byte</td>
+                            <td class="value"><span style="width:12.25%;">1.225 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Document Complete</td>
+                            <td class="value"><span style="width:67.22%;">6.722 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Fully Loaded</td>
+                            <td class="value"><span style="width:67.98%;">6.798 <abbr>s</abbr></span></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Fastly</th>
+                        </tr>
+                        <tr>
+                            <td class="label">First Byte</td>
+                            <td class="value"><span style="width:1.89%;">0.189 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Document Complete</td>
+                            <td class="value"><span style="width:29.88%;">2.988 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Fully Loaded</td>
+                            <td class="value"><span style="width:30.64%;">3.064 <abbr>s</abbr></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Repeat view</h3>
+                
+                <table class="chart-hbar">
+                    <caption>Homepage comparison: <a href="http://webpagetest.org/result/121219_DH_DDQ/">19 December 2012</a> v <a href="http://webpagetest.org/result/121227_BD_GR8/">27 December 2012</a></caption>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">CloudFlare</th>
+                        </tr>
+                        <tr>
+                            <td class="label">First Byte</td>
+                            <td class="value"><span style="width:11.88%;">1.188 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Document Complete</td>
+                            <td class="value"><span style="width:19.61%;">1.961 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Fully Loaded</td>
+                            <td class="value"><span style="width:34.45%;">3.445 <abbr>s</abbr></span></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Fastly</th>
+                        </tr>
+                        <tr>
+                            <td class="label">First Byte</td>
+                            <td class="value"><span style="width:3.87%;">0.387 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Document Complete</td>
+                            <td class="value"><span style="width:7.43%;">0.743 <abbr>s</abbr></span></td>
+                        </tr>
+                        <tr>
+                            <td class="label">Fully Loaded</td>
+                            <td class="value"><span style="width:7.43%;">0.743 <abbr>s</abbr></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p>By moving away from CloudFlare, the site now loads twice as fast. On repeated views the response is four times faster, although that figure is also helped by the optimisations I described earlier, and by the fact that I&#8217;m now caching my <abbr>PHP</abbr> files.</p>
+                
+                <p>If a single lesson is to be taken from all this, it&#8217;s that often the biggest gains can come from the simplest changes. If you&#8217;re interested in improving the speed of your own website, start with the bigger pieces on your plate first.</p>
+                
+                <p>I dare say further improvements could be made, and I wouldn&#8217;t be surprised if I&#8217;m writing a similar blog post again soon.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2012-12-28T19:56:19+00:00" pubdate>Friday, 28 December 2012 at  7:56 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat/">Entry</a></li>
+                    
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/12/trimming_even_more_fat/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

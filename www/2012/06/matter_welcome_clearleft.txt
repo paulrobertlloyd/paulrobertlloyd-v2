@@ -1,0 +1,13 @@
+MATTER: Welcome Clearleft
+=========================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/06/matter_welcome_clearleft>
+  Friday, 1 June 2012
+
+I'm stupidly excited to be working with [Phil][1], [Jeremy][2] and the rest of the Clearleft team on [MATTER][3], a new home for independent long-form journalism focused on the big issues in science and technology. We had our first workshop this week, and the neutrons are already firing about some of the possible directions we can this.
+
+  [1]: http://gyford.com/
+  [2]: http://adactio.com/
+  [3]: http://readmatter.com/
+

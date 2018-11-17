@@ -1,0 +1,18 @@
+Created by Machines
+===================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2011/12/created_by_machines>
+  Tuesday, 20 December 2011
+
+> "It looks like a human was involved in choosing what went where," Marissa told them. "It looks too editorialized. Google products are machine-driven. They're created by machines. And that is what makes us powerful. That's what makes our products great."
+
+--Marissa Mayer addressing Google designers, as quoted in [In The Plex][1] by Steven Levy
+
+This explains *everything*.
+
+(via [Buzz Andersen][2])
+
+  [1]: http://www.amazon.co.uk/dp/1416596585
+  [2]: http://log.scifihifi.com/post/14250409420
+

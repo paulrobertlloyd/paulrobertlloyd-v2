@@ -1,0 +1,11 @@
+Next Larger Context
+===================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/02/next_larger_context>
+  Monday, 27 February 2012
+
+> Always design a thing by considering it in its next larger context--a chair in a room, a room in a house, a house in an environment, an environment in a city plan.
+
+--Eliel Saarinen
+

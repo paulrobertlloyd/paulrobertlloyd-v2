@@ -1,0 +1,33 @@
+
+    </div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li<mt:If name="section" eq="journal"> class="active"</mt:If>><a href="/journal/">Journal</a></li>
+            <li<mt:If name="section" eq="portfolio"> class="active"</mt:If>><a href="/portfolio/">Portfolio</a></li>
+            <li<mt:If name="section" eq="archive"> class="active"</mt:If>><a href="/archive/">Archive</a></li>
+            <li<mt:If name="section" eq="about"> class="active"</mt:If>><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="<mt:CGIPath/><mt:SearchScript/>" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="<mt:SearchMaxResults/>"/>
+            <input type="text" name="search" value="<mt:SearchString replace="/",""/>" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="<mt:BlogCCLicenseURL/>" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://<mt:BlogParentWebsite><mt:WebsiteHost/></mt:BlogParentWebsite>/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+<mt:Var name="scripts" trim="1"/>
+</body>
+</html>

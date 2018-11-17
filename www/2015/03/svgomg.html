@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="SVGOMG is a wonderful example of how to build a web app in a responsible and accessible way. I asked its creator, Jake Archibald, a few questions about how he designed and developed this native-feeling SVG optimisation application."/>
+    <meta name="keywords" content="SVG, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2015/03/svgomg.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2015/03/svgomg/" title="Jake Archibald: Building SVGO&#8217;s Missing GUI"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2015/03/berlin/" title="Briefly Berlin"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2015/04/100_days/" title="100 Days"/>
+    <title>Jake Archibald: Building SVGO&#8217;s Missing GUI &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>Jake Archibald: Building SVGO&#8217;s Missing GUI</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2015/03/berlin/" title="Briefly Berlin">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2015/04/100_days/" title="100 Days">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-431">
+            <figure>
+                <img src="/_assets/2015/03/svgomg.jpg" alt=""/>
+            </figure>
+            <div class="prose">
+                <p>Having spent many hours simplifying, optimising and minifying <abbr>SVG</abbr>s, typically using a combination of tools and services, I was overjoyed to learn that <a href="http://jakearchibald.com">Jake Archibald</a> had <a href="http://sarasoueidan.com/blog/svgo-tools/">taken it upon himself</a> to build a web-based GUI atop <a href="https://github.com/svg/svgo">SVGO</a>.</p>
+                
+                <p><a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> is easy to use and surfaces the range of optimisation options offered by <abbr>SVGO</abbr>. But beyond the obvious utility, it stands out as an example of how to build a &#8216;web app&#8217; (<a href="https://adactio.com/journal/6246">whatever that means</a>) in a responsible and accessible way. I asked Jake a few questions about how he went about designing and developing this application.</p>
+                
+                <h3>SVGOMG has a truly native app feel. What obstacles did you overcome (if any) to make it work so seamlessly on the web?</h3>
+                
+                <blockquote>
+                  <p>It was easier than I expected, but I think I was expecting it to be impossible. I was surprised at how much I used <a href="http://www.w3.org/TR/css-flexbox-1/">flexbox</a>, and how stable it is across modern browsers. Pretty much all of the layout is flexbox driven.</p>
+                
+                <p>All the heavy lifting, such as <abbr>SVG</abbr> parsing and minification, happens in <a href="http://www.w3.org/TR/workers/">web workers</a>, so the <abbr>UI</abbr> stays responsive. But the rule for runtime performance is still &#8220;if you paint, you lose&#8221;, so I had to spend time ensuring everything that moved had its own <abbr>GPU</abbr> layer and used simple transforms. There&#8217;s one downside to this, if you zoom the <abbr>SVG</abbr> preview in Chrome/Safari you start to see pixels. Still looking for a way to fix this that doesn&#8217;t kill performance.</p>
+                
+                <p>I developed entirely in Chrome (disclaimer: I work at Google), then bug fixed in other browsers afterwards. Firefox pretty much worked straight away, in fact the issues were mostly down to stricter spec compliance. IE was okay, the bugs were mainly in newer and lesser used features such as <a href="http://www.w3.org/TR/FileAPI/#url">blob <abbr>URL</abbr>s</a>. The biggest disappointment was Safari.</p>
+                
+                <p>I was shocked how much hacking Safari needed to get basic features working. Smooth scrolling within an element still needs a custom property, which will simply stop working when combined with other properties like <abbr>CSS</abbr> animations. Every tap in iOS Safari comes with a 300ms delay. You can work around this with <a href="http://labs.ft.com/articles/ft-fastclick/">Fastclick</a>, but even the authors admit it&#8217;s a hack. I also found that features like <a href="http://www.w3.org/TR/IndexedDB/">IndexedDB</a> disappear if the site is launched from a home screen icon. I hope Apple step up their game here!</p>
+                </blockquote>
+                
+                <h3>One of the most pleasing features of the app is how it adapts to different screen sizes. Did you make any adaptions to your initial design/concept to achieve this?</h3>
+                
+                <blockquote>
+                  <p>I&#8217;m terrible at design. I don&#8217;t know what I&#8217;m doing. I really don&#8217;t. [Google&#8217;s]  <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a> helped me a lot by telling me what to do. In the cases where Material Design didn&#8217;t have rules, I spent a long time sketching and throwing stuff out.</p>
+                
+                <p>Unlike a lot of apps, the settings need to be visible alongside the output. It&#8217;s kinda tough to fit it all in on mobile, but I decided to split the output almost 50/50. The settings go at the bottom of the screen so you don&#8217;t cover the output with your hand while interacting.</p>
+                </blockquote>
+                
+                <h3>What progressive enhancement techniques and approaches did you use to ensure the widest possible usage for the app?</h3>
+                
+                <blockquote>
+                  <p>In terms of features, there are a couple of polyfills that are brought in dynamically for the browsers that need them. <abbr>IE</abbr> needs a <a href="https://github.com/jakearchibald/es6-promise">Promise polyfill</a>, Safari needs Fastclick.</p>
+                
+                <p>I stuck to enhancing existing browser features rather than reinventing anything. The switches are all checkboxes underneath, styled using <code>&lt;label&gt;</code>s. I couldn&#8217;t style <code>&lt;input type="range"&gt;</code> how I wanted, so it&#8217;s just a series of divs, but there&#8217;s a real range input overlaid at <code>opacity: 0</code>, so you interact (with keyboard, mouse or touch) with the real thing, but the <code>&lt;div&gt;</code>s listen to events and provide the visual output.</p>
+                
+                <p>I thought about making the site work without <abbr>JS</abbr> by doing the <abbr>SVG</abbr> work on the server, but this would be slow and a maintenance burden. I&#8217;m a strong believer in progressive enhancement, but also that each phase of the enhancement needs a user. Working without <abbr>JS</abbr> benefits older browsers, but as a site targeted at developers I figured I could safely leave older browsers behind.</p>
+                </blockquote>
+                
+                <h3>You are a big proponent of web performance. What steps did you take to make the app feel so speedy?</h3>
+                
+                <blockquote>
+                  <p>Although I have no intention of making the site work without <abbr>JS</abbr>, I still render before <abbr>JS</abbr> is available. In fact, it gets to first render with only 5k of <abbr>HTML</abbr> with some inlined <abbr>CSS</abbr> and <abbr>SVG</abbr>, the main scripts and CSS are all loaded in the background. This means the site appears to load in 1.5s even on <abbr>3G</abbr> with an empty cache, and most of that is <abbr>DNS</abbr> and <abbr>SSL</abbr>.</p>
+                
+                <p>The opening screen is really simple, so doing that in 5k wasn&#8217;t a challenge. It really bothers me that so many sites wait on <abbr>JS</abbr> for their first render, some even require their <abbr>JS</abbr> to make further requests before rendering. This pushes <abbr>3G</abbr> render time towards 10s  &#8211;  as a mobile user I know I wouldn&#8217;t put up with that.</p>
+                
+                <p>The main <abbr>JS</abbr> is 15k, but doesn&#8217;t include the parts that parse and minify the <abbr>SVG</abbr>, that&#8217;s loaded as an extra phase in the background. It&#8217;s great because interactivity lands really quickly, and the user doesn&#8217;t notice the extra loading. If the user manages to select an <abbr>SVG</abbr> before that script is available, the loading of that script appears to be part of the processing time.</p>
+                
+                <p>I also used <a href="http://www.w3.org/TR/service-workers/">ServiceWorker</a> to make the whole thing work offline. Working offline is a pretty cool feature, but I&#8217;m mostly doing it for performance. Subsequent visits to SVGOMG render almost instantly, whatever connection the user has. Given the variations in mobile connectivity, that&#8217;s really valuable!</p>
+                </blockquote>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/svg/">SVG</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2015-03-23T13:26:25+00:00" pubdate>Monday, 23 March 2015 at  1:26 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2015/03/svgomg/">Entry</a></li>
+                    
+                    <li><a href="https://v2.paulrobertlloyd.com/2015/03/svgomg/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

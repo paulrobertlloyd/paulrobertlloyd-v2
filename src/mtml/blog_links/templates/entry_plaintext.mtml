@@ -1,0 +1,12 @@
+<mt:AddRegex name="h1_underline">s{(.+)}{ $1 . "\n" . ("=" x (length $1));}e</mt:AddRegex>
+<mt:AddRegex name="StripExt">s{\.\w+$}{}g</mt:AddRegex>
+<mt:AddRegex name="StripDateSpace">s{[ ]{2}(\d)}{ $1}g</mt:AddRegex>
+<mt:EntryTitle regex="h1_underline"/>
+
+  By <mt:EntryAuthorDisplayName/>
+  <<mt:EntryLink regex='StripExt'/>>
+  <mt:EntryDate format="%A, %e %B %Y" regex="StripDateSpace"/>
+
+<mt:MarkdownOptions output='raw'><mt:EntryBody/></mt:MarkdownOptions>
+
+<mt:MarkdownOptions output='raw'><mt:EntryMore/></mt:MarkdownOptions>

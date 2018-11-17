@@ -1,0 +1,23 @@
+<mt:If tag="BlogID" eq="3" trim="1">
+<article class="entry link summary<mt:IfCategory> <mt:EntryCategory lower_case="1"/></mt:IfCategory>" id="entry-<mt:EntryID/>">
+    <mt:If tag="EntryCategory" like="(Article|Quote)" trim="1"><h1><a rel="bookmark" href="<mt:EntryDataURL/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1></mt:If>
+    <footer>
+        <p><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%e %b %Y"/></time> <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="Permalink">#</a></p>
+    </footer>
+    <mt:If name="cgi" eq="true"><mt:Else><?php
+        require_once($_SERVER['DOCUMENT_ROOT'].'/_php/oembed.php');
+        $oembed = new OEmbed();
+        echo $oembed->getHTML('<mt:EntryDataURL/>', array('width' => 720));
+    ?></mt:If>
+    <mt:If tag="EntryCategory" like="(Video|Photo)" trim="1"><h1><a rel="bookmark" href="<mt:EntryDataURL/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1></mt:If>
+    <mt:EntryBody smarty_pants="1" replace="&#8212;"," &#8211; "/>
+</article>
+<mt:Else>
+<article class="entry summary" id="entry-<mt:EntryID/>">
+    <h1><a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1>
+    <footer>
+        <p><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%e %b %Y"/></time></p>
+    </footer>
+    <p><mt:EntryExcerpt smarty_pants="1" replace="&#8212;"," &#8211; "/></p>
+</article>
+</mt:If>

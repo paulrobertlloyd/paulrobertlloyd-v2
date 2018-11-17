@@ -1,0 +1,9 @@
+/* TEAM */
+	Design & Development: Paul Robert Lloyd
+	Twitter: @paulrobertlloyd
+	From: Brighton, Sussex, England
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+	IDE: Movable Type, TextMate, Transmit, Fireworks

@@ -1,0 +1,26 @@
+<mt:Var name="title" value="Comment Preview"/>
+<mt:Var name="comment_preview" value="1"/>
+<mt:SetVarBlock name="meta">
+    <script>
+        var user = <mt:UserSessionState/>;
+        var is_preview = true;
+    </script>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <article class="entry comment<mt:If tag="CommentPreviewEmail" eq="noreply@paulrobertlloyd.com"> author</mt:If>">
+                <h1><img class="gravatar" src="/_assets/common/gravatar.png" alt="Your Gravatar" height="32" width="32"/><mt:CommentAuthorIdentity/><mt:CommentPreviewAuthorLink/></h1>
+                <footer>
+                    <p><time datetime="<mt:CommentPreviewDate format_name="iso8601"/>" pubdate><span><mt:CommentPreviewDate format="%e %b %Y"/></span> <span><mt:CommentPreviewDate format="%l:%M %p"/></span></time></p>
+                </footer>
+<mt:CommentPreviewBody smarty_pants="1" replace="&#8212;"," &#8211; " indent="16" trim="1"/>
+            </article>
+<mt:Include module="Comment Form" parent="1" indent="12"/>
+        </div><!--/main-->
+
+<mt:Include module="Footer" parent="1"/>

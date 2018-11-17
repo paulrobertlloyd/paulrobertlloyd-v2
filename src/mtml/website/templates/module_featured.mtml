@@ -1,0 +1,16 @@
+<mt:Entries blog_ids="2" tag="@featured" unique="1" lastn="4" trim="1">
+<mt:EntriesHeader>
+<section>
+    <h1><mt:If tag="BlogID" eq="2">Featured Entries<mt:Else>From the Journal</mt:Else></mt:If></h1>
+</mt:EntriesHeader>
+    <article id="entry-<mt:EntryID/>" class="entry summary">
+        <h1><a href="<mt:EntryPermalink replace=".php","/"/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"></a></h1>
+        <footer>
+            <p><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%e %b %Y"/></time></p>
+        </footer>
+        <p><mt:EntryExcerpt smarty_pants="1" replace="&#8212;"," &#8211; "/></p>
+    </article>
+<mt:EntriesFooter>
+</section>
+</mt:EntriesFooter>
+</mt:Entries>

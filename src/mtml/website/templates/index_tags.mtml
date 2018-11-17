@@ -1,0 +1,24 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="title" value="Tags"/>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>All Tags</h1>
+                <ul class="tags"><mt:Tags include_blogs="children">
+                    <li class="rank-<mt:TagRank max="6"/>"><a rel="tag" href="/tags/<mt:TagName encode_url="1" normalize="1"/>/"><mt:TagName normalize="1"/></a></li>
+                </mt:Tags></ul>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

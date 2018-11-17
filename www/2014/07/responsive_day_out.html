@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Last Friday I attended Responsive Day Out 2. The format was the same as last year, but the tenor was a little different. Gone were the theoretical presentations, talk of trying to sell responsive web design to clients and fears of embarking on responsive projects. Instead presentations focused on the actual doing; getting into the nitty-gritty."/>
+    <meta name="keywords" content="Conferences, Responsive Design, Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2014/07/responsive_day_out.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2014/07/responsive_day_out/" title="The Pursuit of Laziness: Thoughts from Responsive Day Out"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2014/03/how_valuable_are_css_and_html_skills_now_browsers_have_matured/" title="How Valuable Are CSS and HTML Skills Now Browsers Have Matured?"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2014/08/raising_the_games/" title="Raising the Games: Volunteering at Glasgow 2014"/>
+    <title>The Pursuit of Laziness: Thoughts from Responsive Day Out &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>The Pursuit of Laziness: Thoughts from Responsive Day Out</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2014/03/how_valuable_are_css_and_html_skills_now_browsers_have_matured/" title="How Valuable Are CSS and HTML Skills Now Browsers Have Matured?">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2014/08/raising_the_games/" title="Raising the Games: Volunteering at Glasgow 2014">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-423">
+            <figure>
+                <img src="/_assets/2014/07/responsive_day_out.jpg" alt=""/>
+            </figure>
+            <div class="prose">
+                <!--Jeremy interviews Ethan at Responsive Day Out 2. Photo by Marc Thiele-->
+                
+                <p>Last Friday I attended <a href="http://responsiveconf.com">Responsive Day Out 2</a>, follow-up to last year&#8217;s event at which <a href="http://www.besquare.me/session/the-edge-of-the-web/">I spoke</a>. The format was the same  &#8211;  sessions split into three short 20-minute talks followed by a 15-minute joint discussion  &#8211;  but the tenor was a little different. Gone were the theoretical presentations, talk of trying to sell responsive web design to clients and fears of embarking on responsive projects. Instead presentations focused on the actual doing; getting into the nitty-gritty.</p>
+                
+                <p>There was one change to last year&#8217;s format: the event concluded with <a href="http://huffduffer.com/adactio/167841">an hour-long keynote by Ethan Marcotte</a>, who used his talk to advocate laziness  &#8211;  or rather discourage the building of overly complex systems. Using an example from his work on Editorially, Ethan explained that by using the <code>nth-child</code> selector in CSS, he could create a simple grid without using a pre-existing grid framework. There&#8217;s no shortage of responsive frameworks, each promising to make a developer&#8217;s life easier, but are they always that helpful?</p>
+                
+                <p>Ethan proposed the development of a broader framework, one that guides the work we do. He referenced <a href="http://en.wikipedia.org/wiki/12_basic_principles_of_animation">the twelve basic principles of animation</a> as developed by Frank Thomas and Ollie Johnston at Walt Disney&#8217;s studio during the 1930s. These were described in their book <cite>The Illusion of Life</cite>, and beautifully animated by Cento Lodigiani:</p>
+                
+                <div class="object vimeo"><iframe src="http://player.vimeo.com/video/93206523?title=0&#38;byline=0&#38;portrait=0"></iframe></div>
+                
+                <p>This begged the question: what principles might apply to responsive web design? As I pondered this over the weekend, I realised many of the talks we heard gave hints to what these might be.</p>
+                
+                <h2>Five Responsive Principles</h2>
+                
+                <h3>1. Responsible</h3>
+                
+                <p>What is responsive web design if not an attempt to treat users with respect? In adopting this practice, we no longer dictate how websites should be viewed but have moved towards a more discursive approach, one that is adaptive to user needs. Yet this responsibility should extend beyond concerns about page layout; performance and accessibility are just as important (if not more so) as these aspects actively limit who can and can&#8217;t access the products we&#8217;re building.</p>
+                
+                <p>This principle was explored in surprisingly great detail (especially given the 20 minute time limit) by <strong>Sally Jenkinson</strong> in her talk <cite><a href="http://huffduffer.com/adactio/167829">More Than Media Queries</a></cite>. Every choice we make will impact the user to some degree, so we should bare in mind the ethical consequences of our decisions.</p>
+                
+                <p>The following day it was revealed the extent to which <a href="http://www.theguardian.com/technology/2014/jun/29/facebook-users-emotions-news-feeds">a Facebook survey had deliberately manipulated users emotions</a>. If ever there was a sign that our industry needs to take ethics more seriously, this was it. (If you want an introduction to this topic, I suggest watching <a href="http://www.youtube.com/watch?v=SB_GDF-mKTE">Cennydd Bowles&#8217; talk</a> from earlier this year.)</p>
+                
+                <h3>2. Polylithic</h3>
+                
+                <p>Responsive web design has encouraged the development of modular code bases and more considered design systems. Given the inherent complexity of building products that exhibit such a degree of flexibility, pulling them apart and into component pieces makes dealing with the whole much easier. There is a lot we can learn from existing software development practice  &#8211;  <a href="http://en.wikipedia.org/wiki/Unix_philosophy">the UNIX philosophy</a> looks particularly well-suited.</p>
+                
+                <p>But what aspects of HTML and CSS, as currently defined, make polylitihic design more difficult? Right now it&#8217;s difficult to build truly adaptive components when we can only query values that exist at the viewport level. <strong>Dan Donald</strong> <a href="http://huffduffer.com/adactio/167833">made the case for &#8216;element queries&#8217;</a> (<a href="http://blog.andyhume.net/responsive-containers/">by no means a new idea</a>) a technology that would allow us to design components that are truly independent from the page. By quickly spiking a concept using JavaScript and PHP, Dan was able to explore the opportunities such a feature would enable. It also allowed him to think about use cases, something that&#8217;s desperately needed if browser vendors are to ever implement them.</p>
+                
+                <p>We should also look at those technologies that <em>are</em> being introduced, and ask how they address the first principle. <a href="http://css-tricks.com/modular-future-web-components/">Web Components</a> look promising, but we should ensure their use doesn&#8217;t come at the cost of accessibility and security, something we often take for granted with native browser components.</p>
+                
+                <p>It&#8217;s not just implementations that need to be less monolithic either; we require more agile tools that do one thing well but can easily be combined with others.</p>
+                
+                <p><strong>Stephen Hay</strong> talked about <a href="http://huffduffer.com/adactio/167828">sculpting text</a>; designing an interface by starting with plain structured text and styling it using the development tools available in browsers. Photoshop may still be a useful tool in our arsenal, but it&#8217;s no longer the one true app for web design (if it ever was). Task runners like Grunt allow us to automate our workflow by piecing together different tools. How might design centric applications fit into this environment? Sketch allows for plugins; imagine the possibilities if it could be scripted via a Grunt task!</p>
+                
+                <h3>3. Pragmatic</h3>
+                
+                <p>Given the diverse and unpredictable landscape we support, our work involves a great deal of compromise. Having an eye on the future can help as make better decisions as we consider to what extent compromises need to be made.</p>
+                
+                <p><strong>Rachel Andrew</strong> gave <a href="http://rachelandrew.co.uk/archives/2014/06/27/css-grid-layout-getting-to-grips-with-the-chrome-implementation/">an overview of the new CSS Grids module</a>. Currently only implemented in Chrome Canary (and enabled behind a feature flag), once widely supported, this module will allow us to truly separate presentation from content; no longer will we need worry about source order. Knowing this might influence a decision regarding HTML semantics versus layout complexity.</p>
+                
+                <p>I&#8217;m reminded of Jason Grigsby&#8217;s approach to responsive images. His <cite><a href="http://blog.cloudfour.com/8-guidelines-and-1-rule-for-responsive-images/">8 guidelines and 1 rule</a></cite> balance the reality of browser support for a responsive image solution today with a eye to the future where responsive images are a solved problem.</p>
+                
+                <p>Pragmatism was certainly the theme behind  <strong>Inayaili de Le�n</strong>&#8217;s <a href="http://huffduffer.com/adactio/167834">talk</a>. At Ubuntu, her team needed to make their existing site responsive without changing its design or content. Familiar patterns emerged: the project was achieved by tackling it in smaller parts, with a focus on creating reusable components.</p>
+                
+                <h3>4. Collaborative</h3>
+                
+                <p>I&#8217;ve <a href="http://24ways.org/2011/collaborative-development-for-a-responsively-designed-web/">written about this previously</a>, but increased collaboration between designers, developers (and project stakeholders) ultimately leads to better products. Ideally everybody involved are multi-disciplinary to an extent, <a href="http://markdotto.com/2011/04/15/fatten-up-those-ts/">T-shaped</a> in their range of skills (a designer should have enough familiarity with CSS to allow them to style a page using developer tools, for example).</p>
+                
+                <p>This was brilliantly demonstrated by <strong>Ida Aalen</strong>, whose <a href="http://iallenkelhet.no/2014/06/27/responsive-day-out-2-slides-and-resources-from-my-talk-on-the-norwegian-cancer-society/">case-study</a> described how a close working relationship between designers, developers and the client resulted in phenomenal conversion numbers for the <a href="https://kreftforeningen.no/en/">Norwegian Cancer Society</a>. This was achieved by using core model thinking, focusing on those pages that address both business objectives and user tasks  &#8211;  again, seeking an area in which different people can come together to achieve the same goal.</p>
+                
+                <h3>5. Flexible</h3>
+                
+                <p>The final principle is flexibility, not in terms of layout, but in terms of our thinking. As we continue to understand the continuum of the web, and as the web finds its way on to an ever growing number of platforms (with and without screens), our approach constantly needs to adapt.</p>
+                
+                <p><strong>Oliver Reichenstein</strong> offered <a href="http://huffduffer.com/adactio/167836">an entirely new approach to IA</a>, with a container model that dispatched columns and broad navigation bars whose content is mirrored on the home page. Oliver&#8217;s talk was given without slides, so if you were wondering what this container model looks like, my colleague Nick Haley describes how <a href="http://next.theguardian.com/blog/container-model-blended-content/">we&#8217;ve been using it on the new Guardian website</a>.</p>
+                
+                <p><strong>Kirsty Burgoine</strong> <a href="http://huffduffer.com/adactio/167837">spoke</a> about how, having decided to build responsive websites for her clients by default, see followed a sometimes painful journey in search of an ideal process, before realising there is no correct process at all.</p>
+                
+                <p>This is one of the things I took away from the Responsive Summit two years ago. Mark Boulton described the work we do as &#8220;messy&#8221;; there is no right or wrong way; only a process of discovery and experimentation. Design is not a science (no matter how much people try to argue otherwise) and mistakes will be made. All the more reason to better involve our clients; constant communication and expectation setting remains key.</p>
+                
+                <p>We also need to be more open-minded in how we approach platforms like iOS and Android. Developers on these platforms happily leverage web technologies in their products, but can we say the same? Of course, we should build products true to the nature of the web rather than aimlessly try to ape what&#8217;s possible on native platforms. But maybe we should defer to user agents and native UI a little more often, rather than constantly reinvent the wheel and second-guess context.</p>
+                
+                <p><strong>Stephanie Rieger</strong>&#8217;s <a href="http://huffduffer.com/adactio/167838">talk</a> primarily focused on the CSS Level 4 media queries (which sound unlikely to be that useful in the grand scheme of things), but she also talked of an idea that would enable parts of the UI to be deferred to the user agent. For example, the following HTML:</p>
+                
+                <ol class="code">
+                    <li><code>&#60;nav is="native"&#62;</code></li>
+                    <li class="tab1"><code>&#60;ul&#62;</code></li>
+                    <li class="tab2"><code>&#60;li&#62;Item one&#60;/li&#62;</code></li>
+                    <li class="tab2"><code>&#60;li&#62;Item two&#60;/li&#62;</code></li>
+                    <li class="tab2"><code>&#60;li&#62;Item three&#60;/li&#62;</code></li>
+                    <li class="tab1"><code>&#60;/ul&#62;</code></li>
+                    <li><code>&#60;/nav&#62;</code></li>
+                </ol>
+                
+                <p>would tell a browser to handle this navigation list by using controls native to the platform: on a TV this might be a large menu, in a car this might be steering wheel controls. This is purely theoretical, but we can apply this thinking today when we look at forms. Styling a form is never easy; maybe we should let browsers deal with their style and behaviour however its sees fit. In short, shouldn&#8217;t we be more lazy?</p>
+                
+                <hr />
+                
+                <p>Defining the core principles that support the work we do is an aspect of (responsive) web design I&#8217;d like to explore further. Indeed, I&#8217;ve been thinking about what to write and talk about next, and the above points  &#8211;  their suitability and accurateness  &#8211;  seem like an area worth thinking about more.</p>
+                
+                <p>A huge thank-you to Ethan for greasing the rusty cogs in my brain, the speakers for taking the time to share their work and experience, and Jeremy, Kate and Clearleft for putting on another fantastic event.</p>
+                
+                <p><small>Photo by <a href="https://www.flickr.com/photos/marcthiele/14522243831/in/set-72157645354768166">Marc Thiele</a>.</small></p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/conferences/">Conferences</a>, <a rel="tag" href="/tags/responsivedesign/">Responsive Design</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2014-07-02T13:44:54+00:00" pubdate>Wednesday,  2 July 2014 at  1:44 PM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2014/07/responsive_day_out/">Entry</a></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2014/07/responsive_day_out/discussion/">View Discussion</a> <span>1</span></li>
+                    <li><a href="https://v2.paulrobertlloyd.com/2014/07/responsive_day_out/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

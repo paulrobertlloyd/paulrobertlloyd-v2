@@ -1,0 +1,25 @@
+Syndicated Feeds
+================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/feeds/>
+  Saturday, 23 July 2011
+
+A number of different feeds are available from this site:
+<ul class="feeds">
+    <li><a rel="alternate" type="application/atom+xml" href="/feeds/journal/">Journal Entries</a></li>
+    <li><a rel="alternate" type="application/atom+xml" href="/feeds/links/">Journal Links</a></li>
+    <li><a rel="alternate" type="application/atom+xml" href="/feeds/portfolio/">Portfolio Projects</a></li>
+    <li><a rel="alternate" type="application/atom+xml" href="/feeds/combined/">Combined Feed</a></li>
+ </ul>
+
+Feeds are also published by many of the third-party sites I use. Here are some of the most useful:
+<ul class="feeds">
+    <li><a rel="alternate" type="application/rss+xml" href="http://feeds.pinboard.in/rss/u:paulrobertlloyd">Bookmarks </a> saved to Pinboard</li>
+    <li><a rel="alternate" type="application/rss+xml" href="http://ffffound.com/home/paulrobertlloyd/found/feed">Found images</a> saved to Ffffound</li>
+    <li><a rel="alternate" type="application/atom+xml" href="http://api.flickr.com/services/feeds/photos_public.gne?id=40543580@N05&#38;lang=en-us&#38;format=atom">Photos</a> uploaded to Flickr</li>
+    <li><a rel="alternate" type="application/rss+xml" href="http://vimeo.com/paulrobertlloyd/videos/rss">Videos</a> uploaded to Vimeo</li>
+    <li><a rel="alternate" type="application/rss+xml" href="http://speakerdeck.com/u/paulrobertlloyd.atom">Slides</a> uploaded to Speaker Deck</li>
+    <li><a rel="alternate" type="application/rss+xml" href="http://dribbble.com/paulrobertlloyd/shots.rss">Shots</a> played on Dribbble</li>
+ </ul>
+

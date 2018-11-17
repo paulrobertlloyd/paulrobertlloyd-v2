@@ -1,0 +1,59 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="archive" trim="1">
+<mt:SetVarBlock name="title" trim="1"><mt:ArchiveTitle/></mt:SetVarBlock>
+<mt:SetVarBlock name="archive_start" trim="1"><mt:ArchiveDate format="%Y-%m-01"/></mt:SetVarBlock>
+<mt:SetVarBlock name="archive_end" trim="1"><mt:ArchiveDate format="%Y-%m-31"/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta" trim="1">
+    <mt:ArchivePrevious><link rel="prev archives" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>"/></mt:ArchivePrevious>
+    <mt:ArchiveNext><link rel="next archives" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>"/></mt:ArchiveNext>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:ArchiveTitle/></h1>
+            <nav class="prevnext">
+                <mt:ArchivePrevious><a rel="prev archives" class="prev" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>">Previous</a></mt:ArchivePrevious>
+                <mt:ArchiveNext><a rel="next archives" class="next" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>">Next</a></mt:ArchiveNext>
+            </nav>
+        </header>
+
+        <div role="main">
+            <mt:FlickrPhotos min_taken_date="$archive_start" max_taken_date="$archive_end" username="Paul Robert Lloyd" lastn="1" trim="1"><section class="photos">
+                <h1>Photos</h1></mt:FlickrPhotos>
+                <mt:FlickrPhotos min_taken_date="$archive_start" max_taken_date="$archive_end" username="Paul Robert Lloyd" lastn="8" trim="1"><a rel="external" href="<mt:FlickrPhotoURL/>"><img src="<mt:FlickrPhotoThumb size="s"/>" alt="<mt:FlickrPhotoTitle/>" height="75" width="75"/></a></mt:FlickrPhotos>
+                <mt:FlickrPhotos min_taken_date="$archive_start" max_taken_date="$archive_end" username="Paul Robert Lloyd" lastn="1" trim="1"><p><a rel="external" href="http://flickr.com/photos/paulrobertlloyd/archives/date-taken/<mt:ArchiveDate format="%Y"/>/<mt:ArchiveDate format="%m"/>/" class="more">View all photos</a></p>
+            </section></mt:FlickrPhotos>
+
+            <section>
+                <h1>Journal Entries</h1>
+                <mt:Entries blog_ids="2,3" trim="1">
+<mt:Include module="Entry Summary" parent="1" indent="16"/>
+                </mt:Entries>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <section>
+                <h1>Tags</h1>
+                <ul class="tags"><mt:Entries blog_ids="2,3,4" trim="1"><mt:EntryTags include_blogs="children" top="40" trim="1">
+                    <li><a rel="tag" href="/tags/<mt:TagName encode_url="1" normalize="1"/>"><mt:TagName normalize="1"/></a></li>
+                </mt:EntryTags></mt:Entries></ul>
+                <p><a href="/tags/" class="more">View all tags</a></p>
+            </section>
+
+            <mt:Entries blog_ids="4" trim="1"><mt:EntriesHeader><section>
+                <h1>From the Portfolio</h1>
+                <ul class="projects"></mt:EntriesHeader>
+                    <li class="entry project quarter">
+                        <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>">
+                            <img src="/_assets/portfolio/<mt:EntryBasename/>/_thumb.jpg" alt="<mt:EntryTitle encode_html="1"/>"/>
+                            <mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; ">
+                        </a>
+                    </li>
+                <mt:EntriesFooter></ul>
+            </section></mt:EntriesFooter></mt:Entries>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

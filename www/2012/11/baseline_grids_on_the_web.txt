@@ -1,0 +1,15 @@
+Baseline Grids on the Web
+=========================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/11/baseline_grids_on_the_web>
+  Friday, 2 November 2012
+
+Jason Santa Maria:
+
+> Ratios and baselines grids can be too rigid for the inherently flexible nature of the web. Just because something works at one size doesn't mean the same ratio will be appropriate at larger or smaller sizes.
+
+I often design websites to a vertical rhythm, even though maintaining it can be difficult during development. Jason's arguments made me realise that this practice goes against the grain of the medium; something I discourage in <cite>[The Web Aesthetic][1]</cite>. I need to let go of my baseline grids.
+
+  [1]: http://www.alistapart.com/articles/the-web-aesthetic/
+

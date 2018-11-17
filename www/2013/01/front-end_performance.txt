@@ -1,0 +1,13 @@
+Front-End Performance for Web Designers and Front-End Developers
+================================================================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2013/01/front-end_performance>
+  Tuesday, 22 January 2013
+
+Harry Roberts:
+
+> It's hard, if not impossible, to deny that performance is *by far* one of the most critical aspects of any decent web project, be it a small portfolio site, a mobile-first web app, right through to a full-scale ecommerce project. Studies, articles and personal experience all tell us that fast is best.
+
+If you're a web developer (or designer) read this. Now.
+

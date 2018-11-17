@@ -1,0 +1,184 @@
+# ----------------------------------------------------------------------
+# Rewrite Rules
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+# Enable rewriting
+  RewriteEngine on
+  RewriteBase /
+  RewriteOptions MaxRedirects=5
+  Options +FollowSymLinks
+
+# Suppress "www."
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+
+# Rewrite entry discussion URL
+  RewriteRule ^([\d]{4})/([\d]{2})/(.*)/discussion/$ /$1/$2/$3_discussion.html [L]
+
+# Rewrite entry photos URL
+  RewriteRule ^([\d]{4})/([\d]{2})/(.*)/photos/$ /$1/$2/$3_photos.html [L]
+
+# Rewrite related entries URL
+  RewriteRule ^([\d]{4})/([\d]{2})/(.*)/related/$ /$1/$2/$3_related.html [L]
+
+# Add trailing slash to (non-file) URLs
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/|#(.*))$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+# Redirect to file if it exists.
+# e.g. example.com/foo/ will display the contents of example.com/foo.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)/$ $1.html [QSA,L]
+
+# Rewrite RSS URLs (including legacy)
+  RewriteRule ^_xml/entries\.xml$ /feeds/combined/ [PT,NC,L]
+  RewriteRule ^feed/$ /feeds/combined/ [PT,NC,L]
+  RewriteRule ^feeds/journal/$ /_xml/journal.xml [PT,NC,L]
+  RewriteRule ^feeds/links/$ /_xml/links.xml [PT,NC,L]
+  RewriteRule ^feeds/portfolio/$ /_xml/portfolio.xml [PT,NC,L]
+  RewriteRule ^feeds/combined/$ /_xml/combined.xml [PT,NC,L]
+
+# Rewrite tag URLs
+  RewriteRule tags/index.* - [L]
+  RewriteRule tags/(.+) /_mt/mt-search.cgi?tag=$1&IncludeBlogs=1,2,3,4
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Custom Error Pages
+# ----------------------------------------------------------------------
+# 404 error
+  ErrorDocument 404 /404.html
+
+# ----------------------------------------------------------------------
+# UTF-8 Encoding
+# ----------------------------------------------------------------------
+# Use utf-8 encoding for anything served text/plain or text/html
+  AddDefaultCharset utf-8
+
+# Force utf-8 for a number of file formats
+  AddCharset utf-8 .html .html .css .js .xml .json .rss
+
+# ----------------------------------------------------------------------
+# Better website experience for IE users
+# ----------------------------------------------------------------------
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
+
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=Edge,chrome=1"
+  <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|xpi|safariextz|vcf)$" >
+  # mod_headers can't match by content-type, but we don't want to send this header on everything...
+    Header unset X-UA-Compatible
+  </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Proper MIME type for all files
+# ----------------------------------------------------------------------
+# Audio
+  AddType audio/ogg                                oga ogg
+  AddType audio/mp4                                m4a
+  AddType audio/mpeg                               mp3
+
+# Images
+  AddType image/x-icon                             ico
+  AddType image/webp                               webp
+  AddType image/svg+xml                            svg svgz 
+  AddEncoding gzip                                 svgz
+
+# Video
+  AddType video/ogg                                ogv ogg
+  AddType video/mp4                                mp4 m4v
+  AddType video/webm                               webm
+
+# Other
+  AddType application/javascript                   js
+  AddType application/atom+xml                     xml
+  AddType application/opensearchdescription+xml    xml
+  AddType text/cache-manifest                      appcache manifest
+  AddType text/x-vcard                             vcf
+
+# ----------------------------------------------------------------------
+# Performance
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+# FileETag None is not enough for every server.
+  Header unset ETag
+</IfModule>
+
+# Since we're sending far-future expires, we don't need ETags for static content.
+  FileETag None
+
+<IfModule mod_expires.c>
+# Set expires headers
+  ExpiresActive on
+
+# Perhaps better to whitelist expires rules? Perhaps.
+  ExpiresDefault                          "access plus 1 month"
+
+# HTML
+  ExpiresByType text/html                 "access plus 10 minutes"
+  
+# Data
+  ExpiresByType text/xml                  "access plus 0 seconds"
+  ExpiresByType application/xml           "access plus 0 seconds"
+  ExpiresByType application/json          "access plus 0 seconds"
+
+# RSS feeds
+  ExpiresByType application/rss+xml       "access plus 1 hour"
+  ExpiresByType application/atom+xml      "access plus 1 hour"
+
+# Favicon (cannot be renamed)
+  ExpiresByType image/x-icon              "access plus 1 month" 
+
+# Media
+  ExpiresByType image/gif                 "access plus 1 month"
+  ExpiresByType image/png                 "access plus 1 month"
+  ExpiresByType image/jpeg                "access plus 1 month"
+  ExpiresByType video/ogg                 "access plus 1 month"
+  ExpiresByType audio/ogg                 "access plus 1 month"
+  ExpiresByType video/mp4                 "access plus 1 month"
+  ExpiresByType video/webm                "access plus 1 month"
+
+# CSS and JavaScript
+# ExpiresByType text/css                  "access plus 2 months"
+# ExpiresByType application/javascript    "access plus 2 months"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# GZIP Compression
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+# Force deflate for mangled headers
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+
+# Compress all output labeled with one of the following MIME-types
+  AddOutputFilterByType DEFLATE application/atom+xml \
+                                application/javascript \
+                                application/json \
+                                application/rss+xml \
+                                application/xhtml+xml \
+                                application/xml \
+                                image/svg+xml \
+                                image/x-icon \
+                                text/css \
+                                text/html \
+                                text/plain \
+                                text/xml
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Specify Vary: Accept-Encoding headers
+# ----------------------------------------------------------------------
+<FilesMatch "\.(svgz)$">
+  Header set Vary: Accept-Encoding,User-Agent
+</FilesMatch>

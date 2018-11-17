@@ -1,0 +1,15 @@
+dConstruct 2010
+===============
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/portfolio/dconstruct_2010>
+  Wednesday, 1 September 2010
+
+<figure>
+    <img src="/_assets/portfolio/dconstruct_2010/0.jpg" alt="Home page"/>
+</figure>
+
+Presented by Clearleft, dConstruct is a grassroots conference held annually in Brighton. Speakers at the 2010 edition were invited to explore the power of design thinking.
+
+A conference is only as good as its content, so the homepage featured prominent images of those speaking at the event. The design referred back to an original dConstruct brand asset--the opened cube net--which was placed in different positions across the site to effect the layout of each page.
+

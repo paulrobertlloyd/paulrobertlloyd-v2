@@ -1,0 +1,22 @@
+<mt:If name="comment_confirmation">
+    <mt:Var name="title" value="Confirmation"/>
+    <mt:Var name="message" value="Your message has been received."/>
+<mt:Else name="comment_pending">
+    <mt:Var name="title" value="Thanks!"/>
+    <mt:Var name="message" value="Your message has been received."/>
+<mt:Else name="comment_error">
+    <mt:Var name="title" value="Message Submission Error"/>
+    <mt:SetVarBlock name="message">Message submission failed for the following reasons: <mt:ErrorMessage/></mt:SetVarBlock>
+</mt:If>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <p><mt:Var name="message"/></p>
+            <p>Return to the <a href="<mt:If name="comment_error">javascript:history.back()<mt:Else><mt:EntryLink replace=".php","/"/></mt:If>">original entry</a>.</p>
+        </div><!--/main-->
+
+<mt:Include module="Footer" parent="1"/>

@@ -1,0 +1,36 @@
+Mozilla Add-ons
+===============
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/portfolio/mozilla_addons>
+  Friday, 29 May 2009
+
+<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/1.jpg" alt=""/>
+        <figcaption>
+            <p>Add-on overview page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/2.jpg" alt=""/>
+        <figcaption>
+            <p>Category listing</p>
+        </figcaption>
+    </figure>
+</div>
+
+Mozilla Add-ons is a catalogue of over 6,000 add-ons that let Firefox users customise the browser to suit their individual interests and needs.
+
+The previous site was extremely functional and proved unappealing to users who were less tech savvy. Working at Clearleft alongside [Richard Rutter][1], [Natalie Downe][2] and [Anna Debenham][3] I helped reposition Mozilla's Add-ons so that it was more consumer orientated and approachable.
+
+  [1]: http://clearleft.com/is/richard-rutter/
+  [2]: http://clearleft.com/is/natalie-downe/
+  [3]: http://maban.co.uk/
+

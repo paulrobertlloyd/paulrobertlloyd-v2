@@ -1,0 +1,28 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="journal">
+<mt:SetVarBlock name="title"><mt:BlogName/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta">
+    <meta name="description" content="<mt:BlogDescription/>"/>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:BlogName/></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>Latest Entries</h1>
+                <mt:Entries blog_ids="2,3" limit="16" trim="1">
+<mt:Include module="Entry Summary" parent="1" indent="16"/>
+                </mt:Entries>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

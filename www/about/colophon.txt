@@ -1,0 +1,71 @@
+Colophon
+========
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/about/colophon>
+  Saturday, 23 July 2011
+
+This website is produced on an Apple [iMac][1], using [OmniGraffle][2] and [Fireworks][3] to realise early design concepts before being marked up as <abbr title="HyperText Markup Language">HTML</abbr> in [TextMate][4]. I use and recommend [WebFaction][5] for web hosting. Type set in [Source Sans Pro][6] and served via [Adobe Edge Fonts][7].
+
+This site is published using [Movable Type Pro 5][8] and a number of supporting plugins:
+
+  * [Markdown][9] and [SmartyPants][10] by John Gruber
+  * [Widont][11] by Brook Elgie
+  * [FlickrPhotos][12] by Marc Carey
+  * [TagSupplementals][13] by Hirotaka Ogawa
+  * [Regex][14] by Brad Choate
+  * [Gravatar][15] by Automattic
+  * [ModifiedDate][16] by Hirotaka Ogawa
+
+Additional enhancements:
+
+  * [MapBox][17] interactive maps
+  * [oembed-php][18] to display linked photos and videos inline via oEmbed
+  * [FlexSlider][19] by Tyler Smith
+  * [LESS][20] styles compiled with [lessphp][21]
+
+I've referenced or been inspired by the following articles:
+
+  * <cite>[Resolution Independence With SVG][22]</cite> by David Bushell
+  * <cite>[Compose to a Vertical Rhythm][23]</cite> and <cite>[Web Typography][24]</cite> by Richard Rutter
+  * <cite>[Ghost in the Machine Tags][25]</cite> by Jeremy Keith
+  * <cite>[Responsive Web Design][26]</cite> by Ethan Marcotte
+  * <cite>[Creating Intrinsic Ratios for Video][27]</cite> by Thierry Koblentz
+
+I always try to adhere to [web standards][28] and best practices. Therefore, pages are semantically structured using valid [<abbr>HTML5</abbr>][29] with presentational design provided by [<abbr title="Cascading Style Sheets">CSS</abbr>][30]. Syndicated feeds are available using [Atom][31]-flavoured <abbr title="Really Simple Syndication">RSS</abbr>.
+
+Site analytics are tracked using [Mint][32] by Shaun Inman.
+
+  [1]: http://apple.com/imac/
+  [2]: http://www.omnigroup.com/products/omnigraffle/
+  [3]: http://adobe.com/products/fireworks/
+  [4]: http://macromates.com/
+  [5]: http://webfaction.com/
+  [6]: http://blogs.adobe.com/typblography/2012/08/source-sans-pro.html
+  [7]: http://edgefonts.com/
+  [8]: http://movabletype.com/
+  [9]: http://daringfireball.net/projects/markdown/
+  [10]: http://daringfireball.net/projects/smartypants/
+  [11]: http://www.lowest-common-denominator.com/2006/08/widont_for_movable_type.php
+  [12]: http://mt-hacks.com/flickrphotos.html
+  [13]: http://code.google.com/p/ogawa/wiki/TagSupplementals
+  [14]: http://bradchoate.com/weblog/2002/07/27/mtregex
+  [15]: http://en.gravatar.com/site/implement/images/movabletype/
+  [16]: http://code.google.com/p/ogawa/wiki/ModifiedDate_Plugin
+  [17]: http://mapbox.com/
+  [18]: http://code.google.com/p/oembed-php/
+  [19]: http://flex.madebymufffin.com/
+  [20]: http://lesscss.org/
+  [21]: http://leafo.net/lessphp/
+  [22]: http://coding.smashingmagazine.com/2012/01/16/resolution-independence-with-svg/
+  [23]: http://24ways.org/2006/compose-to-a-vertical-rhythm
+  [24]: http://www.webtypography.net/
+  [25]: http://adactio.com/journal/1274/
+  [26]: http://www.alistapart.com/articles/responsive-web-design/
+  [27]: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+  [28]: http://webstandards.org/
+  [29]: http://www.w3.org/TR/html5/
+  [30]: http://www.w3.org/Style/CSS/
+  [31]: http://www.atomenabled.org/
+  [32]: http://haveamint.com/
+

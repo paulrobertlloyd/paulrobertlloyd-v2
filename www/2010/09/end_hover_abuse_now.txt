@@ -1,0 +1,11 @@
+End Hover Abuse Now
+===================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2010/09/end_hover_abuse_now>
+  Saturday, 18 September 2010
+
+My esteemed colleague, Cennydd Bowles:
+
+  > Hover states can provide subtle visual cues that help the user understand how something works. A faint glow around a &#8220;favourite&#8221; star. An underline appearing underneath a link. But they should not be used for anything else. Hovering does not demonstrate user intent.
+

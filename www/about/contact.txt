@@ -1,0 +1,22 @@
+Contact
+=======
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/about/contact>
+  Saturday, 23 July 2011
+
+<mark>_Available for new projects from May 2015_</mark>
+
+If you wish to contact me regarding new work, please use the form below -- or just use it to say hello! Here are the services I provide:
+
+* **Design:** I believe that by developing common design and interaction patterns, we can combine the systems of the web and graphic design to great effect. I value cohesiveness and attention to detail, and designing products that can be used by all.
+
+* **Front-end development:** I employ pragmatic front-end architecture practices that progressively enhance semantic <abbr>HTML</abbr> with modular <abbr>CSS</abbr> and unobtrusive JavaScript. I advocate tools like style guides and pattern portfolios that encourage collaboration within teams.
+
+* **Writing and speaking:** I like to share accumulated knowledge with my peers. I have written articles for [net Magazine][1], [A List Apart][2] and [24 ways][3], and [spoken][4] at design conferences around the <abbr>UK</abbr> and Europe.
+
+[1]: /2012/04/responsive_design_tutorial/
+[2]: http://alistapart.com/article/the-web-aesthetic
+[3]: http://24ways.org/authors/paulrobertlloyd/
+[4]: http://lanyrd.com/profile/paulrobertlloyd/past/speaking/
+

@@ -1,0 +1,142 @@
+--- 
+id: personal_website
+label: Personal Website
+version: '1.8'
+class: website
+description: ''
+author_name: Paul Robert Lloyd
+author_link: http://paulrobertlloyd.com/
+thumbnail_file: thumb.png
+thumbnail_file_medium: thumb-medium.png
+thumbnail_file_small: thumb-small.png
+elements: 
+  custom_fields: 
+    component: commercial
+    data: 
+      style: 
+        default: ''
+        description: Custom styles
+        name: Style
+        obj_type: page
+        options: ~
+        required: '0'
+        tag: PageDataStyle
+        type: textarea
+    importer: custom_fields
+  default_folders: 
+    component: ~
+    data: 
+      about: 
+        description: Information about the author and this website.
+        label: About
+      articles: 
+        children: 
+          beige_to_bondiblue: 
+            description: The Apple II and iMac introduced consumers to emerging technologies by making them easy to use.
+            label: Beige to Bondi-Blue
+          britain_rebranded: 
+            description: Approaching the new millennium, politicians and image makers sought a new identity for Britain.
+            label: Britain Rebranded
+          dissertation: 
+            description: The emergence of multi-channel broadcasting brought an increased role for graphic design and brand identity.
+            label: Graphic Design on UK Terrestrial Television & the Effects of Multi-Channel Growth
+          early_graphic_design_in_television: 
+            description: The launch of television in 1936 saw the birth of a medium that could be easily exploited and enhanced by graphic design.
+            label: Early Graphic Design in Television
+          fcplc: 
+            description: How the people's game became big business.
+            label: FC/plc
+        description: A selection of published essays and research papers.
+        label: Articles
+      bio: 
+        label: Biography
+      feeds: 
+        label: Feeds
+    importer: default_folders
+  template_set: 
+    component: ~
+    data: 
+      base_path: templates
+      label: Personal Website
+      templates: 
+        index: 
+          404: 
+            label: 404
+            outfile: 404.php
+            rebuild_me: 1
+          atom: 
+            label: Feed
+            outfile: _xml/combined.xml.php
+            rebuild_me: 1
+          htaccess: 
+            label: .htaccess
+            outfile: .htaccess
+            rebuild_me: 1
+          index: 
+            label: Index
+            outfile: index.php
+            rebuild_me: '0'
+          index_articles: 
+            label: Articles
+            outfile: articles/index.php
+            rebuild_me: 1
+          index_tags: 
+            label: Tags
+            outfile: tags/index.php
+            rebuild_me: 1
+          javascript: 
+            label: JavaScript
+            outfile: _js/mt.js
+            rebuild_me: 1
+          opensearch_description: 
+            label: OpenSearch Description
+            outfile: _xml/opensearchdescription.xml
+            rebuild_me: 1
+          rsd: 
+            label: RSD
+            outfile: _xml/rsd.xml
+            rebuild_me: 1
+        module: 
+          module_comment_form: 
+            label: Comment Form
+          module_comments: 
+            label: Comments
+          module_entry_summary: 
+            label: Entry Summary
+          module_featured: 
+            label: Featured
+          module_footer: 
+            label: Footer
+          module_header: 
+            label: Header
+          module_tags: 
+            label: Tags
+        page: 
+          page: 
+            label: Page
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%c/%f"
+                preferred: 1
+          page_plaintext: 
+            label: Page (Plain Text)
+            mappings: 
+              page: 
+                archive_type: Page
+                file_template: "%c/%F.txt"
+                preferred: '0'
+        system: 
+          comment_preview: 
+            label: Comment Preview
+            description_label: Displays preview of comment.
+          comment_response: 
+            label: Comment Response
+            description_label: Displays error, pending or confirmation message for comments.
+          dynamic_error: 
+            label: Dynamic Error
+            description_label: Displays errors for dynamically published templates.
+          search_results: 
+            label: Search Results
+            description_label: Displays results of a search.
+    importer: template_set

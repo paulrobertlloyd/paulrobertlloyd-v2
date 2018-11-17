@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Since returning from San Francisco, much of my spare time has been spent writing a tutorial for .net magazine. Published as part of their 'Responsive Week', this is for developers who want to learn about responsive web design but don't know where to start."/>
+    <meta name="keywords" content=".net Magazine, Responsive Design, Web Design, Web Development, Writing"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2012/04/responsive_design_tutorial.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2012/04/responsive_design_tutorial/" title="Build a Responsive Website in a Week"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2012/03/the_journey/" title="The Journey"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2012/04/brighton_marathon/" title="Marathon Man"/>
+    <title>Build a Responsive Website in a Week &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>Build a Responsive Website in a Week</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2012/03/the_journey/" title="The Journey">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2012/04/brighton_marathon/" title="Marathon Man">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-250">
+            
+            <div class="prose">
+                <p>Since returning from San Francisco, much of my spare time has been spent writing a tutorial for <a href="http://netmagazine.com/">.net magazine</a>. Published as part of their &#8216;Responsive Week&#8217;, this is for developers who want to learn about <a href="http://alistapart.com/articles/responsive-web-design/">responsive web design</a> but don&#8217;t know where to start.</p>
+                
+                <p>It&#8217;s also an opportunity to summarise the current discussion around responsive design, and describe how it fits into broader themes like progressive enhancement, mobile first and the universal nature of the web.</p>
+                
+                <p>The tutorial is split into five parts:</p>
+                
+                <ol start='1'>
+                <li><a href="http://netmagazine.com/tutorials/build-responsive-site-week-designing-responsively-part-1/">Designing Responsively</a></li>
+                <li><a href="http://netmagazine.com/tutorials/build-responsive-site-week-typography-and-grids-part-2/">Responsive Typography &amp; Grids</a></li>
+                <li><a href="http://netmagazine.com/tutorials/build-responsive-site-week-images-and-video-part-3/">Responsive Images &amp; Video</a></li>
+                <li><a href="http://netmagazine.com/tutorials/build-responsive-site-week-media-queries-part-4/">Getting to Grips with Media Queries</a></li>
+                <li><a href="http://netmagazine.com/tutorials/build-responsive-site-week-going-further-part-5/">Going Further with Responsive Design</a></li>
+                </ol>
+                
+                <p>These follow the development of a simple media gallery, the finished example of which can be found here: <a href="http://roadtrip.paulrobertlloyd.com/">http://roadtrip.paulrobertlloyd.com/</a></p>
+                
+                <p>The distinction between design and development is becoming increasingly blurred, so I start by illustrating how one might design a website that could have infinite layouts. The next three chapters describe each component of responsive design: fluid grids, flexible images and media queries, before I finish by covering testing, optimisation and performance.</p>
+                
+                <p>While this breaks down the approach into easily digestible parts, it has the unfortunate effect of suggesting a linear process. Yet in my experience, the responsive design process is quite iterative, involving a lot of back and forth. Hopefully I&#8217;ve given a sense of this in the final chapter.</p>
+                
+                <hr />
+                
+                <p>I somewhat underestimated the enormity of this project. I thought I could complete it during the four-day Easter break, but designing the example site took up much of that time.</p>
+                
+                <p>In fact, it felt like an insurmountable task at times, especially as I&#8217;ve never written a tutorial before. Taking refuge in coffee shops, far from distractions found at home, I created five <a href="http://www.omnigroup.com/products/omnioutliner/">OmniOutliner</a> documents, opening each with a question: what will the reader learn today?</p>
+                
+                <p>Once I had these outlines, I could concentrate on each chapter. Writing &#8216;pigeon English&#8217; (or, more accurately, bashing my fists on the keyboard and allowing a train of poorly constructed thoughts to appear on the page) shifted the mental barrier stopping me from getting this done. Once this was edited into something more structured, I shared drafts with friends to ensure it made sense and was factually correct! Thanks to <a href="http://maban.co.uk/">Anna</a>, <a href="http://joshemerson.co.uk/">Josh</a>, <a href="http://andyhume.net/">Andy</a>, <a href="http://adactio.com/">Jeremy</a> and <a href="http://bevanstephens.com/">Bevan</a> for their contributions in this regard. Thanks also to <a href="http://fullcreammilk.co.uk/">Owen</a>, who corrected many grammatical errors.</p>
+                
+                <p>As much as I hope this series educates others, it&#8217;s been an immensely valuable learning experience for myself; not only in terms of responsive design, but how to write a tutorial too. Like many projects, having acquired this knowledge, I now want to rewrite the whole thing.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/netmagazine/">.net Magazine</a>, <a rel="tag" href="/tags/responsivedesign/">Responsive Design</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a>, <a rel="tag" href="/tags/writing/">Writing</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2012-04-27T00:04:26+00:00" pubdate>Friday, 27 April 2012 at 12:04 AM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2012/04/responsive_design_tutorial/">Entry</a></li>
+                    
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/04/responsive_design_tutorial/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

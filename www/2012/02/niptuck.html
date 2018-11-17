@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en-gb">
+
+<head>
+    <link rel="dns-prefetch" href="//use.edgefonts.net"/>
+    <link rel="dns-prefetch" href="//p.typekit.net"/>
+    <script>
+        (function flagSVG() {
+            var ns = {'svg': 'http://www.w3.org/2000/svg'};
+            if(document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1")) {document.getElementsByTagName('html')[0].className += ' svg';}
+        })();
+    </script>
+    <link rel="stylesheet" href="/_css/presentation.css" type="text/css" media="all"/>
+    <link rel="alternate" href="/feeds/combined/" type="application/atom+xml" title="RSS Feed"/>
+    <link rel="search" href="/_xml/opensearchdescription.xml" type="application/opensearchdescription+xml" title="Paul Lloyd"/>
+    <script src="//use.edgefonts.net/source-sans-pro:n3:all;source-sans-pro:n4,i3;source-code-pro:n4.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta charset="utf-8"/>
+    <meta name="author" content="Paul Robert Lloyd"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="twitter:account_id" content="1597954074" />
+    <meta name="description" content="Following on from last July's extensive redesign of this site, the last few weeks have seen me revisit the design and implementation. In light of today's Responsive Summit, and with a few people asking about the changes, I thought I should provide a little more detail."/>
+    <meta name="keywords" content="Responsive Design, Web Design, Web Development"/>
+
+    <link rel="alternate" href="https://v2.paulrobertlloyd.com/2012/02/niptuck.txt" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="https://v2.paulrobertlloyd.com/2012/02/niptuck/" title="Nip/Tuck"/>
+    <link rel="prev bookmark" href="https://v2.paulrobertlloyd.com/2012/02/the_beach/" title="The Beach"/>
+    <link rel="next bookmark" href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/" title="How I Learned to Stop Worrying and Love Responsive Images"/>
+    <title>Nip/Tuck &#8212; Paul Robert Lloyd</title>
+</head>
+
+<body>
+    <div role="banner" id="top">
+        <a href="https://v2.paulrobertlloyd.com/" rel="home">Paul Robert Lloyd</a>
+        <a id="jump" href="#nav">Jump to navigation</a>
+    </div><!--/@banner-->
+
+    <div role="document">
+
+        <header>
+            <h1>Nip/Tuck</h1>
+            <nav class="prevnext">
+                <a rel="prev bookmark" class="prev" href="https://v2.paulrobertlloyd.com/2012/02/the_beach/" title="The Beach">Previous</a>
+                <a rel="next bookmark" class="next" href="https://v2.paulrobertlloyd.com/2012/02/responsive_summit/" title="How I Learned to Stop Worrying and Love Responsive Images">Next</a>
+            </nav>
+        </header>
+
+        <div role="main" class="entry" id="page-243">
+            
+            <div class="prose">
+                <p>Following on from <a href="/2011/07/new_and_improved/">last July&#8217;s extensive redesign</a> of this site, the last few weeks have seen me revisit the design and implementation. In light of today&#8217;s <a href="http://responsivesummit.com/">Responsive Summit</a>, and with a few people asking about the changes, I thought I should provide a little more detail.</p>
+                
+                <h2>Design</h2>
+                
+                <p>I was never truly happy with the design I launched with last year. While <a href="http://netmagazine.com/features/ethan-marcottes-20-favourite-responsive-sites">it received high acclaim</a>, the dark blue and grey colour scheme made the site feel dull. As someone who appreciates <a href="http://en.wikipedia.org/wiki/International_Typographic_Style">clean, modern and unfussy design</a>, leading with a serif was also a strange choice.</p>
+                
+                <p>I&#8217;d originally intended to use <a href="http://fontdeck.com/typeface/bliss/">Bliss</a> for headings and <a href="http://fontdeck.com/typeface/skolar/">Skolar</a> for body copy, but switched these around at the last minute. I&#8217;ve decided to revert back to that sans/serif application, but since becoming enamoured with <a href="http://fontdeck.com/typeface/akagi/">Akagi</a> and <a href="http://fontdeck.com/typeface/magneto/">Magento</a> typefaces from Positype, I&#8217;ve opted to use that font pairing instead.</p>
+                
+                <h2>Responsive Refactoring</h2>
+                
+                <h3>Navigation</h3>
+                
+                <p><img class="right" src="/_assets/2012/02/navigation-icons.png"/>One of the biggest changes to the design is around the header. As <a href="/2012/01/responsive_answers/">I wrote previously</a>, the old design had a large footer that contained links to the <em>About</em> and <em>Archive</em> sections as well as a site search, social links and copyright information. This meant I could hide the two duplicated links in the header when they no longer fit.</p>
+                
+                <p>Yet much of this footer was superfluous. Linearised at narrower sizes, it became taller, gained unintended prominence and increased the length of every page. The site search was difficult to access, and it seemed pointless duplicating the <em>About</em> and <em>Archive</em> links. I realised the footer needn&#8217;t be more than a one line copyright statement, and a handful of social media links.</p>
+                
+                <p>Without those duplicated links, I could no longer get away with my lazy <code>display:none</code> tactics in the header, so this required a rethink also. I arrived at a fairly complex matrix of layout variations based on viewport width and JavaScript availability, and much head scratching followed. The final result is worth it though.</p>
+                
+                <p>Some have asked why I decided to prioritise the search functionality on narrower layouts. I&#8217;d like to say this was based on research or a deep understanding of how readers navigate the site, but the reason is much simpler; I could either choose to show nothing, or show search. This does mean navigation links are two taps away, but that would&#8217;ve been the case with other layouts too. It&#8217;s a decision I&#8217;ll probably revisit, but I&#8217;m happy with this approach for now.</p>
+                
+                <p>As a side note, the icon I&#8217;m using to denote the hidden navigation menu is becoming something of an emerging design pattern; one aspect of a &#8216;web aesthetic&#8217; I&#8217;d like to explore in more detail.</p>
+                
+                <h3>Resolution Independence</h3>
+                
+                <p>The introduction of the iPad was instrumental in making adaptive web layouts more attractive to designers &#8211; before it was easy to think in terms of separate fixed &#8216;mobile&#8217; and &#8216;desktop&#8217; layouts, but this third type of device confirmed that designing for web required a universal approach. If the iPad 3 has the retina display everyone is anticipating, I predict we&#8217;ll see another surge towards responsive design, but with thoughts centred on display density rather than size.</p>
+                
+                <p>As a pre-emptive strike, and following <a href="http://coding.smashingmagazine.com/2012/01/16/resolution-independence-with-svg/">this useful tutorial by David Bushell</a>, I&#8217;m now using <abbr title="Scalable Vector Graphics">SVG</abbr> image sprites in my <abbr title="Cascading Style Sheets">CSS</abbr>. Unfortunately, browsers that support <abbr>SVG</abbr> still need to download both vector and rasterised versions and I&#8217;m not sure there&#8217;s a way to avoid this.</p>
+                
+                <p>I also ran into a few problems with Firefox&#8217;s implementation of the background-size property. In order to get around another of its bugs, I originally saved the <abbr>SVG</abbr> with a large canvas size, and scaled it down. This brought the browser to a crawl, and in some cases it could crash! So right now, Firefox users may see sprites rendered with some fuzziness when scaled up; hopefully a fix is in the works.</p>
+                
+                <h3>(Un)responsive Images</h3>
+                
+                <p>I&#8217;ve also removed the responsive images script I was experimenting with, <a href="https://github.com/ahume/Responsive-Images">a fork by Andy Hume</a> that built upon <a href="https://github.com/filamentgroup/Responsive-Images/">the work of Scott Jehl</a>. Rather than loading images based on screen resolution, Andy&#8217;s script aimed to be more contextual, looking to see what size the final image needed to be rendered at before loading an appropriate version.</p>
+                
+                <p>However, this script was extremely fragile. Sometimes both images would load, and no images would appear on pages requested with <abbr title=HyperText Markup Language version 5">HTML5</abbr> History pushState. There were workflow considerations as well; creating two different sizes for each image soon became tedious.</p>
+                
+                <p>As I looked to make the design resolution independent, I noticed that loading lower resolution images on my iPhone 4S meant I wasn&#8217;t taking advantage of its retina display. Not only was screen size an unreliable means of determining what images to load, but so was Andy&#8217;s method. Ideally, images would load based on a combination of measures, the most important being the speed of the network.</p>
+                
+                <p>The challenge of serving responsive images reliably has been described in great detail by Mat Marquis in <a href="http://www.alistapart.com/articles/responsive-images-how-they-almost-worked-and-what-we-need/">his recent article for A List Apart</a>. Jeremy has also written extensively about this subject, and <a href="http://adactio.com/journal/5208/">his latest post</a> discusses an interesting approach <a href="http://joshemerson.co.uk/">Josh</a> has been using. For now, I&#8217;ve reverted back to always loading full-size images, but to lessen the blow I&#8217;m serving them via Amazon S3.</p>
+                
+                <p>In the portfolio, I&#8217;m using compressed <abbr>JPEG</abbr>s instead of lossless <abbr title="Portable Network Graphic">PNG</abbr>s. This isn&#8217;t dissimilar to what Jeremy has done on the <a href="http://archive.dconstruct.org/">dConstruct archive</a>. Rather than use responsive images, he spent time blurring out backgrounds and playing with compression settings to achieve reasonable sized images with the smallest possible file size. There&#8217;s much discussion about a new <code>&lt;picture&gt;</code> markup pattern, but in the short-term this approach seems the most sensible. I do wonder if support for file formats like <abbr>JPEG</abbr> 2000 shouldn&#8217;t be part of an overall solution as well though.</p>
+                
+                <h2>Performance</h2>
+                
+                <p>Removing the responsive image script meant I could move my JavaScript back to the bottom of the page. Inquisitive about the performance implications, I again found myself tuning the speed of the site. I implemented Google&#8217;s <a href="https://developers.google.com/webfonts/docs/webfont_loader">Web Font Loader</a>, improved the order in which JavaScript and <abbr>CSS</abbr> files are loaded, reduced <abbr>HTML</abbr> page sizes (deleting some meta data and the old footer markup) and again I&#8217;m loading images from Amazon&#8217;s <abbr>S3</abbr> <abbr title="Content Delivery Network">CDN</abbr>. As such, the homepage currently achieves the following scores:</p>
+                
+                <ul>
+                <li><strong>Google Page Speed</strong>: 94/100</li>
+                <li><strong>Yahoo YSlow</strong>: 96/100 (with &#8216;Small Site or Blog&#8217; ruleset)</li>
+                <li><strong>webpagetest.org</strong>: <a href="http://www.webpagetest.org/result/120222_QC_3B11V/1/performance_optimization/">Results</a></li>
+                </ul>
+                
+                <p>Hopefully, this will impact performance on mobile devices just as much as any responsive image technique.</p>
+                
+                <h2>Iteration, Iteration, Iteration</h2>
+                
+                <p>There are a number of other changes too. From tiny tweaks like showing short <abbr title="Uniform Resource Locators">URLs</abbr>, to adjusting the homepage so that featured entries are more apparent. I&#8217;ve also updated <a href="/portfolio/">my portfolio</a>, with most projects including a slideshow of work. I&#8217;ve also added case studies for <a href="/portfolio/the_week/">The Week</a> and <a href="/portfolio/dconstruct_2011/">dConstruct 2011</a>.</p>
+                
+                <p>Although I&#8217;ve got the site into a much healthier state, I&#8217;m sure further changes will follow. One of the great aspects of the web is that you can improve and iterate upon the experience you&#8217;re providing. I&#8217;ll continue to do that here.</p>
+
+
+                
+            </div>
+            <aside class="tags">
+                <h1>Tags</h1>
+                <p><a rel="tag" href="/tags/responsivedesign/">Responsive Design</a>, <a rel="tag" href="/tags/webdesign/">Web Design</a>, <a rel="tag" href="/tags/webdevelopment/">Web Development</a></p>
+            </aside>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="2012-02-23T01:33:57+00:00" pubdate>Thursday, 23 February 2012 at  1:33 AM</time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li class="active"><a href="https://v2.paulrobertlloyd.com/2012/02/niptuck/">Entry</a></li>
+                    
+                    <li><a href="https://v2.paulrobertlloyd.com/2012/02/niptuck/related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+</div><!--/@document-->
+
+    <nav role="navigation" id="nav">
+        <ul>
+            <li class="active"><a href="/journal/">Journal</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/about/" rel="author">About</a></li>
+        </ul>
+        <form method="get" action="http://prlloyd.webfactional.com/_mt/mt-search.cgi" role="search" id="search">
+            <input type="hidden" name="IncludeBlogs" value="1,2,3,4"/>
+            <input type="hidden" name="limit" value="20"/>
+            <input type="text" name="search" value="" placeholder="Search" class="text"/><button type="submit" class="search">Search</button>
+        </form>
+        <p id="back"><a href="#top">Back to top</a></p>
+    </nav><!--/@navigation-->
+
+    <footer role="contentinfo">
+        <p class="copyright">
+            <small><strong>&#169; <abbr title="2013">MMXIII</abbr> Paul Robert Lloyd</strong> All content <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="Creative Commons Attribution-Non-Commercial-Share Alike 2.0 UK: England &#38; Wales">Creative Commons licensed</a> unless otherwise stated. <a href="/about/colophon/">Colophon</a></small>
+        </p>
+        <ul class="elsewhere">
+            <li><a rel="me" href="http://flickr.com/photos/paulrobertlloyd" class="flickr">Flickr</a></li>
+            <li><a rel="me" href="http://dribbble.com/paulrobertlloyd" class="dribbble" data-icon="&#xe003;">Dribbble</a></li>
+            <li><a rel="me" href="https://twitter.com/paulrobertlloyd" class="twitter" data-icon="&#xe002;">Twitter</a></li>
+            <li><a rel="me" href="http://v2.paulrobertlloyd.com/feeds" class="feeds" data-icon="&#xe001;">Feeds</a></li>
+        </ul>
+    </footer><!--/@contentinfo-->
+
+
+</body>
+</html>

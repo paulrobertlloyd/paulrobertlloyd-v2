@@ -1,0 +1,13 @@
+Highly Optimized Images for the Web in 3 Steps
+==============================================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/05/highly_optimized_images_for_the_web_in_3_steps>
+  Tuesday, 22 May 2012
+
+Pascal Altena:
+
+> In this article, I'll cover the techniques I use to make images load fast on a webpage.
+
+A beautifully succinct yet informative article that begs to printed out and stuck on the wall next to every web developer.
+

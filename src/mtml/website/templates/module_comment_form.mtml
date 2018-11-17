@@ -1,0 +1,54 @@
+<mt:IfCommentsAccepted>
+<script src="/_js/mt.js"></script>
+<form method="post" action="<mt:CGIPath/><mt:CommentScript/>" name="comments_form" id="comments-form" onsubmit="return mtCommentOnSubmit(this)">
+    <fieldset>
+        <legend><mt:If name="form" eq="contact" trim="1">Send Me a Message<mt:Else><mt:If name="comment_preview">Edit Comment<mt:Else>Add a Comment</mt:Else></mt:If></mt:If></legend>
+        <input type="hidden" name="static" value="1"/>
+        <input type="hidden" name="entry_id" value="<mt:EntryID/>"/>
+        <input type="hidden" name="__lang" value="<mt:BlogParentWebsite><mt:WebsiteLanguage/></mt:BlogParentWebsite>"/>
+        <input type="hidden" name="parent_id" value="<mt:CommentParentID/>" id="comment-parent-id"/>
+        <input type="hidden" name="armor" value="1"/>
+        <input type="hidden" name="preview" value=""/>
+        <input type="hidden" name="sid" value=""/>
+        <mt:If name="form" eq="contact"><mt:Else><p id="comment-greeting"></p></mt:If>
+        <div id="comments-open-data">
+            <div id="comment-form-name">
+                <label for="comment-author">Name</label>
+                <input id="comment-author" class="text" type="text" name="author" size="30"<mt:If name="comment_preview"> value="<mt:CommentAuthor encode_html="1" required/>"</mt:If>/>
+            </div>
+            <div id="comment-form-email">
+                <label for="comment-email">Email Address</label>
+                <input id="comment-email" class="text" type="email" name="email" size="30"<mt:If name="comment_preview"> value="<mt:CommentEmail encode_html="1"/>"</mt:If>/>
+                <mt:If name="form" eq="contact" trim="1"><mt:Else><em>Required but not published</em></mt:If>
+            </div>
+            <mt:If name="form" eq="contact"><mt:Else>
+                <div id="comment-form-url">
+                    <label for="comment-url">Website</label>
+                    <input id="comment-url" class="text" type="url" name="url" size="30"<mt:If name="comment_preview"> value="<mt:CommentURL encode_html="1"/>"</mt:If>/>
+                </div>
+                <mt:Unless name="comment_preview">
+                    <div id="comment-form-remember-me">
+                        <label for="comment-bake-cookie" class="check"><input id="comment-bake-cookie" class="checkbox" type="checkbox" name="bakecookie" onclick="mtRememberMeOnClick(this)" value="1"/> Remember these details?</label>
+                    </div>
+                </mt:Unless>
+            </mt:If>
+        </div>
+        <div id="comments-open-text">
+            <label for="comment-text"><mt:If name="form" eq="contact">Message<mt:Else>Comment</mt:Else></mt:If></label>
+            <textarea id="comment-text" name="text" rows="8" cols="48"><mt:If name="comment_preview"><mt:CommentBody autolink="0" sanitize="0" convert_breaks="0" encode_html="1"/></mt:If></textarea>
+            <mt:If name="form" eq="contact"><mt:Else><mt:IfAllowCommentHTML><em>You may use <abbr title="HyperText Markup Language">HTML</abbr> tags for style</em></mt:IfAllowCommentHTML></mt:If>
+        </div>
+        <div id="comments-open-footer" class="submit"><mt:If name="form" eq="contact">
+            <input id="comment-submit" class="button" type="submit" name="post" value="Send Message"/>
+            <mt:Else>
+            <input id="comment-submit" class="button" type="submit" name="post" value="Post Comment"/>
+            <input id="comment-preview" class="button" type="submit" name="preview_button" value="Preview" onclick="this.form.preview.value='1';"/>
+            <mt:If name="comment_preview"><a href="<mt:EntryPermalink replace=".php","/"/>">Cancel</a></mt:If>
+        </mt:If></div>
+    </fieldset>
+</form>
+<script>
+    mtAttachEvent("load", mtEntryOnLoad);
+    mtAttachEvent("unload", mtEntryOnUnload);
+</script>
+</mt:IfCommentsAccepted>

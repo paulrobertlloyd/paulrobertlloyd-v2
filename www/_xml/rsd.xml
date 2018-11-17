@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+    <service>
+        <engineName>Movable Type Pro 5.2.6</engineName>
+        <engineLink>http://www.sixapart.com/movabletype/</engineLink>
+        <homePageLink>https://v2.paulrobertlloyd.com/</homePageLink>
+        <apis>
+            <api name="MetaWeblog" preferred="true" apiLink="http://prlloyd.webfactional.com/_mt/mt-xmlrpc.cgi" blogID="1"/>
+            <api name="MovableType" preferred="false" apiLink="http://prlloyd.webfactional.com/_mt/mt-xmlrpc.cgi" blogID="1"/>
+            <api name="Blogger" preferred="false" apiLink="http://prlloyd.webfactional.com/_mt/mt-xmlrpc.cgi" blogID="1"/>
+            <api name="Atom" preferred="false" apiLink="http://prlloyd.webfactional.com/_mt/mt-atom.cgi/weblog" blogID="1"/>
+        </apis>
+    </service>
+</rsd>

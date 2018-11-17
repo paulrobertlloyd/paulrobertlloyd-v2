@@ -1,0 +1,81 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="home" trim="1"/>
+<mt:SetVarBlock name="meta" trim="1">
+    <meta name="description" content="<mt:WebsiteDescription/>"/>
+    <meta name="geo.placename" content="Brighton"/>
+    <meta name="geo.region" content="gb-bnh"/>
+    <meta name="geo.country" content="gb"/>
+    <meta name="geo.position" content="50.8420;-0.1539"/>
+    <mt:OpenIDHeader/>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <div role="main">
+<mt:Entries blog_ids="2" lastn="1" trim="1"><mt:EntryIfTagged tag="@photo"><mt:Var name="entry_has_photo" value="true"></mt:EntryIfTagged></mt:Entries>
+<mt:If name="entry_has_photo" eq="true" trim="1">
+            <mt:Entries blog_ids="2" lastn="1" trim="1"><article class="featured entry" id="entry-<mt:EntryID/>">
+                <figure>
+                    <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>"><img src="/_assets/<mt:EntryDate format="%Y/%m"/>/<mt:EntryBasename/>.jpg" alt="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/></a>
+                </figure>
+                <h1><a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1>
+                <footer>
+                    <p><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%e %b %Y"/></time></p>
+                </footer>
+                <p><mt:EntryExcerpt smarty_pants="1" replace="&#8212;"," &#8211; "/></p>
+            </article></mt:Entries>
+            <section>
+                <h1>Recent Entries</h1>
+                <mt:Entries blog_ids="2" lastn="4" trim="1" offset="1">
+<mt:Include module="Entry Summary" parent="1" indent="16"/>
+                </mt:Entries>
+            </section>
+<mt:Else>
+            <mt:Entries blog_ids="3" lastn="1" category="Photo" unique="1" trim="1"><article class="featured entry" id="entry-<mt:EntryID/>">
+                <figure>
+                    <?php
+                        require_once($_SERVER['DOCUMENT_ROOT'].'/_php/oembed.php');
+                        $oembed = new OEmbed();
+                        echo $oembed->getHTML('<mt:EntryDataURL/>', array('width' => 720));
+                    ?>
+                    <figcaption>
+                        <h4><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></h4>
+                        <mt:EntryBody smarty_pants="1" replace="&#8212;"," &#8211; "/>
+                    </figcaption>
+                </figure>
+            </article></mt:Entries>
+            <section>
+                <h1>Recent Entries</h1>
+                <mt:Entries blog_ids="2" lastn="4" trim="1">
+<mt:Include module="Entry Summary" parent="1" indent="16"/>
+                </mt:Entries>
+            </section>
+</mt:If>
+            <section>
+                <h1>From the Portfolio</h1>
+                <ul class="projects">
+                    <mt:Entries blog_ids="4" lastn="4" trim="1"><li class="entry project quarter" id="entry-<mt:EntryID/>">
+                        <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>">
+                            <img src="/_assets/portfolio/<mt:EntryBasename/>/_thumb.jpg" alt="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/>
+                            <mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; ">
+                        </a>
+                    </li></mt:Entries>
+                </ul>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+            <section>
+                <h1>Recently Linked</h1>
+                <mt:Entries blog_ids="3" lastn="6" trim="1"><article class="entry summary" id="entry-<mt:EntryID/>">
+                    <h1><a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1>
+                    <footer>
+                        <p><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%e %B %Y"/></time></p>
+                    </footer>
+                </article></mt:Entries>
+            </section>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

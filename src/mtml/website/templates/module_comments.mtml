@@ -1,0 +1,9 @@
+<mt:Comments>
+<article class="entry comment<mt:If tag="CommentEmail" eq="mt@paulrobertlloyd.com"> author</mt:If>" id="comment-<mt:CommentID/>">
+    <h1><img class="gravatar" src="<mt:Gravatar default="http://paulrobertlloyd.com/_assets/common/gravatar.png" size="64"/>" alt="<mt:CommentAuthor/>&#39;s Gravatar" height="32" width="32"/><mt:CommentAuthorIdentity/><mt:CommentAuthorLink/></h1>
+    <footer>
+        <p><time datetime="<mt:CommentDate format_name="iso8601"/>" pubdate><span><mt:CommentDate format="%e %b %Y"/></span> <span><mt:CommentDate format="%l:%M %p"/></span></time> <a href="<mt:EntryPermalink replace=".php","/"/>discussion/#comment-<mt:CommentID/>" title="Permalink">#</a></p>
+    </footer>
+<mt:CommentBody smarty_pants="1" replace="&#8212;"," &#8211; " indent="4" trim="1"/>
+</article>
+</mt:Comments>

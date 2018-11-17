@@ -1,0 +1,15 @@
+The Banality of 'Don't Be Evil'
+===============================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2013/06/the_banality_of_dont_be_evil>
+  Saturday, 22 June 2013
+
+Julian Assange reviews Eric Schmidt and Jared Cohen's new book, 'The New Digital Age':
+
+> Google, which started out as an expression of independent Californian graduate student culture--a decent, humane and playful culture--has, as it encountered the big, bad world, thrown its lot in with traditional Washington power elements, from the State Department to the National Security Agency.
+
+Exhibit A: [PRISM][1].
+
+  [1]: http://www.guardian.co.uk/world/2013/jun/06/us-tech-giants-nsa-data
+

@@ -1,0 +1,34 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="archive"/>
+<mt:Var name="title" value="Archive">
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <mt:ArchiveList type="Yearly" trim="1">
+            <section class="year">
+                <h1><a rel="archives" href="/<mt:ArchiveDate format="%Y"/>/"><mt:ArchiveDate format="%Y"/></a></h1>
+                <mt:ArchiveList type="Monthly" trim="1">
+                <section class="month quarter">
+                    <h1><a rel="archives" href="/<mt:ArchiveDate format="%Y"/>/<mt:ArchiveDate format="%m"/>/"><mt:ArchiveDate format="%B"/></a></h1>
+                    <ul>
+                        <mt:Entries include_blogs="2" exclude_blogs="3,4" trim="1"><mt:EntriesHeader><li><mt:EntriesCount singular="1 entry" plural="# entries"/></li></mt:EntriesHeader></mt:Entries>
+                        <mt:Entries include_blogs="3" exclude_blogs="2,4" trim="1"><mt:EntriesHeader><li><mt:EntriesCount singular="1 link" plural="# links"/></li></mt:EntriesHeader></mt:Entries>
+                        <mt:Entries include_blogs="4" exclude_blogs="2,3" trim="1"><mt:EntriesHeader><li><mt:EntriesCount singular="1 project" plural="# projects"/></li></mt:EntriesHeader></mt:Entries>
+                    </ul>
+                </section>
+                </mt:ArchiveList>
+            </section>
+            </mt:ArchiveList>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Tags" parent="1" indent="12"/>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Paul Robert Lloyd: Links</title>
+    <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/journal/"/>
+    <link rel="self" type="application/atom+xml" href="http://v2.paulrobertlloyd.com/feeds/links/"/>
+    <id>tag:v2.paulrobertlloyd.com,2013-06-11:/3</id>
+    <updated>2017-01-02T19:31:19Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 5.2.6</generator>
+    
+    <entry>
+        <title>Better CSS with Sass by Cole Henley</title>
+        <link rel="alternate" type="text/html" href="http://www.fivesimplesteps.com/products/better-css-with-sass"/>
+        <id>tag:paulrobertlloyd.com,2015://3.442</id>
+        <published>2015-07-06T13:59:31Z</published>
+        <updated>2017-01-02T19:31:19Z</updated>
+        <summary>For those looking for a quick and succinct introduction to Sass, the popular CSS pre-processor, my friend Cole Henley has written a pocket guide: Sass is a tool that takes a lot of the legwork out of writing good CSS&#8230;.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="books" label="Books" scheme="http://www.sixapart.com/ns/types#tag"/><category term="sass" label="Sass" scheme="http://www.sixapart.com/ns/types#tag"/><category term="webdevelopment" label="Web Development" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>For those looking for a quick and succinct introduction to Sass, the popular CSS pre-processor, my friend <a href="http://cole007.net">Cole Henley</a> has written a pocket guide:</p>
+
+<blockquote>
+  <p>Sass is a tool that takes a lot of the legwork out of writing good CSS. This pocket guide will provide an overview of how Sass can dramatically improve your workflow and make your CSS more flexible, robust and reusable.</p>
+</blockquote>
+
+<p>This guide only takes 30 to 45 minutes to read, but on turning the last page you&#8217;ll be up to speed on all the features of Sass, know why you may want to use them and be thinking about building upon these features to take your Sass usage to the next level  &#8211;  careful now! The book is <a href="http://www.fivesimplesteps.com/products/better-css-with-sass">available now from Five Simple Steps</a> for just £3.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2015/07/better_css_with_sass/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>The Billionaire&apos;s Typewriter</title>
+        <link rel="alternate" type="text/html" href="http://practicaltypography.com/billionaires-typewriter.html"/>
+        <id>tag:paulrobertlloyd.com,2015://3.432</id>
+        <published>2015-03-24T12:59:18Z</published>
+        <updated>2017-01-02T19:35:14Z</updated>
+        <summary>Matthew Butterick&#8217;s scrutiny of Medium reveals it to be &#8220;a form of human fracking&#8221;: In &#8220;Death to Typewriters,&#8221; Medium insists that the typewriter is its &#8220;sworn enemy.&#8221; In certain typographic details, maybe so. But as a device that imposes homogeneous&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="ethics" label="Ethics" scheme="http://www.sixapart.com/ns/types#tag"/><category term="siliconvalley" label="Silicon Valley" scheme="http://www.sixapart.com/ns/types#tag"/><category term="webdesign" label="Web Design" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Matthew Butterick&#8217;s scrutiny of Medium reveals it to be &#8220;a form of human fracking&#8221;:</p>
+
+<blockquote>
+  <p>In <a href="https://medium.com/designing-medium/death-to-typewriters-9b7712847639">&#8220;Death to Typewriters,&#8221;</a> Medium insists that the typewriter is its &#8220;sworn enemy.&#8221; In certain typographic details, maybe so. But as a device that imposes homogeneous design, Medium still has a lot in common with the typewriter.</p>
+
+<p>In fact, its ethics are actually <em>worse</em> than the traditional typewriter. Why? Because Medium&#8217;s homogeneous design has nothing to do with limitations of the underlying technology (in this case, the web)&#8230; it&#8217;s a deliberate choice that lets Medium extract value from the talent and labor of others.</p>
+</blockquote>
+
+<p>Convenience always has a cost.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2015/03/the_billionaires_typewriter/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Naming Things</title>
+        <link rel="alternate" type="text/html" href="http://24ways.org/2014/naming-things/"/>
+        <id>tag:paulrobertlloyd.com,2014://3.426</id>
+        <published>2014-12-22T12:35:26Z</published>
+        <updated>2014-12-22T12:42:56Z</updated>
+        <summary>My contribution to this year&#8217;s 24 ways attempts to tackle one of the most difficult aspects of web development, naming things: Working in-house may mean working with multiple developers, perhaps in distributed teams, who are all committing changes  &#8211;  possibly&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="24ways" label="24 ways" scheme="http://www.sixapart.com/ns/types#tag"/><category term="writing" label="Writing" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>My contribution to <a href="http://24ways.org/2014/">this year&#8217;s 24 ways</a> attempts to tackle one of the most difficult aspects of web development, naming things:</p>
+
+<blockquote>
+  <p>Working in-house may mean working with multiple developers, perhaps in distributed teams, who are all committing changes  &#8211;  possibly to a significant codebase  &#8211;  at the same time. Left unchecked, this codebase can become unwieldy. Coding conventions ensure everyone can contribute, and help build a product that works as a coherent whole.</p>
+
+<p>Even on smaller projects, perhaps working within an agency or by yourself, at some point the resulting product will need to be handed over to a third party. It&#8217;s sensible, therefore, to ensure that your code can be understood by those who&#8217;ll eventually take ownership of it.</p>
+
+<p>Put simply, code is read more often than it is written or changed. A consistent and predictable naming scheme can make code easier for other developers to understand, improve and maintain&#8230;</p>
+</blockquote>
+
+<p>This is the fourth successive year I&#8217;ve been involved with 24 ways (including <a href="/2013/12/redesigning_24_ways/">last year&#8217;s redesign</a>), although this article rounds out a year in which I have been deliberately quiet in terms of writing and speaking. I don&#8217;t intend for that to be the case in 2015.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2014/12/naming_things/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>&apos;FIFA is a comically grotesque organisation&apos;</title>
+        <link rel="alternate" type="text/html" href="http://youtube.com/watch?v=DlJEt2KU33I"/>
+        <id>tag:paulrobertlloyd.com,2014://3.422</id>
+        <published>2014-06-11T00:31:37Z</published>
+        <updated>2014-06-11T00:47:22Z</updated>
+        <summary>John Oliver&#8217;s new weekly late-night HBO show Last Week Tonight has seen him deliver a number of cutting satirical observations on current events. His thoughts on net neutrality perfectly encapsulated the blatant corruption surrounding the FCC&#8217;s proposed regulatory changes. But&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="fifa" label="FIFA" scheme="http://www.sixapart.com/ns/types#tag"/><category term="football" label="Football" scheme="http://www.sixapart.com/ns/types#tag"/><category term="johnoliver" label="John Oliver" scheme="http://www.sixapart.com/ns/types#tag"/><category term="worldcup" label="World Cup" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>John Oliver&#8217;s new weekly late-night HBO show <cite><a href="http://www.hbo.com/last-week-tonight-with-john-oliver">Last Week Tonight</a></cite> has seen him deliver a number of cutting satirical observations on current events. His <a href="http://youtube.com/watch?v=fpbOEoRrHyU">thoughts on net neutrality</a> perfectly encapsulated the blatant corruption surrounding the FCC&#8217;s proposed regulatory changes. But on the eve of the World Cup, his comments on FIFA are worth sharing:</p>
+
+<blockquote>
+  <p>[Football] is an organised religion, and FIFA is its church. Just think about it, its leader is infallible, it compels South American countries to spend money they don&#8217;t have building opulent cathedrals, and it may ultimately be responsible for the deaths of shocking numbers of people in the Middle East. But, for millions of people around the world like me, it is also the guardian of the only thing that gives their lives any meaning.</p>
+</blockquote>
+
+<p>Spot on.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2014/06/john_oliver_fifa/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Designer Duds: Losing Our Seat at the Table</title>
+        <link rel="alternate" type="text/html" href="https://mokriya.quora.com/Designer-Duds-Losing-Our-Seat-at-the-Table"/>
+        <id>tag:paulrobertlloyd.com,2014://3.421</id>
+        <published>2014-04-27T20:27:24Z</published>
+        <updated>2014-04-27T20:38:24Z</updated>
+        <summary>Mills Baker: Much of the work for which we express the most enthusiasm seems superficial, narrow in its conception of design, shallow in its ambitions, or just ineffective. A necessary critique of the state of design emanating from Silicon Valley&#8230;.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="design" label="Design" scheme="http://www.sixapart.com/ns/types#tag"/><category term="siliconvalley" label="Silicon Valley" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Mills Baker:</p>
+
+<blockquote>
+  <p>Much of the work for which we express the most enthusiasm seems superficial, narrow in its conception of design, shallow in its ambitions, or just ineffective.</p>
+</blockquote>
+
+<p>A necessary critique of the state of design emanating from Silicon Valley. It would seem its best designers are putting lipstick on pigs; adding gloss to products that most people outside San Francisco neither want or need. Also, this:</p>
+
+<blockquote>
+  <p>Design is about solving problems that humans have, not problems that products have.</p>
+</blockquote>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2014/04/designer_duds/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Fuel-Careful F1 Less of a Guilty Pleasure</title>
+        <link rel="alternate" type="text/html" href="http://bigstory.ap.org/article/column-fuel-careful-f1-less-guilty-pleasure"/>
+        <id>tag:paulrobertlloyd.com,2014://3.420</id>
+        <published>2014-04-22T21:51:23Z</published>
+        <updated>2014-04-22T22:27:10Z</updated>
+        <summary>John Leicester provides a considered view on the new energy-conscious regulations governing Formula 1: F1 wouldn&#8217;t be F1 without excess. Fans worldwide wouldn&#8217;t tune in for world champion Sebastian Vettel driving a Prius. F1 boss Bernie Ecclestone got fabulously rich&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="formulaone" label="Formula One" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>John Leicester provides a considered view on the new energy-conscious regulations governing Formula 1:</p>
+
+<blockquote>
+  <p>F1 wouldn&#8217;t be F1 without excess. Fans worldwide wouldn&#8217;t tune in for world champion Sebastian Vettel driving a Prius. F1 boss Bernie Ecclestone got fabulously rich with the sales pitch of bigger, faster, costlier, noisier equals vroooom&#8230; But as road cars become more fuel efficient, with electric and hybrid-engine technology making increasing inroads, F1 needed to reconnect with its time or risk becoming an anachronism, racing on regardless the costs to the environment.</p>
+</blockquote>
+
+<p>I&#8217;m loving the new-look Formula 1! Last season had become too predictable, not helped by the leading team favouring one driver. This year we have midfield teams challenging for podiums, and Mercedes allowing its two drivers to battle for the top step. As for the loudness, the squeal of locking wheels and the roar of expectant crowds more than makes up for the lack of growling V8s, however much the new engines sound like a dentist&#8217;s drill.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2014/04/fuel-careful_f1_less_of_a_guilty_pleasure/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Cennydd Bowles on the Ethical Designer </title>
+        <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=SB_GDF-mKTE"/>
+        <id>tag:paulrobertlloyd.com,2014://3.419</id>
+        <published>2014-04-13T15:20:11Z</published>
+        <updated>2014-04-13T15:29:35Z</updated>
+        <summary>Possibly the most important design talk you&#8217;ll hear this year: For decades, the spaces we live in have been built by consensus. Planners, architects, councils, consultation; and always the watchful eye of the regulators and elected officials. But the world&#8217;s&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="design" label="Design" scheme="http://www.sixapart.com/ns/types#tag"/><category term="ethics" label="Ethics" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Possibly the most important design talk you&#8217;ll hear this year:</p>
+
+<blockquote>
+  <p>For decades, the spaces we live in have been built by consensus. Planners, architects, councils, consultation; and always the watchful eye of the regulators and elected officials. But the world&#8217;s favourite digital spaces are largely in the hands of people like you and me. We have to oversee ourselves  &#8211;  and it&#8217;s not going very well.</p>
+
+<p>Are we focusing on the right problems? Or just aggrandising the mundane? How do we know what the right problems are? How can we guide ourselves to appreciate the cultural and personal impact of the decisions we make?</p>
+
+<p>It&#8217;s time for our industry to become ethically aware, if we&#8217;re to have a chance of doing the right thing.</p>
+</blockquote>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2014/04/the_ethical_designer/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Why I Want Bitcoin to Die in a Fire</title>
+        <link rel="alternate" type="text/html" href="http://www.antipope.org/charlie/blog-static/2013/12/why-i-want-bitcoin-to-die-in-a.html"/>
+        <id>tag:paulrobertlloyd.com,2013://3.412</id>
+        <published>2013-12-29T22:34:16Z</published>
+        <updated>2013-12-29T22:38:07Z</updated>
+        <summary>More on Bitcoin from Charlie Stross: BitCoin looks like it was designed as a weapon intended to damage central banking and money issuing banks, with a Libertarian political agenda in mind &#8211; to damage states ability to collect tax and monitor their&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="bitcoin" label="Bitcoin" scheme="http://www.sixapart.com/ns/types#tag"/><category term="economics" label="Economics" scheme="http://www.sixapart.com/ns/types#tag"/><category term="siliconvalley" label="Silicon Valley" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>More on Bitcoin from Charlie Stross:</p>
+
+<blockquote>
+  <p>BitCoin looks like it was designed as a weapon intended to damage central banking and money issuing banks, with a Libertarian political agenda in mind &#8211; to damage states ability to collect tax and monitor their citizens financial transactions.</p>
+</blockquote>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/12/bitcoin_should_die_in_a_fire/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Bitcoin, Magical Thinking, and Political Ideology</title>
+        <link rel="alternate" type="text/html" href="https://al3x.net/2013/12/18/bitcoin.html"/>
+        <id>tag:paulrobertlloyd.com,2013://3.411</id>
+        <published>2013-12-29T18:00:59Z</published>
+        <updated>2013-12-29T21:22:09Z</updated>
+        <summary>Alex Payne on Bitcoin: Most charitably, Bitcoin is regarded as a flawed but nonetheless worthwhile experiment, one that has unfortunately attracted outsized attention and investment before correcting any number of glaring security issues. To those less kind, Bitcoin has become&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="bitcoin" label="Bitcoin" scheme="http://www.sixapart.com/ns/types#tag"/><category term="economics" label="Economics" scheme="http://www.sixapart.com/ns/types#tag"/><category term="siliconvalley" label="Silicon Valley" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Alex Payne on Bitcoin: </p>
+
+<blockquote>
+  <p>Most charitably, Bitcoin is regarded as a flawed but nonetheless worthwhile experiment, one that has unfortunately attracted outsized attention and investment before correcting any number of <a href="https://en.bitcoin.it/wiki/Weaknesses">glaring security issues</a>.</p>
+
+<p>To those less kind, Bitcoin has become synonymous with everything wrong with Silicon Valley: a marriage of dubious technology and <a href="http://economonitor.com/blog/2013/03/bitcoin-bubble-or-new-virtual-currency/">questionable</a> <a href="http://marginalrevolution.com/marginalrevolution/2011/04/the-economics-of-bitcoin.html">economics</a> wrapped up in a crypto-libertarian political agenda that smacks of nerds-do-it-better paternalism.</p>
+</blockquote>
+
+<p>Such criticism &#8211; that of the selfish logic behind the libertarian ideology prevalent in the Valley &#8211; will only grow louder in the coming year. Time to disrupt the disrupters, I say.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/12/bitcoin/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>The Pixel Painter</title>
+        <link rel="alternate" type="text/html" href="http://vimeo.com/70748579"/>
+        <id>tag:paulrobertlloyd.com,2013://3.407</id>
+        <published>2013-08-12T21:33:38Z</published>
+        <updated>2013-08-12T21:36:53Z</updated>
+        <summary>Hal Lasko is a 97-year-old man who uses Microsoft Paint from Windows 95 to create artwork that has been described as &#8216;a collision of pointillism and 8-Bit art&#8217;&#8230;.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="art" label="Art" scheme="http://www.sixapart.com/ns/types#tag"/><category term="hallasko" label="Hal Lasko" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p><a href="http://hallasko.com/">Hal Lasko</a> is a 97-year-old man who uses Microsoft Paint from Windows 95 to create artwork that has been described as &#8216;a collision of pointillism and 8-Bit art&#8217;.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/08/the_pixel_painter/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Andy Higgs: Journey into Africa</title>
+        <link rel="alternate" type="text/html" href="http://justbeyondthebridge.co.uk/blog/category/travel/"/>
+        <id>tag:paulrobertlloyd.com,2013://3.404</id>
+        <published>2013-06-22T02:09:48Z</published>
+        <updated>2013-06-22T02:17:22Z</updated>
+        <summary>Although it&#8217;s easy to feel envious of Andy&#8217;s travels around the world, his writing is vivid enough to make you believe you had joined him. His latest series of posts, detailing a trip trough Africa, are no different. It sounds&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="africa" label="Africa" scheme="http://www.sixapart.com/ns/types#tag"/><category term="andyhiggs" label="Andy Higgs" scheme="http://www.sixapart.com/ns/types#tag"/><category term="travel" label="Travel" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Although it&#8217;s easy to feel envious of Andy&#8217;s travels around the world, his writing is vivid enough to make you believe you had joined him. His latest series of posts, detailing a trip trough Africa, are no different. It sounds like an amazing continent, one that offers the intrepid traveller some incredible sights:</p>
+
+<blockquote>
+  <p>Great rich earthy trails of red, amber and ochre form streaks across huge plains of deep green foliage and scrubland. Huge white outcrops soar up through groves of yellow-pocked acacia trees, chunky bare-trunked baobabs and the fluttering sprouts of the banana plants&#8230;</p>
+
+<p>Blade-like roads slice directly through villages where bright white eyes peer out from under the leafy shade of communal trees, and terracotta coloured, tin-roofed houses are lined up like matchboxes to each side of the varying qualities of tarmac &#8211; which range from rough to barely present.</p>
+</blockquote>
+
+<p>Yet this beauty is threatened by a persistent danger, be it from wild game circling your isolated camp, or from fellow humans in a crime-ridden city:</p>
+
+<blockquote>
+  <p>It was repeated to me a few times that you don&#8217;t stop at red lights after dark in Johannesburg, nor do you drive with your windows fully up (it stiffens the glass which makes it an easier task to smash with a crowbar at an intersection). Security is a massive concern of daily life, and every brick built house squats in a concrete or iron-fenced compound, and comes with a big board showing which particular company will provide the armed response. It&#8217;s quite a strange sight for European eyes.</p>
+</blockquote>
+
+<p>What an experience.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/06/andy_higgs_journey_into_africa/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>The Banality of &apos;Don&apos;t Be Evil&apos;</title>
+        <link rel="alternate" type="text/html" href="http://www.nytimes.com/2013/06/02/opinion/sunday/the-banality-of-googles-dont-be-evil.html"/>
+        <id>tag:paulrobertlloyd.com,2013://3.403</id>
+        <published>2013-06-22T02:00:23Z</published>
+        <updated>2013-06-22T02:09:37Z</updated>
+        <summary>Julian Assange reviews Eric Schmidt and Jared Cohen&#8217;s new book, &#8216;The New Digital Age&#8217;: Google, which started out as an expression of independent Californian graduate student culture &#8211; a decent, humane and playful culture &#8211; has, as it encountered the big, bad world, thrown&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="ericschmidt" label="Eric Schmidt" scheme="http://www.sixapart.com/ns/types#tag"/><category term="google" label="Google" scheme="http://www.sixapart.com/ns/types#tag"/><category term="jaredcohen" label="Jared Cohen" scheme="http://www.sixapart.com/ns/types#tag"/><category term="julianassange" label="Julian Assange" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>Julian Assange reviews Eric Schmidt and Jared Cohen&#8217;s new book, &#8216;The New Digital Age&#8217;:</p>
+
+<blockquote>
+  <p>Google, which started out as an expression of independent Californian graduate student culture &#8211; a decent, humane and playful culture &#8211; has, as it encountered the big, bad world, thrown its lot in with traditional Washington power elements, from the State Department to the National Security Agency.</p>
+</blockquote>
+
+<p>Exhibit A: <a href="http://www.guardian.co.uk/world/2013/jun/06/us-tech-giants-nsa-data">PRISM</a>.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/06/the_banality_of_dont_be_evil/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Alan Partridge: Alpha Papa</title>
+        <link rel="alternate" type="text/html" href="http://youtube.com/watch?v=2ed2pifRpc0"/>
+        <id>tag:prlloyd.webfactional.com,2013://3.402</id>
+        <published>2013-06-14T21:35:31Z</published>
+        <updated>2013-06-14T21:39:50Z</updated>
+        <summary>&#8220;Time for big school.&#8221;&#8230;</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="alanpartridge" label="Alan Partridge" scheme="http://www.sixapart.com/ns/types#tag"/><category term="film" label="Film" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>&#8220;Time for big school.&#8221;</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/06/alan_partridge_alpha_papa/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Eric Schmidt Interviews Stephen Colbert</title>
+        <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=-HpBHWUPa8Q"/>
+        <id>tag:prlloyd.webfactional.com,2013://3.353</id>
+        <published>2013-04-17T18:58:33Z</published>
+        <updated>2013-06-11T22:22:58Z</updated>
+        <summary>The uncut interview of Stephen Colbert&#8217;s visit to Google&#8217;s New York office&#8230;.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="google" label="Google" scheme="http://www.sixapart.com/ns/types#tag"/><category term="interview" label="Interview" scheme="http://www.sixapart.com/ns/types#tag"/><category term="stephencolbert" label="Stephen Colbert" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>The uncut interview of Stephen Colbert&#8217;s visit to Google&#8217;s New York office.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/04/eric_schmidt_interviews_stephen_colbert/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+    <entry>
+        <title>Paperman</title>
+        <link rel="alternate" type="text/html" href="http://www.youtube.com/watch?v=Fpe99ci_C8g"/>
+        <id>tag:prlloyd.webfactional.com,2013://3.352</id>
+        <published>2013-02-10T20:15:43Z</published>
+        <updated>2013-06-11T22:22:57Z</updated>
+        <summary>First-time director John Kahrs combines computer-generated and hand-drawn animation techniques to great effect in this Oscar�-nominated short from Disney&#8230;.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="animation" label="Animation" scheme="http://www.sixapart.com/ns/types#tag"/><category term="disney" label="Disney" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            <![CDATA[<p>First-time director John Kahrs combines computer-generated and hand-drawn animation techniques to great effect in this Oscar�-nominated short from Disney.</p>
+]]>
+            
+            <![CDATA[<p><a href="https://v2.paulrobertlloyd.com/2013/02/paperman/" title="Permalink">#</a></p>]]>
+        </content>
+    </entry>
+    
+</feed>

@@ -1,0 +1,17 @@
+The Billionaire's Typewriter
+============================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2015/03/the_billionaires_typewriter>
+  Tuesday, 24 March 2015
+
+Matthew Butterick's scrutiny of Medium reveals it to be "a form of human fracking":
+
+> In ["Death to Typewriters,"][1] Medium insists that the typewriter is its "sworn enemy." In certain typographic details, maybe so. But as a device that imposes homogeneous design, Medium still has a lot in common with the typewriter.
+>
+> In fact, its ethics are actually _worse_ than the traditional typewriter. Why? Because Medium's homogeneous design has nothing to do with limitations of the underlying technology (in this case, the web)... it's a deliberate choice that lets Medium extract value from the talent and labor of others.
+
+Convenience always has a cost.
+
+[1]: https://medium.com/designing-medium/death-to-typewriters-9b7712847639
+

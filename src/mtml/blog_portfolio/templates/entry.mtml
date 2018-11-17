@@ -1,0 +1,50 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="portfolio"/>
+<mt:SetVarBlock name="title" trim="1"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></mt:SetVarBlock>
+<mt:SetVarBlock name="tagged" trim="1"><mt:EntryTags><mt:TagName/></mt:EntryTags></mt:SetVarBlock>
+<mt:SetVarBlock name="meta">
+    <meta name="description" content="<mt:EntryExcerpt encode_html="1"/>"/>
+    <meta name="keywords" content="<mt:EntryTags glue=", "><mt:TagName/></mt:EntryTags>"/>
+    <link rel="alternate" href="<mt:EntryPermalink replace=".php",".txt"/>" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:Var name="title"/>"/>
+    <mt:EntryPrevious trim="1"><link rel="prev bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/></mt:EntryPrevious>
+    <mt:EntryNext trim="1"><link rel="next bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/></mt:EntryNext>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+            <nav class="prevnext">
+                <mt:EntryPrevious><a rel="prev" class="prev" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>">Previous</a></mt:EntryPrevious>
+                <mt:EntryNext><a rel="next" class="next" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>">Next</a></mt:EntryNext>
+            </nav>
+        </header>
+
+        <div role="main" class="entry project" id="entry-<mt:EntryID/>">
+            <div class="prose">
+<mt:EntryBody smarty_pants="1" replace="&#8212;"," &#8211; " indent="16"/>
+<mt:EntryMore smarty_pants="1" replace="&#8212;"," &#8211; " indent="16"/>
+            </div>
+            <mt:If name="tagged" trim="1"><aside class="tags">
+                <h1>Tags</h1>
+                <p><mt:EntryTags glue=", "><a rel="tag" href="/tags/<mt:TagName encode_url="1" normalize="1"/>/"><mt:TagName/></a></mt:EntryTags></p>
+            </aside></mt:If>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Completed in <time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%B %Y"/></time></p>
+                <dl>
+                    <dt>Role</dt>
+                    <dd><mt:EntryDataRole/></dd>
+                </dl>
+                <mt:If tag="EntryDataURL"><p><a href="<mt:EntryDataURL/>" class="action">Visit this project</a></p></mt:If tag="EntryDataURL">
+            </footer>
+        </div><!--/complementary-->
+
+<mt:EntryIfTagged tag="@slideshow" trim="1"><mt:SetVarBlock name="scripts">
+	<script src="/_js/slideshow.min.js"></script>
+</mt:SetVarBlock></mt:EntryIfTagged>
+<mt:Include module="Footer" parent="1"/>

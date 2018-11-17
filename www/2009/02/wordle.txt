@@ -1,0 +1,11 @@
+Wordle
+======
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2009/02/wordle>
+  Monday, 9 February 2009
+
+This is a word cloud generated from content that has appeared on my site over the last few months. You can create your own word clouds at [wordle.net][w]
+
+  [w]: http://wordle.net
+

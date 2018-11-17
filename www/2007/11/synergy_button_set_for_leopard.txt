@@ -1,0 +1,15 @@
+Synergy Button Set for Leopard
+==============================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2007/11/synergy_button_set_for_leopard>
+  Saturday, 10 November 2007
+
+<img class="right" src="/_assets/2007/11/tabbedleopard.png" alt="">One of the tiny little annoyances with the upgrade to Leopard, was that Synergy, a great little application that provides control of iTunes from the menu bar, looked a little unpolished when using the 'Tabbed' style interface.
+
+I managed to survive a week noticing the white artefacts around it's edges, but come Friday night last week, I just had to create my own button set, which I imaginatively called *'Tabbed Leopard'*.
+
+This updated button set is based on the original 'Tabbed' style, yet aside from removing the white artefacts from the edges, it also removes the subtle pin-stripes and introduces a level of transparency to match the behaviour of the menu bar in Leopard.
+
+<a class="action" href="/_assets/2007/11/tabbedleopard_v100.zip" download>Download 'Tabbed Leopard.zip'</a>
+

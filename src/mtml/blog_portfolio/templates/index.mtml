@@ -1,0 +1,111 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="portfolio"/>
+<mt:SetVarBlock name="title"><mt:BlogName/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta">
+    <meta name="description" content="<mt:BlogDescription/>"/>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>Web Design &#38; Development</h1>
+                <ul class="projects">
+                    <mt:Entries trim="1"><li class="entry project quarter" id="entry-<mt:EntryID/>">
+                        <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>">
+                            <img src="/_assets/portfolio/<mt:EntryBasename/>/_thumb.jpg" alt="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/>
+                            <mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; ">
+                        </a>
+                    </li></mt:Entries>
+                </ul>
+            </section>
+            <section>
+                <h1>Articles</h1>
+                <article class="entry summary article">
+                    <h1><a href="http://digitalartsonline.co.uk/reviews/creative-software/adobe-edge-review/">Review: Adobe Edge CC</a></h1>
+                    <footer>
+                        <p><time datetime="2013-06-20T00:00:00+00:00" pubdate>20 Jun 2012</time></p>
+                    </footer>
+                    <p>The latest update to Adobe&#8217;s Edge suite showcases some intriguing and innovative features &#8211; but given the prohibitive Creative Cloud subscription model, are these apps worth the money?</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://the-pastry-box-project.net/clearleft/2013-june-6/">The Pastry Box Project: Works Well with Others</a></h1>
+                    <footer>
+                        <p><time datetime="2013-06-06T00:00:00+00:00" pubdate>6 Jun 2012</time></p>
+                    </footer>
+                    <p>A brief thought about collaboration.</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://digitalartsonline.co.uk/reviews/interactive-design/bohemian-coding-sketch-2-review/">Review: Bohemian Coding Sketch 2</a></h1>
+                    <footer>
+                        <p><time datetime="2013-05-15T00:00:00+00:00" pubdate>15 May 2012</time></p>
+                    </footer>
+                    <p>I explain why I&#8217;m not sad that Adobe killed Fireworks, having found a better tool for interface design.</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://24ways.org/2012/responsive-images-what-we-thought-we-needed/">Responsive Images: What We Thought We Needed</a></h1>
+                    <footer>
+                        <p><time datetime="2012-12-11T00:00:00+00:00" pubdate>11 Dec 2012</time></p>
+                    </footer>
+                    <p>I engage with the two main approaches to the matter of responsive images and find them wanting. Could &#8220;Bah, humbug!&#8221; be a reasonable response to markup excess?</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://alistapart.com/articles/the-web-aesthetic">The Web Aesthetic</a></h1>
+                    <footer>
+                        <p><time datetime="2012-09-25T00:00:00+00:00" pubdate>25 Sep 2012</time></p>
+                    </footer>
+                    <p>Responsive web design is an emerging best practice, but innovation is focused on technical implementations while the visual aesthetic remains ignored. Put another way, we&#8217;re embracing &#8216;responsive&#8217; but neglecting the second part: &#8216;design&#8217;. Now is the time to seek out an aesthetic that is truer to the medium.</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://netmagazine.com/tutorials/build-responsive-site-week-designing-responsively-part-1">Build a Responsive Website in a Week</a></h1>
+                    <footer>
+                        <p><time datetime="2012-04-23T00:00:00+00:00" pubdate>23 Apr 2012</time></p>
+                    </footer>
+                    <p>A five-part tutorial that gives an introduction to Responsive Web Design. I begin with an illustration of how one might design a website with infinite layouts. I go on describe each component of responsive design: <a href="http://netmagazine.com/tutorials/build-responsive-site-week-typography-and-grids-part-2">fluid grids</a>, <a href="http://netmagazine.com/tutorials/build-responsive-site-week-images-and-video-part-3">flexible images</a> and <a href="http://netmagazine.com/tutorials/build-responsive-site-week-media-queries-part-4">media queries</a>, before finishing with <a href="http://netmagazine.com/tutorials/build-responsive-site-week-going-further-part-5">testing, optimisation and performance</a>.</p>
+                </article>
+                <article class="entry summary article">
+                    <h1><a href="http://24ways.org/2011/collaborative-development-for-a-responsively-designed-web">Collaborative Development for a Responsively Designed&#160;Web</a></h1>
+                    <footer>
+                        <p><time datetime="2011-12-05T00:00:00+00:00" pubdate>5 Dec 2011</time></p>
+                    </footer>
+                    <p>I unfurl my seraph wings to proclaim peace on Earth and the importance of goodwill between designers and developers. It&#8217;s not the office Secret Santa that unites them, but constant contact and shared appreciation.</p>
+                </article>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <section>
+                <h1>Side Projects</h1>
+                <article class="entry summary">
+                    <h1><a href="http://bradshawsguide.org/">Bradshaw&#8217;s Guide</a></h1>
+                    <p>A modern-day revival of a victorian classic.</p>
+                </article>
+                <article class="entry summary">
+                    <h1><a href="https://github.com/paulrobertlloyd/barebones/">Barebones</a></h1>
+                    <p>Directory setup, style guide and pattern primer, intended as a starting point for web development projects.</p>
+                </article>
+                <article class="entry summary">
+                    <h1><a href="https://github.com/paulrobertlloyd/socialmediaicons/">Social Media Icons</a></h1>
+                    <p>A set of standardised icons for popular social networking services and tools.</p>
+                </article>
+            </section>
+            <section>
+                <h1>Academic Essays</h1>
+                <mt:Folders trim="1" blog_ids="1">
+                <mt:SetVarBlock name="parentfolder" trim="1"><mt:ParentFolder><mt:FolderLabel /></mt:ParentFolder></mt:SetVarBlock>
+                <mt:If name="parentfolder" eq="Articles" trim="1">
+                <article class="entry summary">
+                    <h1><a href="<mt:BlogURL/><mt:FolderPath/>/"><mt:FolderLabel encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1>
+                    <p><mt:FolderDescription encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></p>
+                </article>
+                </mt:If>
+                </mt:Folders>
+            </section>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

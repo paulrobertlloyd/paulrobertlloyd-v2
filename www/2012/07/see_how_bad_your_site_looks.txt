@@ -1,0 +1,13 @@
+See How Bad Your Site Looks
+===========================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2012/07/see_how_bad_your_site_looks>
+  Saturday, 7 July 2012
+
+> If you're a web designer, you really, really need to get a cheap Dell monitor so you can see how bad your site looks on it and fix it.
+
+-- Anna Debenham's excellent response to [Marco Arment's ridiculous assertion][1] that every web designer needs to buy a retina MacBook Pro.
+
+  [1]: https://twitter.com/marcoarment/status/220968507117015040
+

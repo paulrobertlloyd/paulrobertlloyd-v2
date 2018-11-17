@@ -1,0 +1,12 @@
+<mt:AddRegex name="h1_underline">s{(.+)}{ $1 . "\n" . ("=" x (length $1));}e</mt:AddRegex>
+<mt:AddRegex name="StripExt">s{\.\w+$}{}g</mt:AddRegex>
+<mt:AddRegex name="StripDateSpace">s{[ ]{2}(\d)}{ $1}g</mt:AddRegex>
+<mt:PageTitle regex="h1_underline"/>
+
+  By <mt:PageAuthorDisplayName/>
+  <<mt:PagePermalink regex="StripExt"/>>
+  <mt:PageDate format="%A, %e %B %Y" regex="StripDateSpace"/>
+
+<mt:MarkdownOptions output="raw"><mt:PageBody/></mt:MarkdownOptions>
+
+<mt:MarkdownOptions output="raw"><mt:PageMore/></mt:MarkdownOptions>

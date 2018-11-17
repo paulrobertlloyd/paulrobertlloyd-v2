@@ -1,0 +1,26 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="title" value="Page Not Found (404)"/>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1>Eek!</h1>
+        </header>
+
+        <div role="main">
+            <figure>
+                <img src="/_assets/common/404.png" alt=""/>
+            </figure>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <section>
+                <h1>Page Not Found (404)</h1>
+                <p>The page you requested wasn&#8217;t found in the location specified. You may have an incorrect <abbr title="Uniform Resource Locator">URL</abbr>, or the file could have been moved or renamed.</p>
+                <p>If you&#8217;re having problems finding a particular page, try searching the site or return to the <a rel="home" href="/">homepage</a>.</p>
+                <p><small><em>Illustration by <a href="http://waldopancake.com/">Waldo Pancake</a></em></small></p>
+            </section>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

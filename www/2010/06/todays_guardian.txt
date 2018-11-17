@@ -1,0 +1,11 @@
+Today's Guardian
+================
+
+  By Paul Robert Lloyd
+  <https://v2.paulrobertlloyd.com/2010/06/todays_guardian>
+  Wednesday, 9 June 2010
+
+Phil Gyford has built a stripped down version of the Guardian Website, featuring only articles that appear in today's paper. He's written more about the project [on his website][1].
+
+  [1]: http://www.gyford.com/phil/writing/2010/06/09/todays-guardian.php
+

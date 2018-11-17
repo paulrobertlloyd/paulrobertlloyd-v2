@@ -1,0 +1,73 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:SetVarBlock name="location" trim="1"><mt:ParentFolder><mt:FolderBasename/></mt:ParentFolder></mt:SetVarBlock>
+<mt:If name="location" ne="articles" trim="1"><mt:Var name="location" value="about"/><mt:Else><mt:Var name="location" value="portfolio"/></mt:Else></mt:If>
+<mt:Var name="section" value="$location" trim="1"/>
+<mt:PageIfTagged tag="@code" trim="1"><mt:Var name="monospace" value="true"/></mt:PageIfTagged>
+<mt:SetVarBlock name="title" trim="1"><mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta" trim="1">
+    <meta name="description" content="<mt:PageExcerpt encode_html="1"/>"/>
+    <meta name="keywords" content="<mt:PageTags glue=", "><mt:TagName/></mt:PageTags>"/>
+    <link rel="alternate" href="<mt:PagePermalink replace=".php",".txt"/><mt:If tag="PageBasename" eq="index">index.txt</mt:If>" type="text/plain" title="Plain text version"/>
+    <link rel="canonical bookmark" href="<mt:PagePermalink replace=".php","/"/>" title="<mt:Var name="title"/>"/>
+    <mt:If tag="EntryDataStyle" trim="1"><style>
+<mt:EntryDataStyle convert_breaks="0" indent="8"/>
+    </style></mt:If>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:PageFolder><mt:FolderLabel encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></mt:PageFolder></h1>
+        </header>
+
+        <div role="main" class="entry" id="page-<mt:PageID/>">
+            <article>
+                <h1><mt:Var name="title"/></h1>
+                <mt:PageIfTagged tag="@photo" trim="1"><figure>
+                    <img src="/_assets/<mt:PageFolder><mt:FolderLabel lower_case="1" dirify="_"/></mt:PageFolder>/<mt:PageBasename/>.jpg" alt=""/>
+                </figure></mt:PageIfTagged>
+                <div class="prose">
+<mt:PageBody smarty_pants="1" replace="&#8212;"," &#8211; " indent="20"/>
+<mt:PageMore smarty_pants="1" replace="&#8212;"," &#8211; " indent="20"/>
+                </div>
+<mt:IfCommentsActive><mt:Include module="Comment Form" parent="1" form="contact" indent="16"/></mt:IfCommentsActive>
+                <mt:SetVarBlock name="this_folder" trim="1"><mt:PageFolder><mt:FolderBasename/></mt:PageFolder></mt:SetVarBlock>
+                <mt:SetVarBlock name="this_folder_name" trim="1"><mt:PageFolder><mt:FolderLabel/></mt:PageFolder></mt:SetVarBlock>
+                <mt:SetVarBlock name="this_page" trim="1"><mt:PageTitle></mt:SetVarBlock>
+                <mt:If name="location" eq="portfolio"><mt:If name="this_folder" like="(beige_to_bondiblue|britain_rebranded|bio|feeds)" trim="1"><mt:Else><mt:PageFolder trim="1"><nav>
+                    <ul role="navigation" class="pagination">
+                        <mt:SetVarBlock name="this_page_link" trim="1"><a rel="prev" href="<mt:PagePermalink replace=".php","/"/>" title="<mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"></mt:SetVarBlock>
+                        <mt:SetVar name="prev_page_link" value="" trim="1"/>
+                        <mt:Pages sort_by="authored_on" sort_order="ascend" trim="1"> 
+                            <mt:SetVarBlock name="next_page_link" trim="1"><a rel="prev" href="<mt:PagePermalink replace=".php","/"/>" title="<mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"></mt:SetVarBlock>
+                            <mt:If name="this_page_link" eq="$next_page_link" trim="1">
+                                <mt:If name="prev_page_link" trim="1"><li><mt:Var name="prev_page_link"/>Previous Chapter</a></li></mt:If>
+                            </mt:If>
+                            <mt:Var name="prev_page_link" value="$next_page_link" trim="1"/>
+                        </mt:Pages>
+                        <mt:SetVarBlock name="this_page_link" trim="1"><a rel="next" href="<mt:PagePermalink replace=".php","/"/>" title="<mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"></mt:SetVarBlock>
+                        <mt:SetVar name="prev_page_link" value="" trim="1"/>
+                        <mt:Pages sort_by="authored_on" sort_order="ascend" trim="1"> 
+                            <mt:SetVarBlock name="next_page_link" trim="1"><a rel="next" href="<mt:PagePermalink replace=".php","/"/>" title="<mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"></mt:SetVarBlock>
+                            <mt:If name="prev_page_link" eq="$this_page_link" trim="1"><li><mt:Var name="next_page_link"/>Next Chapter</a></li></mt:If>
+                            <mt:Var name="prev_page_link" value="$next_page_link" trim="1"/>
+                        </mt:Pages>
+                    </ul>
+                </nav></mt:PageFolder></mt:If></mt:If>
+            </article>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <mt:If name="location" eq="portfolio"><footer>
+                <p>First published <time datetime="<mt:PageDate format_var="iso8601"/>" pubdate><mt:PageDate format="%B %Y"/></time></p>
+            </footer></mt:If>
+            <mt:If name="this_folder" like="(beige_to_bondiblue|britain_rebranded|bio|feeds)" trim="1"><mt:Else><nav>
+                <h1><mt:If name="location" eq="portfolio">Chapters<mt:Else>More</mt:Else></mt:If></h1>
+                <ol role="navigation" class="chapters"><mt:Pages folder="$this_folder_name" sort_order="ascend" sort_by="authored_on">
+                    <li<mt:If tag="PageTitle" eq="$this_page"> class="active"</mt:If>><a href="<mt:PagePermalink replace=".php","/"/>"><mt:PageTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></a></li>
+                </mt:Pages></ol>
+            </nav></mt:Else></mt:If>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

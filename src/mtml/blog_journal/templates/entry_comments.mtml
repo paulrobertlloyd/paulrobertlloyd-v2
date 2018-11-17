@@ -1,0 +1,45 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="journal">
+<mt:SetVarBlock name="title">Discussion on <mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></mt:SetVarBlock>
+<mt:SetVarBlock name="entry_id">paulrobertlloyd:post=<mt:EntryID/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta">
+    <link rel="canonical bookmark" href="<mt:EntryPermalink replace=".php","/"/>discussion/" title="<mt:Var name="title"/>"/>
+    <mt:EntryPrevious trim="1"><link rel="prev bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/></mt:EntryPrevious>
+    <mt:EntryNext trim="1"><link rel="next bookmark" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>"/></mt:EntryNext>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1" section="journal"/>
+
+        <header>
+            <h1><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></h1>
+            <nav class="prevnext">
+                <mt:EntryPrevious trim="1"><a rel="prev bookmark" class="prev" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>">Previous</a></mt:EntryPrevious>
+                <mt:EntryNext trim="1"><a rel="next bookmark" class="next" href="<mt:EntryPermalink replace=".php","/"/>" title="<mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/>">Next</a></mt:EntryNext>
+            </nav>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>Discussion on This Entry</h1>
+                <mt:If tag="EntryCommentCount" eq="0" trim="1"><p>Nobody has posted a comment yet. Why not be the first!</p><mt:Else/></mt:If>
+                <mt:Include module="Comments" parent="1" indent="16"/>
+            </section>
+<mt:Include module="Comment Form" parent="1" indent="16"/>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <footer>
+                <p>Published on <time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%A, %e %B %Y at %l:%M %p"/></time></p>
+            </footer>
+            <nav>
+                <ol role="navigation" class="related">
+                    <li><a href="<mt:EntryPermalink replace=".php","/"/>">Entry</a></li>
+                    <mt:IfCommentsActive trim="1"><li class="active"><a href="<mt:EntryPermalink replace=".php","/"/>discussion/"><mt:IfCommentsAccepted trim="1">Join<mt:Else>View</mt:IfCommentsAccepted> Discussion</a> <span><mt:EntryCommentCount/></span></li></mt:IfCommentsActive>
+                    <mt:FlickrPhotos tags="$entry_id" username="Paul Robert Lloyd" lastn="1" trim="1"><li><a href="<mt:EntryPermalink replace=".php","/"/>photos/">Related Photos</a></li></mt:FlickrPhotos>
+                    <li><a href="<mt:EntryPermalink replace=".php","/"/>related/">Related Entries</a></li>
+                </ol>
+            </nav>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

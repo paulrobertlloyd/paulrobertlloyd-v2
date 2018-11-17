@@ -1,0 +1,49 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="section" value="archive"/>
+<mt:SetVarBlock name="title"><mt:ArchiveTitle/></mt:SetVarBlock>
+<mt:SetVarBlock name="meta">
+    <mt:ArchivePrevious trim="1"><link rel="prev archives" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>"/></mt:ArchivePrevious>
+    <mt:ArchiveNext trim="1"><link rel="next archives" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>"/></mt:ArchiveNext>
+</mt:SetVarBlock>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:ArchiveTitle/></h1>
+            <nav class="prevnext">
+                <mt:ArchivePrevious><a rel="prev archives" class="prev" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>">Previous</a></mt:ArchivePrevious>
+                <mt:ArchiveNext><a rel="next archives" class="next" href="<mt:ArchiveLink/>" title="<mt:ArchiveTitle/>">Next</a></mt:ArchiveNext>
+            </nav>
+        </header>
+
+        <div role="main">
+            <mt:ArchiveDate format="%Y" setvar="this_year" trim="1"/>
+            <mt:ArchiveList archive_type="Monthly" trim="1">
+            <mt:ArchiveDate format="%Y" setvar="archive_year" trim="1"/>
+            <mt:If name="this_year" eq="$archive_year" trim="1">
+            <section class="month">
+                <h1><a rel="archives" href="<mt:ArchiveLink/>"><mt:ArchiveDate format="%B"/></a></h1>
+                <ol><mt:Entries blog_ids="all" limit="$limit">
+                    <li class="entry<mt:IfCategory> <mt:EntryCategory lower_case="1"/></mt:IfCategory>" id="entry-<mt:EntryID/>"><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:EntryDate format="%d"/></time> <a href="<mt:EntryPermalink replace=".php","/"/>" rel="bookmark"><mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></li>
+                </mt:Entries></ol>
+            </section>
+            </mt:If>
+            </mt:ArchiveList>
+        </div><!--/main-->
+
+        <div role="complementary">
+            <mt:Entries blog_ids="4" trim="1"><mt:EntriesHeader><section>
+                <h1>From the Portfolio</h1>
+                <ul class="projects"></mt:EntriesHeader>
+                    <li class="entry project quarter">
+                        <a rel="bookmark" href="<mt:EntryPermalink replace=".php","/"/>">
+                            <img src="/_assets/portfolio/<mt:EntryBasename/>/_thumb.jpg" alt="<mt:EntryTitle encode_html="1"/>"/>
+                            <mt:EntryTitle encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; ">
+                        </a>
+                    </li>
+                <mt:EntriesFooter></ul>
+            </section></mt:EntriesFooter></mt:Entries>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>

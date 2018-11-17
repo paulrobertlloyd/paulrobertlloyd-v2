@@ -1,0 +1,15 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="title" value="System Error"/>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <p><mt:ErrorMessage/></p>
+        </div><!--/main-->
+
+<mt:Include module="Footer" parent="1"/>

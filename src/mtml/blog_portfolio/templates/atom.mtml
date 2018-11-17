@@ -1,0 +1,33 @@
+<?php
+    header("Content-Type:application/atom+xml");
+    echo '<?xml version="1.0" encoding="utf-8"?'.">\r";
+?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><mt:BlogParentWebsite><mt:WebsiteName remove_html="1" encode_xml="1"/></mt:BlogParentWebsite>: <mt:BlogName remove_html="1" encode_xml="1"/></title>
+    <link rel="alternate" type="text/html" href="<mt:BlogURL encode_xml="1"/>portfolio/"/>
+    <link rel="self" type="application/atom+xml" href="http://<mt:BlogParentWebsite><mt:WebsiteHost/></mt:BlogParentWebsite>/feeds/portfolio/"/>
+    <id>tag:<mt:BlogHost exclude_port="1" encode_xml="1"/>,<mt:TemplateCreatedOn format="%Y-%m-%d"/>:<mt:BlogRelativeURL encode_xml="1"/>/<mt:BlogID/></id>
+    <updated><mt:Entries lastn="1"><mt:EntryModifiedDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"/></mt:Entries></updated>
+    <mt:If tag="BlogDescription"><subtitle><mt:BlogDescription remove_html="1" encode_xml="1"/></subtitle></mt:If>
+    <generator uri="http://www.sixapart.com/movabletype/"><mt:ProductName version="1"/></generator>
+    <mt:Entries lastn="15">
+    <entry>
+        <title><mt:EntryTitle remove_html="1" encode_xml="1"/></title>
+        <link rel="alternate" type="text/html" href="<mt:EntryLink encode_xml="1" encode_php="q" replace=".php","/"/>"/>
+        <id><mt:EntryAtomID/></id>
+        <published><mt:EntryDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"/></published>
+        <updated><mt:EntryModifiedDate utc="1" format="%Y-%m-%dT%H:%M:%SZ"/></updated>
+        <summary><mt:EntryExcerpt smarty_pants="1" replace="&#8212;"," &#8211; " remove_html="1" encode_xml="1"/></summary>
+        <author>
+            <name><mt:EntryAuthorDisplayName encode_xml="1"/></name>
+            <mt:If tag="EntryAuthorURL"><uri><mt:EntryAuthorURL encode_xml="1"/></uri></mt:If>
+        </author>
+        <mt:EntryIfTagged><mt:EntryTags><category term="<mt:TagName normalize="1" encode_xml="1"/>" label="<mt:TagName encode_xml="1"/>" scheme="http://www.sixapart.com/ns/types#tag"/></mt:EntryTags></mt:EntryIfTagged>
+        <content type="html" xml:lang="<mt:BlogLanguage ietf="1"/>" xml:base="<mt:BlogURL encode_xml="1"/>">
+            <mt:EntryIfTagged tag="@photo"><![CDATA[<img src="/_assets/portfolio/<mt:EntryBasename/>/<mt:EntryBasename/>.png" alt="<mt:EntryTitle encode_html="1"/>"/>]]></mt:EntryIfTagged>
+            <mt:EntryBody smarty_pants="1" replace="&#8212;"," &#8211; " encode_xml="1"/>
+            <mt:EntryMore smarty_pants="1" replace="&#8212;"," &#8211; " encode_xml="1"/>
+        </content>
+    </entry>
+</mt:Entries>
+</feed>

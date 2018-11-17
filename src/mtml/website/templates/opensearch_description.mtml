@@ -1,0 +1,14 @@
+<mt:HTTPContentType type="application/opensearchdescription+xml"/><?xml version="1.0" encoding="<mt:PublishCharset/>"?>
+<OpenSearchDescription
+xmlns="http://a9.com/-/spec/opensearch/1.1/"
+xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+    <ShortName>Paul Lloyd</ShortName>
+    <LongName>Paul Robert Lloyd's Website</LongName>
+    <Description>Paul Robert Lloyd is an interaction designer. This is where he shares his thoughts, photos and latest work.</Description>
+    <Contact>noreply@paulrobertlloyd.com</Contact>
+    <Url type="text/html" template="<mt:CGIPath/><mt:SearchScript/>?IncludeBlogs=1,2,3,4&#38;search={searchTerms}"/>
+    <Url type="application/atom+xml" template="<mt:CGIPath/><mt:SearchScript/>?IncludeBlogs=1,2,3,4&#38;search={searchTerms}&#38;Template=opensearch"/>
+    <Url type="application/opensearchdescription+xml" rel="self" template="<mt:BlogURL/>_xml/opensearchdescription.xml" />
+    <Image height="16" width="16" type="image/x-icon"><mt:BlogURL/>/favicon.ico</Image>
+    <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

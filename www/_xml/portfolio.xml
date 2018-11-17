@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Paul Robert Lloyd: Portfolio</title>
+    <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/"/>
+    <link rel="self" type="application/atom+xml" href="http://v2.paulrobertlloyd.com/feeds/portfolio/"/>
+    <id>tag:v2.paulrobertlloyd.com,2013-06-11:/4</id>
+    <updated>2013-07-21T11:44:27Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 5.2.6</generator>
+    
+    <entry>
+        <title>UNICEF UK</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/unicef_uk/"/>
+        <id>tag:paulrobertlloyd.com,2013://4.406</id>
+        <published>2013-07-01T12:00:00Z</published>
+        <updated>2013-07-21T11:44:27Z</updated>
+        <summary>UNICEF UK is a charitable organisation that raises money in aid of children and children&#8217;s rights.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="unicef" label="UNICEF" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<figure>
+    <img src="/_assets/portfolio/unicef_uk/0.jpg" alt=""/>
+    <figcaption>
+        <p></p>
+    </figcaption>
+</figure>
+
+<p><abbr title="United Nations Children&#8217;s Fund">UNICEF</abbr> <abbr>UK</abbr> is a charitable organisation that raises money in aid of children and children&#8217;s rights. Like many organisations, <abbr>UNICEF</abbr> has seen an increase in mobile traffic, with mobile devices accounting for approximately 20% of site visits. Having recognised the need to support small-screen devices, a limited mobile version of their website had been produced. However, much of the information about their vital work remained on the desktop-orientated site, which featured large imagery, complex interactions and small text.</p>
+
+<h2>From desktop-first to mobile-first</h2>
+
+<p>With a constrained budget and tightly scoped brief, me and <a href="http://clearleft.com/is/ben-sauer/">Ben Sauer</a> were tasked with expressing this existing content and information architecture in a way that could be understood on smaller screens. The site also needed to degrade gracefully on older mobile devices, taking into account the often imperfect nature of cellular connectivity. Put simply, we needed to employ mobile-first design principles with desktop-first content, rationalising and simplifying wherever possible.</p>
+
+<p>With this in mind, we asked key stakeholders on the project to dissect the home page and a key internal page, placing component parts in order of importance. We then worked with <abbr>UNICEF</abbr>&#8217;s content editor to pull out common patterns, noting those which were essential, and those that were superfluous. We sketched the relevant patterns on a whiteboard, imagining how they would adapt on smaller screens. These could then be interpreted as <abbr>HTML</abbr> and used as the basis for my front-end build. This pattern-based approach allowed us to simplify what was already there, rather than starting again from scratch.</p>
+
+<p>We experimented with different ways of simplifying way-finding around the site, remove unnecessary interactions and invoking less taps. We removed layers of navigation, and advocated including more links within body copy. We also moved breadcrumb navigation into a slide out menu, allowing users to orientate themselves within the site.</p>
+
+<p>Considerable effort was spent to ensure performance didn&#8217;t suffer at the cost of excessive design. UNICEF&#8217;s extensive brand guidelines helped in this respect, their identifiable cyan brand colour and emotive photography providing enough identity. In a break with their out-dated web brand guidelines, I opted to use the Roboto typeface instead of Verdana. Not only was Roboto similar to <abbr>UNICEF</abbr>&#8217;s brand font Univers, but created specifically for newer Android devices, we knew it would render well on mobile screens. Its condensed nature would also allow for more comfortable line lengths on narrower screens.</p>
+
+<h2>A firm foundation to build upon</h2>
+
+<p>We were able to create a design language that could encompass the various template types, clearly delineating areas of navigation and content. Although a mobile focused project, we had a secondary ambition to design an experience that is better than the desktop site &#8211; even on a desktop. In time, it is hoped this responsive mobile design will form the foundation of a fully responsive site, accessible from all devices, large or small.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Matter</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/matter/"/>
+        <id>tag:paulrobertlloyd.com,2012://4.405</id>
+        <published>2012-11-14T12:00:00Z</published>
+        <updated>2013-07-21T10:49:36Z</updated>
+        <summary>A beautiful reading experience for this independent publisher of unmissable journalism about science and technology.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="matter" label="Matter" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/matter/0.jpg" alt=""/>
+        <figcaption>
+            <p>Identity development sketches</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/matter/1.jpg" alt=""/>
+        <figcaption>
+            <p>The MATTER logo</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/matter/2.jpg" alt=""/>
+        <figcaption>
+            <p>Article landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/matter/3.jpg" alt=""/>
+        <figcaption>
+            <p>Article page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/matter/4.jpg" alt=""/>
+        <figcaption>
+            <p>Article landing page on mobile</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Matter is the brainchild of journalists Bobbie Johnson and Jim Giles. Frustrated with the lack of care and quality on display in most online journalism, they set out to create a service where journalists and readers could focus on the finest science and technology writing. To achieve this, they started <a href="http://www.kickstarter.com/projects/readmatter/matter">a Kickstarter campaign</a> which was enormously successful, proving that there was a real desire for high-quality, focused, long-form writing.</p>
+
+<p>A incredibly collaborative project, I took the reins on the visual design and identity, with <a href="http://clearleft.com/is/jeremy-keith/">Jeremy Keith</a> working on the front-end and <a href="http://www.gyford.com/">Phil Gyford</a> handling the Django-based back-end.</p>
+
+<p>We began our work together with some design workshops where we did some competitor analysis, figured out the focus of the project, mapped user journeys, and hammered out design principles to guide us through the project.</p>
+
+<p>My early design work for Matter focused on its identity, thinking about how articles may appear on the web and how readers would recognise them in eBook stores and bookmark them on smartphone home screens. As the identity would play a supporting role to the articles being published, the logo needed to act as a hallmark, identifying an article as one that meets the high standards of journalism Matter is aiming for.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>DACS</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/dacs/"/>
+        <id>tag:prlloyd.webfactional.com,2012://4.371</id>
+        <published>2012-08-01T12:00:00Z</published>
+        <updated>2013-07-21T10:49:52Z</updated>
+        <summary>In the UK, many artists don&#8217;t understand their legal rights regarding copyright, and as a result, often fail to receive the royalties they deserve. DACS is a non-profit organisation that aims to change this through education, legal services and lobbying government to ensure artists&#8217; never become sidelined.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="dacs" label="DACS" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/dacs/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/dacs/1.jpg" alt=""/>
+        <figcaption>
+            <p>Landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/dacs/2.jpg" alt=""/>
+        <figcaption>
+            <p>Service page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/dacs/3.jpg" alt=""/>
+        <figcaption>
+            <p>Mobile landing page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>In the <abbr>UK</abbr>, many artists don&#8217;t understand their legal rights regarding copyright, and as a result, often fail to receive the royalties they deserve. <abbr>DACS</abbr> (Design and Artists Copyright Society) is a non-profit organisation that aims to change this through education, legal services and lobbying government to ensure artists&#8217; never become sidelined.</p>
+
+<p>Working with <a href="http://clearleft.com/is/harry-brignull/">Harry Brignull</a>, we discovered that even though <abbr>DACS</abbr>&#8217;s user groups were diverse, they were united by a common concern: none of them wanted to become legal experts, but just wanted enough information about the law to complete their personal goals. For example, artists only wanted to be told about the copyright laws that affected them, not the stuff that affects art galleries or lobbyists.</p>
+
+<p>We reworked the <abbr title="information architecture">IA</abbr> so that users could quickly be directed to the right section of the site, where they could find content with an appropriate perspective, tone-of voice and calls-to-action that matched their needs.</p>
+
+<p>When it came to the visual design, <abbr>DACS</abbr> had already undergone an extensive rebrand exercise for print but they needed assistance translating this to work online. Ultimately, we drew upon their photographic library of artists to give a &#8216;human face&#8217; to the organisation, combined with a restrained typographic pallet to ensure clarity. This was, of course, developed responsively so that content could be experienced equally well regardless of the device being used to access it.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>The Week</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/the_week/"/>
+        <id>tag:prlloyd.webfactional.com,2011://4.370</id>
+        <published>2011-11-18T12:00:00Z</published>
+        <updated>2013-07-21T10:50:21Z</updated>
+        <summary>The Week magazine condenses the news into lively and informative editorial, giving you complete understanding and insight into the week&#8217;s most vital stories.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="ipad" label="iPad" scheme="http://www.sixapart.com/ns/types#tag"/><category term="tablet" label="Tablet" scheme="http://www.sixapart.com/ns/types#tag"/><category term="theweek" label="The Week" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/the_week/0.jpg" alt=""/>
+        <figcaption>
+            <p>The Week iPad Edition</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/the_week/1.jpg" alt=""/>
+        <figcaption>
+            <p>Issue Cover</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/the_week/2.jpg" alt=""/>
+        <figcaption>
+            <p>Film overview page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/the_week/3.jpg" alt=""/>
+        <figcaption>
+            <p>Film review</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/the_week/4.jpg" alt=""/>
+        <figcaption>
+            <p>Text resize options</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/the_week/5.jpg" alt=""/>
+        <figcaption>
+            <p>Best properties overview page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>The Week magazine condenses the news into lively and informative editorial, giving readers an insight into the week&#8217;s most vital stories. With over 183,000 subscribers, it&#8217;s also the <abbr>UK</abbr>&#8217;s most popular weekly subscription magazine. Part of this success can be attributed to a rigorously consistent editorial format which readers describe as familiar, reliable and intuitive.</p>
+
+<p>Myself and <a href="http://clearleft.com/is/harry-brignull/">Harry Brignull</a> were tasked with bringing this much loved publication to a new generation of tablet users; retaining the best qualities of the print edition whilst also creating a product true to the best abilities of the iPad.</p>
+
+<p>With a readership not looking for rich interactivity, embedded videos or masses of hyperlinks, we focused instead on creating an easy to navigate interface that privileged the reading experience. A highly iterative approach saw the design evolve over the course of the project; working first with paper sketches, then click-through keynote prototypes before finessing the design in Fireworks; all whilst using real content from the magazine to ensure what we were designing would actually work!</p>
+
+<p>Working closely with the development team at <a href="http://kaldorgroup.com/">Kaldor</a>, we then honed the gestural interface, navigation and page templates. Building upon their hybrid <a href="http://pugpig.com/">PugPig</a> framework, the application could take advantage of native iOS features and also utilise <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> for precise layout and typographic control for each article.</p>
+
+<p>Features include an archive of back-issues, adjustable text size, a night reading mode and automatic downloading through Apple&#8217;s iOS5 Newsstand. <a href="http://itunes.apple.com/gb/app/the-week-uk/id468108781">It&#8217;s available now on the App Store</a>.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>dConstruct 2011</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/dconstruct_2011/"/>
+        <id>tag:prlloyd.webfactional.com,2011://4.369</id>
+        <published>2011-06-14T12:00:00Z</published>
+        <updated>2013-07-21T10:50:46Z</updated>
+        <summary>A grassroots conference held annually in Brighton. Speakers at the 2011 edition were invited to explore how we can bridge the gap between physical and digital product design.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="dconstruct" label="dConstruct" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/dconstruct_2011/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/dconstruct_2011/1.jpg" alt=""/>
+        <figcaption>
+            <p>Home page, as shown on an iPhone</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Presented by Clearleft, dConstruct is a grassroots conference held annually in Brighton. Speakers at the 2011 edition were invited to explore how we can bridge the gap between physical and digital product design.</p>
+
+<p>A conference is only as good as its speakers, so like <a href="/portfolio/dconstruct_2010/">the previous year&#8217;s design</a>, the homepage featured prominent images of those speaking at the event. The design process involved close collaboration with <a href="http://clearleft.com/is/andy-hume/">Andy Hume</a>, which was needed for us to build a highly responsive website that would work well across devices. With this in mind, the main navigation was simplified to just four items (Conference, Workshops, Location and Register) and an alternative navigation method was shown when browsing speaker pages on smaller screens.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Nuts.com</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/nuts/"/>
+        <id>tag:prlloyd.webfactional.com,2011://4.368</id>
+        <published>2011-05-27T12:00:00Z</published>
+        <updated>2013-06-11T22:34:51Z</updated>
+        <summary>Online reseller Nuts.com are &#8216;more than just nuts&#8217;; they also sell dried fruit, chocolates, sweets, seeds, spices, coffees, teas and much more. A family business founded over 80 years ago in Cranford, New Jersey, they have built a reputation for exceptional customer service.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="nutscom" label="Nuts.com" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/nuts/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/nuts/1.jpg" alt=""/>
+        <figcaption>
+            <p>Category page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/nuts/2.jpg" alt=""/>
+        <figcaption>
+            <p>Product page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Online retailer Nuts.com are &#8216;more than just nuts&#8217;; they also sell dried fruit, chocolates, sweets, seeds, spices, coffees, teas and much more. A family business founded over 80 years ago in Cranford, New Jersey, their success is built upon a passion for quality, a deep connection with their heritage and good old-fashioned customer service.</p>
+
+<p>At Clearleft, I&#8217;ve worked closely with Nuts.com to improve the design of their website. Although highly successful, it had lost a design consistency and was difficult to navigate. We decided to initially focus on fixing obvious usability problems and stabilise the site. Once this was done, we could then spend short 3 month sprints refining different aspects of the service.</p>
+
+<p>By modernising the design of home, listing and product pages, I made them more appealing to users and easier to use. This was followed by the design of a new checkout process and bespoke gift creation tools. Each sprint involved reviewing previous changes, and then iterating designs based on usage of the site and feedback from users.</p>
+
+<p>The most recent sprint involved implementing a new brand. I worked with Pentagram in New York and <a href="http://carbongraffiti.com/">Jon Aizlewood</a> in Brighton to ensure the new identity would work as well online as it does off.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Waldo Pancake</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/waldo_pancake/"/>
+        <id>tag:prlloyd.webfactional.com,2011://4.362</id>
+        <published>2011-02-09T11:54:47Z</published>
+        <updated>2013-06-11T22:34:50Z</updated>
+        <summary>A designer, illustrator and copywriter whose work you can find on the side of juice bottles, sweet packets and in Puccino&#8217;s coffee shops.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="jimsmith" label="Jim Smith" scheme="http://www.sixapart.com/ns/types#tag"/><category term="waldopancake" label="Waldo Pancake" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/0.jpg" alt=""/>
+        <figcaption>
+            <p>The Waldo Pancake website</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/1.jpg" alt=""/>
+        <figcaption>
+            <p>Navigation</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/waldo_pancake/2.jpg" alt=""/>
+        <figcaption>
+            <p>Slideshow featuring some of Jim&#8217;s work</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Jim Smith (<abbr title="also known as">aka</abbr> <a href="http://waldopancake.com/">Waldo Pancake</a>) is a designer, illustrator and copywriter whose work can be found on the side of juice bottles, sweet packets and inside every <a href="http://puccinosworldwide.com/">Puccino&#8217;s</a> coffee shop.</p>
+
+<p>His existing site used a Flash-based solution, but this meant his work couldn&#8217;t be viewed on mobile devices. Wanting to maintain similar slideshow functionality (with images that could be updated via an <abbr title="File Transfer Protocol">FTP</abbr> client) Jim approached me to redevelop his website. In addition to visualising his designs in <abbr title="HyperText Markup Language">HTML</abbr>, I created a simple file based content management system in <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> and utilised jQuery to provide cross-browser compatible image slideshows.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Fontdeck</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/fontdeck/"/>
+        <id>tag:prlloyd.webfactional.com,2010://4.363</id>
+        <published>2010-11-30T12:00:00Z</published>
+        <updated>2013-06-11T22:34:50Z</updated>
+        <summary>A pure CSS @font-face solution providing hundreds of fonts that can be used on the web without the need for complicated and non-standard based text replacement techniques.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="fontdeck" label="Fontdeck" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/1.jpg" alt=""/>
+        <figcaption>
+            <p>Browse Fonts</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/2.jpg" alt=""/>
+        <figcaption>
+            <p>Typeface page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/3.jpg" alt=""/>
+        <figcaption>
+            <p>Font specimen page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/4.jpg" alt=""/>
+        <figcaption>
+            <p>Designers landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/fontdeck/5.jpg" alt=""/>
+        <figcaption>
+            <p>Project settings</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Using a pure CSS @font-face solution, Fontdeck provides hundreds of web fonts that can be used without the need for complicated text replacement techniques.</p>
+
+<p>Based upon initial designs for the public beta created by <a href="http://aegir.me/work/fontdeck/">Aegir Hallmundur</a>, I realigned the design to give the service a more professional feel. This was achieved by pairing the distinctive <a href="http://fontdeck.com/typeface/adelle">Adelle</a> typeface for headings with the incredibly legible <a href="http://fontdeck.com/typeface/ptsans">PT Sans</a> for body copy. The colour palette was also modified, using desaturated colours that could be aligned with different font categorisations.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Universal Playback</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/universal_playback/"/>
+        <id>tag:prlloyd.webfactional.com,2010://4.364</id>
+        <published>2010-11-01T12:00:00Z</published>
+        <updated>2013-06-11T22:34:51Z</updated>
+        <summary>The TV-on-DVD label of Universal Pictures UK, responsible for releasing content from NBC Universal as well as other locally acquired series on DVD and blu-ray.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="universalplayback" label="Universal Playback" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/1.jpg" alt=""/>
+        <figcaption>
+            <p>Navigation</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/2.jpg" alt=""/>
+        <figcaption>
+            <p>Show landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/3.jpg" alt=""/>
+        <figcaption>
+            <p>Cast member biography</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/4.jpg" alt=""/>
+        <figcaption>
+            <p>Show-scoped shop item page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/5.jpg" alt=""/>
+        <figcaption>
+            <p>Genres landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/6.jpg" alt=""/>
+        <figcaption>
+            <p>Videos landing page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_playback/7.jpg" alt=""/>
+        <figcaption>
+            <p>Shop item page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Playback is the <abbr title="television">TV</abbr>-on-<abbr title="Digital Versatile Disc">DVD</abbr> label of Universal Pictures in the <abbr title="United Kingdom">UK</abbr>, responsible for releasing content from <abbr title="National Broadcasting Company">NBC</abbr> Universal as well as other acquired series on <abbr>DVD</abbr> and Blu-ray disc. Its website acts as an information hub for these shows, providing news, photos, and behind-the-scenes videos and interviews.</p>
+
+<p>I created a modular design that could showcase differing types of content. As Playback acts as a supporting brand to the various television shows it releases, an element of customisation was added, allowing site editors to choose a colour palette that would coordinate with each shows branding.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Channel 4 News</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/channel4_news/"/>
+        <id>tag:prlloyd.webfactional.com,2010://4.365</id>
+        <published>2010-09-30T12:00:00Z</published>
+        <updated>2013-07-21T10:51:38Z</updated>
+        <summary>In collaboration with James Box, James Bates and Cathy Jones, I helped design an innovative and bold website, reflecting the programmes branding and Channel 4&#8217;s public remit.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="channel4" label="Channel 4" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/1.jpg" alt=""/>
+        <figcaption>
+            <p>Category</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/2.jpg" alt=""/>
+        <figcaption>
+            <p>Special Report</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/3.jpg" alt=""/>
+        <figcaption>
+            <p>Country</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/4.jpg" alt=""/>
+        <figcaption>
+            <p>Article</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/5.jpg" alt=""/>
+        <figcaption>
+            <p>Benjamin Cohen&#8217;s Blog</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/6.jpg" alt=""/>
+        <figcaption>
+            <p>iPad: Home screen</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/7.jpg" alt=""/>
+        <figcaption>
+            <p>iPad: Special Reports</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/channel4_news/8.jpg" alt=""/>
+        <figcaption>
+            <p>iPad: Special Report</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Channel 4 News focuses on in-depth quality reporting, yet the previous website was centred around breaking news. This was forcing their editorial staff into a constant cycle of small updates rather than allowing them to address deeper stories.</p>
+
+<p>In collaboration with <a href="http://clearleft.com/is/james-box/">James Box</a>, <a href="http://clearleft.com/is/james-bates/">James Bates</a> and <a href="http://www.electricelephant.com/">Cathy Jones</a>, I helped design an innovative and bold website that drew upon their on air brand, highlighted the broadcasting talent and showcased in-depth reporting by means of curated &#8216;Special Reports&#8217;. I was later involved in the design of the companion iPad app, that took the design of the website and adapted it to suit the requirements of a touch based interface.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>dConstruct 2010</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/dconstruct_2010/"/>
+        <id>tag:prlloyd.webfactional.com,2010://4.366</id>
+        <published>2010-09-01T12:00:00Z</published>
+        <updated>2013-06-11T22:34:51Z</updated>
+        <summary>A grassroots conference held annually in Brighton. Speakers at the 2010 edition were invited to explore the power of design thinking.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="dconstruct" label="dConstruct" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<figure>
+    <img src="/_assets/portfolio/dconstruct_2010/0.jpg" alt="Home page"/>
+</figure>
+
+<p>Presented by Clearleft, dConstruct is a grassroots conference held annually in Brighton. Speakers at the 2010 edition were invited to explore the power of design thinking.</p>
+
+<p>A conference is only as good as its content, so the homepage featured prominent images of those speaking at the event. The design referred back to an original dConstruct brand asset &#8211; the opened cube net &#8211; which was placed in different positions across the site to effect the layout of each page.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Universal Networks</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/universal_networks/"/>
+        <id>tag:prlloyd.webfactional.com,2010://4.367</id>
+        <published>2010-05-03T12:00:00Z</published>
+        <updated>2013-07-21T10:52:31Z</updated>
+        <summary>Design for a family of five sites representing NBC Universal&#8217;s international channel portfolio.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="universalnetworks" label="Universal Networks" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure class="slideshow">
+        <img src="/_assets/portfolio/universal_networks/0.jpg" alt=""/>
+        <figcaption>
+            <p>Syfy Universal home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/1.jpg" alt=""/>
+        <figcaption>
+            <p>Syfy Universal show page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/2.jpg" alt=""/>
+        <figcaption>
+            <p>Syfy Universal schedule page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/3.jpg" alt=""/>
+        <figcaption>
+            <p>Studio Universal home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/4.jpg" alt=""/>
+        <figcaption>
+            <p>Studio Universal film page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/5.jpg" alt=""/>
+        <figcaption>
+            <p>Studio Universal schedule page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/6.jpg" alt=""/>
+        <figcaption>
+            <p>Universal Channel home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/7.jpg" alt=""/>
+        <figcaption>
+            <p>Universal Channel schedule page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/8.jpg" alt=""/>
+        <figcaption>
+            <p>13TH STREET Universal home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/universal_networks/9.jpg" alt=""/>
+        <figcaption>
+            <p>13TH STREET Universal schedule page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Design for a family of five sites representing <abbr title="National Broadcasting Company">NBC</abbr> Universal&#8217;s international channel portfolio, including <cite>Syfy Universal</cite>, <cite>Universal Channel</cite>, <cite>13th Street Universal</cite> and <cite>Studio Universal</cite>.</p>
+
+<p>Working alongside <a href="http://clearleft.com/is/james-box/">James Box</a>, I helped devise a common user experience and underlying design language that worked across different regional editions and also allowed each channel to exhibit its own unique brand personality.</p>
+
+<p>Example implementations can be seen at:</p>
+
+<ul>
+<li><a href="http://syfy.co.uk/">Syfy Universal</a> (<abbr title="United Kingdom">UK</abbr>)</li>
+<li><a href="http://universalchannel.co.za/">Universal Channel</a> (South Africa)</li>
+<li><a href="http://br.studiouniversal.com/">Studio Universal</a> (Brazil)</li>
+<li><a href="http://calle13universal.es/">13TH STREET Universal</a> (Spain)</li>
+</ul>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>BookFHR</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/bookfhr/"/>
+        <id>tag:prlloyd.webfactional.com,2009://4.355</id>
+        <published>2009-11-24T12:00:00Z</published>
+        <updated>2013-07-21T10:52:51Z</updated>
+        <summary>Discounts on airport hotels, parking and lounges and other travel services in the UK.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="bookfhr" label="BookFHR" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/bookfhr/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/bookfhr/1.jpg" alt=""/>
+        <figcaption>
+            <p>Search results</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/bookfhr/2.jpg" alt=""/>
+        <figcaption>
+            <p>Booking form</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>BookFHR provides discounts on airport hotels, parking and lounges and other travel services in the <abbr title="United Kingdom">UK</abbr>.</p>
+
+<p>During a short engagement working alongside <a href="http://clearleft.com/is/richard-rutter/">Richard Rutter</a>, I helped improve the overall user experience, with particular a focus on search and booking flows. I provided a more consistent visual treatment for the site, and took the opportunity to refine the company&#8217;s logo too.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>University of Wales</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/university_of_wales/"/>
+        <id>tag:prlloyd.webfactional.com,2009://4.356</id>
+        <published>2009-10-29T12:00:00Z</published>
+        <updated>2013-07-21T10:53:10Z</updated>
+        <summary>A confederal university responsible for accrediting degrees for institutions in Wales as well as for courses provided overseas.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="universityofwales" label="University of Wales" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/university_of_wales/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/university_of_wales/1.jpg" alt=""/>
+        <figcaption>
+            <p>Internal page</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>The University of Wales was a confederal university responsible for accrediting degrees for institutions in Wales and for courses provided overseas.</p>
+
+<p>Working with <a href="http://clearleft.com/is/james-box/">James Box</a>, and against a constrained budget and fixed timescale, we created an extensible design language that could be applied across the website, micro sites and the &#8216;myWales&#8217; social e-learning network.</p>
+]]>
+            
+        </content>
+    </entry>
+
+    <entry>
+        <title>Mozilla Add-ons</title>
+        <link rel="alternate" type="text/html" href="https://v2.paulrobertlloyd.com/portfolio/mozilla_addons/"/>
+        <id>tag:prlloyd.webfactional.com,2009://4.357</id>
+        <published>2009-05-29T12:00:00Z</published>
+        <updated>2013-07-21T10:53:37Z</updated>
+        <summary>A catalogue of more than 6,000 add-ons that allow users to customise Firefox to suit their different interests and browsing needs.</summary>
+        <author>
+            <name>Paul Robert Lloyd</name>
+            <uri>http://paulrobertlloyd.com/</uri>
+        </author>
+        <category term="mozillaaddons" label="Mozilla Add-ons" scheme="http://www.sixapart.com/ns/types#tag"/>
+        <content type="html" xml:lang="en-us" xml:base="https://v2.paulrobertlloyd.com/">
+            
+            <![CDATA[<div class="slides">
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/0.jpg" alt=""/>
+        <figcaption>
+            <p>Home page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/1.jpg" alt=""/>
+        <figcaption>
+            <p>Add-on overview page</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="/_assets/portfolio/mozilla_addons/2.jpg" alt=""/>
+        <figcaption>
+            <p>Category listing</p>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Mozilla Add-ons is a catalogue of over 6,000 add-ons that let Firefox users customise the browser to suit their individual interests and needs.</p>
+
+<p>The previous site was extremely functional and proved unappealing to users who were less tech savvy. Working at Clearleft alongside <a href="http://clearleft.com/is/richard-rutter/">Richard Rutter</a>, <a href="http://clearleft.com/is/natalie-downe/">Natalie Downe</a> and <a href="http://maban.co.uk/">Anna Debenham</a> I helped reposition Mozilla&#8217;s Add-ons so that it was more consumer orientated and approachable.</p>
+]]>
+            
+        </content>
+    </entry>
+
+</feed>

@@ -1,0 +1,34 @@
+<?php
+    require_once($_SERVER['DOCUMENT_ROOT'].'/_php/_functions.php');
+?>
+<mt:Var name="title" value="Articles"/>
+<mt:Var name="section" value="portfolio"/>
+<mt:Include module="Header" parent="1"/>
+
+        <header>
+            <h1><mt:Var name="title"/></h1>
+        </header>
+
+        <div role="main">
+            <section>
+                <h1>Academic Essays and Research</h1>
+                <mt:Folders trim="1">
+                <mt:SetVarBlock name="parentfolder" trim="1"><mt:ParentFolder><mt:FolderLabel /></mt:ParentFolder></mt:SetVarBlock>
+                <mt:If name="parentfolder" eq="Articles" trim="1">
+                <article class="entry summary">
+                    <h1><a href="<mt:BlogURL/><mt:FolderPath/>/"><mt:FolderLabel encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; " widont="1"/></a></h1>
+                    <footer>
+                        <p><mt:Pages folder="$FolderLabel" lastn="1"><time datetime="<mt:EntryDate format_name="iso8601"/>" pubdate><mt:PageDate format="%B %Y"/></time></mt:Pages></p>
+                    </footer>
+                    <p><mt:FolderDescription encode_html="1" smarty_pants="1" replace="&#8212;"," &#8211; "/></p>
+                </article>
+                </mt:If>
+                </mt:Folders>
+            </section>
+        </div><!--/main-->
+
+        <div role="complementary">
+<mt:Include module="Featured" parent="1" indent="12"/>
+        </div><!--/complementary-->
+
+<mt:Include module="Footer" parent="1"/>
